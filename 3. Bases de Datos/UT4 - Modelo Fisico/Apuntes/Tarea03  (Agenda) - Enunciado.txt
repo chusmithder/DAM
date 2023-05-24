@@ -1,0 +1,70 @@
+---------------------------------------------------------------------
+-- A) Queremos almacenar los datos de nuestros amigos en una agenda.
+---------------------------------------------------------------------
+
+-- Creamos una base de datos "agenda"
+
+
+
+-- Mostramos la lista de bases de datos. ¿Ves alguna BD que no hayas creado tú? ¿Para qué sirven?
+
+
+
+-- Volvemos a crear la misma base de datos. ¿Qué ocurre? ¿Cómo lo solucionamos? 
+-- Pon un ejemplo que solo cree "agenda" si no existe y otro ejemplo que borre "agenda y luego la vuelva a crear.
+
+
+
+-- ¿Podemos tener dos bases de datos con el mismo nombre? ¿Por qué?
+
+
+
+-- Seleccionamos "sys" y mostramos las tablas que tiene.
+
+
+
+-- Creamos la tabla "amigos" en nuestra base de datos "agenda" para almacenar:
+-- DNI (PK)
+-- nombre (NN)
+-- apellidos (NN)
+-- email
+-- telefono
+-- fecha de cumpleaños
+-- tipo de amigo (estudios, vecino, trabajo, otros)
+-- Nota: La tabla tendrá una clave alternativa llamada "cl_al_amigos" compuesta por "nombre" y "apellidos".
+
+
+
+
+
+
+
+
+-- Mostramos la lista de tablas.
+
+
+-- Volvemos a crear la misma tabla. ¿Qué ocurre? ¿Cómo lo solucionamos para que no la cree si ya existe??
+
+
+-- ¿Podemos tener dos tablas con el mismo nombre? ¿Por qué?
+
+
+
+-- Mostramos la definición de la tabla "amigos". 
+
+
+
+-- Borramos la tabla "amigos" y mostramos la lista de tablas para comprobar que ya no está.
+
+
+
+-- Volvemos a borrar la tabla "amigos". ¿Qué ocurre? ¿Cómo lo solucionamos?
+
+
+-- Borramos la base de datos "agenda" y mostramos la lista de bases de datos para comprobar que ya no está.
+
+
+
+-- Volvemos a borrar la base de datos "agenda". ¿Qué ocurre? ¿Cómo lo solucionamos?
+
+

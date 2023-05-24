@@ -1,0 +1,113 @@
+/*
+	Autor: Carlos
+    Fecha: 30/11/2021
+    Descripción: Pruebas de modificación de tablas
+*/
+
+-- Crear base de datos vacía
+drop database if exists instituto;
+create database instituto;
+
+-- Elegir la BBDD
+use instituto;
+
+-- Tabla Departamentos
+create table Departamentos(
+	CodDepartamento int(3),
+    Nombre varchar(20) not null,
+    constraint dp_cd_PK primary key (CodDepartamento)
+);
+
+insert into Departamentos (CodDepartamento,Nombre) values (107,"Informática");
+insert into Departamentos (CodDepartamento,Nombre) values (210,"Fol");
+
+-- Tabla Profesorado
+create table Profesorado(
+	DNI varchar(9),
+    Nombre varchar(10),
+    CodDepartamento int(3),
+    constraint pf_dni_PK primary key (DNI),
+    constraint pf_cd_FK foreign key (CodDepartamento) references Departamentos(CodDepartamento) on update cascade on delete set null
+);
+
+/*insert into Profesorado (DNI,Nombre,CodDepartamento) values ("11111111A","Carlos",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("22222222B","Izaskun",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("33333333C","Pedro",210);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("44444444D","Félix",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("55555555F","MJose",210);*/
+
+-- Añadir una columna, el número de la sala del departamento, varchar(3)
+alter table Departamentos add column sala varchar(3);
+-- Añadir una columna, la extensión del teléfono int(3) not null
+alter table Departamentos add column extension int(3) not null;
+-- Añadir una columna, fecha de creación por defecto 01/04/2000
+alter table Departamentos add column FCreacion date default '2000-04-01';
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extension) values (400,"Administrativo","A14",150);
+
+
+-- Modificar la columna sala a tamaño varchar(5)
+alter table Departamentos modify column sala varchar(5);
+-- Modificar la columna extensión a varchar(3), se puede llamar igual, pero no se puede hacer directamente varchar to int
+alter table Departamentos change extension extensionVarchar varchar(3);
+-- Modificar la columna, fecha de creación por defecto 01/04/2020
+alter table Departamentos alter FCreacion set default '2020-04-01';
+-- Modificar la columna, Nombre puede ser null
+alter table Departamentos modify column Nombre varchar(20);
+-- Modificar la columna, Nombre no puede ser null
+alter table Departamentos modify column Nombre varchar(20) not null;
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar) values (500,"Química","A9999","B90");
+
+-- Añadir una columna, email del departamento, varchar(50) único
+alter table Departamentos add column email varchar(50);
+alter table Departamentos add constraint de_em_UQ unique (email);
+-- Añadir una columna, instituto del departamento, varchar(20) valores (MSANZ, CIP Estella, ETI Tudela)
+alter table Departamentos add column instituto varchar(20);
+alter table Departamentos add constraint de_in_CK check (instituto in('MSANZ','CIP Estella','ETI Tudela'));
+-- Añadir una columna, fecha de revision mayor o igual a fecha de creación
+alter table Departamentos add column fechaRevision date;
+alter table Departamentos add constraint de_fr_CK check (fechaRevision >= FCreacion);
+
+-- Prueba práctica
+-- insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar,email,instituto,fechaRevision) 
+				   -- values (800,"Electrónica","A5478","B50","elec@mariaanasanz.es","CIP Estella","2021-09-01");
+
+-- Eliminar una restricción, fecha de revision mayor o igual a fecha de creación
+alter table Departamentos drop check de_fr_CK;
+-- Eliminar una columna fechaRevision
+alter table Departamentos drop column fechaRevision;
+-- Eliminar una restricción, email unique
+alter table Departamentos drop index de_em_UQ;
+
+-- Prueba práctica
+/*insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar,email,instituto) 
+				   values (900,"Marketing","A1111","B50","elec@mariaanasanz.es","MSANZ");*/
+
+-- Cambiar la PK de profesorado. Quito DNI y pongo NSS.
+alter table Profesorado drop primary key;
+alter table Profesorado add column NSS int(10);
+alter table Profesorado add constraint pr_nss_PK primary key (NSS);
+
+-- Cambiar la clave primaria de Departamentos. Quitamos CodDepartamento y ponemos
+-- una doble con CodDepartamento y NDepartamento.
+alter table Profesorado drop foreign key pf_cd_FK;
+alter table Departamentos drop primary key;
+
+alter table Departamentos add column NDepartamento int(5) not null;
+alter table Departamentos add constraint de_cdnd_PK 
+primary key (CodDepartamento,NDepartamento);
+
+alter table Profesorado add column NDepartamento int(5) not null;
+alter table Profesorado add constraint pr_cdnd_FK 
+foreign key (CodDepartamento,NDepartamento) 
+references Departamentos(CodDepartamento,NDepartamento);
+
+-- Renombrar una columna, Nombre a NombreDepar de Departamentos
+alter table Departamentos rename column Nombre to NombreDepar;
+-- Renombrar tabla Departamentos a DepartamentosDidácticos
+rename table Departamentos to DepartamentosDidácticos;
+-- Borrar tabla Profesorado
+drop table if exists Profesorado;
+-- Borrar la BBDD
+drop database if exists instituto;

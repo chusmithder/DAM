@@ -1,0 +1,37 @@
+
+
+* AL cambiar seguridad
+	en where ya puede ir cualquier campo
+- es recomendable que la condcion sea la clave primaria
+- quitar y volver a poner el modo seguro
+
+* actual puede ser sobre varias tablas
+
+* una clave ext o esta vacia o coincide conuno de los valores de la clave prim (cascade null, ...)
+
+* 
+
+-- primero quitar modo seguro
+update Socios
+	SET tipoSocio = "de baja"
+	where sañdp < (select avg(saldo)
+		from Socios);
+- con la misma tabla no se puede hacer
+- volver a poner seguridad
+
+* Crear otra BBDD
+drop database if exists barcos2;
+create database barcos2;
+use barcos2;
+
+
+
+
+
+
+
+
+
+
+
+

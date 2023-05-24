@@ -1,0 +1,5 @@
+	4 ejercicios
+1. 3 ptos: hacer ejercicio con cursor (parecido ejemplo circo)
+2. Trabajar un error (3 ejemplos del moodle, no vale el que utiliza el numero) / 2 y 3 son iguales 
+3. 1 Trigger (2 posibilidades: modificaralgo en la tabla y tenga que modificar//borrar algo en una tabla y por consecuencia en otra tabla)
+4. 4 ptos: procedimiento largo (condiciones, bucles)

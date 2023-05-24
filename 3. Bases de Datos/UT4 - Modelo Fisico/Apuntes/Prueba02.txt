@@ -1,0 +1,67 @@
+/*
+	Autor: Carlos
+    Fecha: 26/11/2021
+    Descripción: Pruebas de clase
+*/
+
+-- Crear base de datos vacía
+drop database if exists Cursos;
+create database Cursos;
+
+-- Elegir la BBDD
+use Cursos;
+
+-- Tablas
+drop table if exists PONENTES;
+CREATE TABLE PONENTES(
+     Nombre VARCHAR(30),
+     Apellido1 VARCHAR(30),
+     Apellido2 VARCHAR(30),
+     NumeroSegSoc VARCHAR(12) NOT NULL, -- Es obligatorio introducir los Números de la Seguridad Social.
+     DNI VARCHAR(9),
+     Direccion VARCHAR(100),
+     Origen VARCHAR(10),
+     PrecioHora DECIMAL(5,2),
+     CONSTRAINT pon_nss_UQ UNIQUE (NumeroSegSoc), -- No puede haber dos ponentes con el mismo número de la seguridad social.
+     CONSTRAINT pon_dni_PK PRIMARY KEY (DNI), -- Los ponentes se distinguen por su DNI.
+     CONSTRAINT pon_pre_CK CHECK (PrecioHora BETWEEN 30 AND 50), -- El precio/hora de un ponente debe estar comprendido entre 30 y 50.
+     CONSTRAINT pon_ori_CK CHECK (Origen IN('Propio','Externo')) -- El atributo Origen solo puede tomar los valores Propio y Externo.
+);
+
+drop table if exists ESPECIALIZACIONES;
+CREATE TABLE ESPECIALIZACIONES(
+     Codigo DECIMAL(5), 
+     Titulo VARCHAR(30), 
+     Horas DECIMAL(3),
+     FechaInicio DATE,
+     FechaFin DATE,
+     DNI_ponente VARCHAR(9) NOT NULL,
+     CONSTRAINT esp_cod_PK PRIMARY KEY (Codigo), -- Las especializaciones se distinguen por su código.
+     CONSTRAINT esp_tit_UQ UNIQUE (Titulo), -- No puede haber dos especializaciones que tengan el mismo título.
+     CONSTRAINT esp_fec_CK CHECK (FechaFin >= FechaInicio), -- La fecha de cierre de la especialización debe ser mayor que la fecha de apertura.
+     CONSTRAINT esp_dni_FK FOREIGN KEY (DNI_ponente) REFERENCES PONENTES(DNI) -- Para generar una especialización debe existir previamente el ponente que va realizar esa función formativa.
+);
+
+drop table if exists EMPLEADOS;
+CREATE TABLE EMPLEADOS(
+     Nombre VARCHAR(30),
+     Apellido1 VARCHAR(30),
+     Apellido2 VARCHAR(30),
+     NumeroSegSoc DECIMAL(12) NOT NULL, -- Es obligatorio introducir los Números de la Seguridad Social.
+     DNI VARCHAR(9),
+     Direccion VARCHAR(30),
+     Salario DECIMAL(7,2),
+     FechaIngreso DATETIME DEFAULT CURRENT_TIMESTAMP, -- El valor por defecto de la Fecha de Ingreso en la empresa, será la fecha actual.
+     CONSTRAINT emp_nss_UQ UNIQUE (NumeroSegSoc), -- No puede haber dos empleados con el mismo número de la seguridad social.
+     CONSTRAINT emp_dni_PK PRIMARY KEY (DNI) -- Los empleados se distinguen por su DNI.
+);
+
+drop table if exists INSCRIPCIONES;
+CREATE TABLE INSCRIPCIONES(
+     DNIempleado VARCHAR(9),
+     CodigoEspecializacion DECIMAL(5),
+     FechaInscripcion DATE,
+     CONSTRAINT ins_dc_PK PRIMARY KEY (DNIempleado,CodigoEspecializacion), -- Un empleado no puede inscribirse más de una vez a la misma especialización.
+     CONSTRAINT ins_dni_FK FOREIGN KEY (DNIempleado) REFERENCES EMPLEADOS(DNI),
+     CONSTRAINT ins_cod_FK FOREIGN KEY (CodigoEspecializacion) REFERENCES ESPECIALIZACIONES(Codigo)
+);

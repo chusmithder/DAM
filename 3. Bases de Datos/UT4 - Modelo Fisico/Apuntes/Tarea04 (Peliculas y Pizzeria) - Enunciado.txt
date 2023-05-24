@@ -1,0 +1,109 @@
+---------------------------------------
+-- 1. PELICULAS
+--------------------------------------
+-- Crea una base de datos llamada "videoclub"
+
+
+
+/*Crea una tabla denominada "peliculas" con la siguiente estructura:
+ - codigo (numero entero positivo, clave primaria)
+ - titulo (cadena de 30, obligatorio)
+ - duracion (numero entero positivo)
+ - valoracion (numero decimal, de 0.0 a 10.0)
+ - tipo (lista de valores: Infantil, Público general, Adultos)
+ - año de estreno (obligatorio)
+ - El conjunto de los campos titulo y año de estreno no se puede repetir
+*/ 
+
+
+
+-- Visualiza la estructura de la tabla películas.
+
+
+
+-- Cambia el nombre de la tabla "peliculas" para que se denomine "alquileres"
+
+
+
+-- Cambia el nombre de la columna "tipo" por "edad_recomedada"
+
+
+
+-- Añade una nueva columna denominada "ultima_fecha_alquiler" que almacene la fecha y la hora de alquiler.
+
+
+
+-- Modifica la columna "ultima_fecha_alquiler" para que su valor por defecto sea la fecha y hora actual.
+
+
+-- Elimina la clave primaria
+
+
+
+-- Elimina la clave alternativa (unique)
+
+
+
+-- Añade una clave primaria compuesta de los campos titulo y año de estreno
+
+
+
+-- Visualiza el código que genera la tabla alquileres
+
+
+
+-------------------------------------
+-- B) PIZZERIA 
+-------------------------------------
+
+/*Un comercio que envía pizzas y empanadas a domicilio registra los siguientes datos de sus pedidos:
+ - numero de pedido: entero positivo. Clave primaria.
+ - nombre: texto de máximo 50 caracteres. Obligatorio.
+ - tipo: pizza o empanada, por defecto "empanada"
+ - precio: precio total del pedido, valor con decimales. Obligatorio.
+ - cantidad: cantidad de articulos, entero positivo, por defecto "1". Obligatorio.
+ - domicilio del cliente.
+ - recoger: si / no
+ - fecha y hora del pedido: fecha y hora. Por defecto, fecha y hora actual. Obligatorio.
+ - fecha y hora de entrega: fecha y hora.
+ 
+*/
+
+-- Crea la base de datos "pizzeria"
+
+
+-- Crea la tabla "pedidos" eligiendo el tipo de dato adecuado para cada campo.
+
+
+
+-- Visualiza la estructura de la tabla creada.
+
+
+
+-- Cambia el nombre de la columna "recoger" por "a_domicilio" y haz que tenga un valor defecto de "no"
+
+
+
+-- Añade una nueva columna denominada "telefono" que almacene un telefono de contacto de forma obligatoria.
+
+
+
+-- Modifica la columna "fecha y hora de recogida" para que almacene únicamente la hora de entrega.
+
+
+
+-- Cambia el nombre de la columna "fecha y hora de recogida" por "hora de recogida"
+
+
+
+-- Elimina la columna "cantidad"
+
+
+
+-- Elimina la tabla "pedidos". Vuelve a crear la tabla incluyendo todos los cambios realizados en los pasos anteriores en su definición.
+  
+
+
+
+
+  

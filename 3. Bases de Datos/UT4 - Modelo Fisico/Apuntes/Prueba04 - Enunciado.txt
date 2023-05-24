@@ -1,0 +1,103 @@
+/*
+	Autor: Carlos
+    Fecha: 30/11/2021
+    Descripción: Pruebas de modificación de tablas
+*/
+
+-- Crear base de datos vacía
+drop database if exists instituto;
+create database instituto;
+
+-- Elegir la BBDD
+use instituto;
+
+-- Tabla Departamentos
+create table Departamentos(
+	CodDepartamento int(3),
+    Nombre varchar(20) not null,
+    constraint dp_cd_PK primary key (CodDepartamento)
+);
+
+insert into Departamentos (CodDepartamento,Nombre) values (107,"Informática");
+insert into Departamentos (CodDepartamento,Nombre) values (210,"Fol");
+
+-- Tabla Profesorado
+create table Profesorado(
+	DNI varchar(9),
+    Nombre varchar(10),
+    CodDepartamento int(3),
+    constraint pf_dni_PK primary key (DNI),
+    constraint pf_cd_FK foreign key (CodDepartamento) references Departamentos(CodDepartamento) on update cascade on delete set null
+);
+
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("11111111A","Carlos",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("22222222B","Izaskun",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("33333333C","Pedro",210);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("44444444D","Félix",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("55555555F","MJose",210);
+
+-- Añadir una columna, el número de la sala del departamento, varchar(3)
+
+-- Añadir una columna, la extensión del teléfono int(3) not null
+
+-- Añadir una columna, fecha de creación por defecto 01/04/2000
+
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extension) values (400,"Administrativo","A14",150);
+
+
+-- Modificar la columna sala a tamaño varchar(5)
+
+-- Modificar la columna extensión a varchar(3), se puede llamar igual, pero no se puede hacer directamente varchar to int
+
+-- Modificar la columna, fecha de creación por defecto 01/04/2020
+
+-- Modificar la columna, nombre puede ser null
+
+-- Modificar la columna, Nombre no puede ser null
+
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar) values (500,"Química","A9999","B90");
+
+-- Añadir una columna, email del departamento, varchar(50) único
+
+
+-- Añadir una columna, instituto del departamento, varchar(20) valores (MSANZ, CIP Estella, ETI Tudela)
+
+
+-- Añadir una columna, fecha de revision mayor o igual a fecha de creación
+
+
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar,email,instituto,fechaRevision) 
+				   values (800,"Electrónica","A5478","B50","elec@mariaanasanz.es","CIP Estella","2021-09-01");
+
+-- Eliminar una columna fechaRevision
+
+-- Eliminar una restricción, email unique
+
+-- Eliminar una restricción, fecha de revision mayor o igual a fecha de creación
+
+-- Prueba práctica
+insert into Departamentos (CodDepartamento,Nombre,sala,extensionVarchar,email,instituto) 
+				   values (900,"Marketing","A1111","B50","elec@mariaanasanz.es","MSANZ");
+
+-- Eliminar clave primaria de Profesorado
+
+-- Eliminar clave primaria de Departamentos, antes quitar la FK de Profesorado
+
+
+-- Reponer clave primaria de Profesorado
+
+-- Reponer clave primaria de Departamentos
+
+-- Reponer clave externa de Profesorado
+
+
+-- Renombrar una columna, Nombre a NombreDepar de Departamentos
+
+-- Renombrar tabla Departamentos a DepartamentosDidácticos
+
+-- Borrar tabla Profesorado
+
+-- Borrar la BBDD

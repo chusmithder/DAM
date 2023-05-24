@@ -1,0 +1,67 @@
+/*
+	Autor: Carlos
+    Fecha: 22/11/2021
+    Descripción: Pruebas de clase
+*/
+
+-- Crear base de datos vacía
+drop database if exists PruebasClase;
+create database PruebasClase;
+
+-- Crear base de datos conservando datos
+create database if not exists PruebasClase;
+
+-- Mostrar la BBDD
+-- show databases;
+
+-- Elegir la BBDD
+use PruebasClase;
+
+-- Tabla FAMILIA
+drop table if exists FAMILIA;
+create table FAMILIA(
+	Codfamilia int(3), -- Numérico de 3 dígitos
+    Denofamilia varchar(50) not null,	-- Alfanumérico de 50 caracteresfamiliaCodfamilia, Debe tener contenido.
+    constraint fm_cf_PK primary key (Codfamilia),	-- Clave primaria.
+	constraint fm_df_UQ unique (Denofamilia)		-- No puede haber dos familias con la misma denominación
+);
+
+-- Tabla PRODUCTO
+drop table if exists PRODUCTO;
+create table PRODUCTO(
+	Codproducto int(5),	-- Numérico de 5 dígitos
+    Denoproducto varchar(20) not null,	-- Alfanumérico de 20 caracteres, Debe tener contenido.
+    Descripcion varchar(100),	-- Alfanumérico de 100 caracteres
+    PrecioBase decimal(8,2) not null,	-- Numérico de 8 dígitos dos de ellos decimales, Debe tener contenido.
+    PorcReposición int(3),	-- Numérico de 3 dígitos
+    UnidadesMinimas int(4) not null,	-- Numérico de 4 dígitos, Debe tener contenido.
+    Codfamilia int(3) not null,	-- Numérico de 3 dígitos, Debe tener contenido.
+	constraint pr_cp_PK primary key (Codproducto),	-- Clave primaria.
+    constraint pr_pb_CK	check (PrecioBase > 0),	-- Mayor que 0.
+    constraint pr_pr_CK	check (PorcReposición > 0),	-- Mayor que 0.
+    constraint pr_um_CK	check (UnidadesMinimas > 0),	-- Mayor que 0.
+    constraint pr_cf_FK foreign key (Codfamilia) references FAMILIA(Codfamilia)
+);
+
+-- Tabla TIENDA
+drop table if exists TIENDA;
+create table TIENDA(
+	Codtienda int(3),-- Numérico de 3 dígitos
+    Denotienda varchar(20) not null,	-- Alfanumérico de 20 caracteres, Debe tener contenido.
+    Telefono varchar(11),	-- Alfanumérico de 11 caracteres
+    CodigoPostal varchar(5) not null,-- Alfanumérico de 5 caracteres, Debe tener contenido.
+    Provincia varchar(5) not null,	-- Alfanumérico de 5 caracteres, Debe tener contenido.
+    constraint ti_ct_PK primary key (Codtienda) -- Clave primaria.
+);
+
+-- Tabla STOCK
+drop table if exists STOCK;
+create table STOCK(
+	Codtienda int(3), -- Numérico de 3 dígitos
+    Codproducto int(5), -- Numérico de 5 dígitos
+    Unidades int(6)	not null,	-- Numérico de 6 dígitos.
+    constraint st_ctcp_PK primary key (Codtienda,Codproducto), -- Clave primaria
+    constraint st_ct_FK foreign key (Codtienda) references TIENDA(Codtienda),
+    constraint st_cp_FK foreign key (Codproducto) references PRODUCTO(Codproducto),
+    constraint st_un_CK check (Unidades >= 0) -- Mayor o igual a 0.
+);

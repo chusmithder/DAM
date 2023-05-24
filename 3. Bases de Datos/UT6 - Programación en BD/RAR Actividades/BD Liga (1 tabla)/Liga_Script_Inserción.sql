@@ -1,0 +1,10 @@
+INSERT INTO jugadores VALUES (1, 'Juan Carlos', 'Navarro', 'escolta', '2010-01-10', 130000, null, 'Regal Barcelona');
+INSERT INTO jugadores VALUES (2, 'Felipe', 'Reyes', 'Pivot', '2009-02-20', 120000, 2.04, 'Real Madrid');
+INSERT INTO jugadores VALUES (3, 'Fernando', 'San Emeterio', 'Alero', '2008-09-22', 60000, 1.99, 'Caja Laboral');
+INSERT INTO jugadores VALUES (4, 'Mirza', 'Teletovic', 'Pivot', '2010-05-13', 70000, 2.06, 'Caja Laboral');
+INSERT INTO jugadores VALUES (5, 'Sergio', 'LLul', 'escolta', '2011-10-29', 100000, 1.90, 'Real Madrid');
+INSERT INTO jugadores VALUES (6, 'Victor', 'Sarda', 'Base', '2012-01-01', 80000, 1.92, 'Regal Barcelona');
+INSERT INTO jugadores VALUES (7, 'Carlos', 'Suarez', 'Alero', '2011-02-19', 60000, 2.03, 'Real Madrid');
+INSERT INTO jugadores VALUES (8, 'Carlos', 'Cabezas', 'Base', '2012-01-21', 105000, 1.86, 'CAI Zaragoza');
+INSERT INTO jugadores VALUES (9, 'Pablo', 'Aguilar', 'Alero', '2011-06-14', 47000, 2.03, 'CAI Zaragoza');
+INSERT INTO jugadores VALUES (10, 'Rafa', 'Hetrsheimeir', 'Pivot', '2008-04-15', 53000, 2.08, 'CAI Zaragoza');

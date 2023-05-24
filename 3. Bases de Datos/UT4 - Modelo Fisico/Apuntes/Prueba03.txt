@@ -1,0 +1,46 @@
+/*
+	Autor: Carlos
+    Fecha: 30/11/2021
+    Descripción: Pruebas de integridad referencial
+*/
+
+-- Crear base de datos vacía
+drop database if exists instituto;
+create database instituto;
+
+-- Elegir la BBDD
+use instituto;
+
+-- Tabla Departamentos
+create table Departamentos(
+	CodDepartamento int(3),
+    Nombre varchar(20),
+    constraint dp_cd_PK primary key (CodDepartamento)
+);
+
+insert into Departamentos (CodDepartamento,Nombre) values (107,"Informática");
+insert into Departamentos (CodDepartamento,Nombre) values (210,"Fol");
+
+-- Tabla Profesorado
+create table Profesorado(
+	DNI varchar(9),
+    Nombre varchar(10),
+    CodDepartamento int(3),
+    constraint pf_dni_PK primary key (DNI),
+    constraint pf_cd_FK foreign key (CodDepartamento) references Departamentos(CodDepartamento) on update set null on delete cascade
+);
+
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("11111111A","Carlos",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("22222222B","Izaskun",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("33333333C","Pedro",210);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("44444444D","Félix",107);
+insert into Profesorado (DNI,Nombre,CodDepartamento) values ("55555555F","MJose",210);
+
+-- Fechoría número 1, poner una clave externa que no exista
+insert into Profesorado (DNI,Nombre) values ("66666666G","Pepito");
+
+-- Fechoría número 2, modifico la clave primaria
+update Departamentos set CodDepartamento = 310 where CodDepartamento = 210;
+
+-- Fechoría número 3, elimino la clave primaria
+delete from Departamentos where CodDepartamento = 107;
