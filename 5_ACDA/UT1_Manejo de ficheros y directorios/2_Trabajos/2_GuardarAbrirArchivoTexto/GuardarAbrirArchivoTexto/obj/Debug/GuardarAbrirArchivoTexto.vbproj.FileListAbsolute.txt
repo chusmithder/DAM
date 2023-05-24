@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\bin\Debug\GuardarAbrirArchivoTexto.exe.config
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\bin\Debug\GuardarAbrirArchivoTexto.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\bin\Debug\GuardarAbrirArchivoTexto.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\bin\Debug\GuardarAbrirArchivoTexto.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.formulario.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.Resources.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirArchivoTexto\GuardarAbrirArchivoTexto\obj\Debug\GuardarAbrirArchivoTexto.pdb

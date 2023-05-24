@@ -1,0 +1,13 @@
+[ODBC]
+DRIVER=Microsoft Access Driver (*.mdb, *.accdb)
+UID=admin
+UserCommitSync=Yes
+Threads=3
+SafeTransactions=0
+PageTimeout=5
+MaxScanRows=8
+MaxBufferSize=2048
+FIL=MS Access
+DriverId=25
+DefaultDir=C:\Users\alumMA\Desktop\0- Trabajos\2-ACDA\ut2 - bd\resources
+DBQ=C:\Users\alumMA\Desktop\0- Trabajos\2-ACDA\ut2 - bd\resources\MUSICA.accdb

@@ -1,0 +1,7 @@
+[ODBC]
+DRIVER=SQL Server
+UID=alumnoServer
+DATABASE=Northwind
+WSID=3MASANZA06-11
+APP=Sistema operativo Microsoft® Windows®
+SERVER=A06SERVIDOR1\SQLEXPRESS

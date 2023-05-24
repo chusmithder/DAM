@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\bin\Debug\GuardarAbrirConControles.exe.config
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\bin\Debug\GuardarAbrirConControles.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\bin\Debug\GuardarAbrirConControles.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\bin\Debug\GuardarAbrirConControles.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.formulario.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.Resources.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\GuardarAbrirConControles\GuardarAbrirConControles\obj\Debug\GuardarAbrirConControles.pdb

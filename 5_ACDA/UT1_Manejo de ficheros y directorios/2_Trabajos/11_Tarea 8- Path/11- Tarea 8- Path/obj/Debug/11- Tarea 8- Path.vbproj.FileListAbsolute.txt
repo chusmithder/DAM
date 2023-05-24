@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\bin\Debug\11- Tarea 8- Path.exe.config
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\bin\Debug\11- Tarea 8- Path.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\bin\Debug\11- Tarea 8- Path.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\bin\Debug\11- Tarea 8- Path.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\_11__Tarea_8__Path.Form1.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\_11__Tarea_8__Path.Resources.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\11- Tarea 8- Path\11- Tarea 8- Path\obj\Debug\11- Tarea 8- Path.pdb

@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=ODBC Driver 17 for SQL Server
+TrustServerCertificate=No
+DATABASE=pubs
+WSID=LAPTOP-ROVMSAET
+APP=Sistema operativo Microsoft® Windows®
+Trusted_Connection=Yes
+SERVER=(LocalDB)\MSSQLLocalDB

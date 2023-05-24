@@ -1,0 +1,67 @@
+-------------------------------------------------------------
+PRIMERA PARTE -----------------------------------------------
+-------------------------------------------------------------
+1 -----------------------------
+SELECT idfab,idproducto,descripcion,precio, (precio * 1.16) AS ivaIncluido FROM producto
+
+2 -----------------------------
+SELECT numpedido, fab, producto, cant, importe / cant AS precio_unitario, importeFROM pedidos
+
+3 -----------------------------
+SELECT nombre, date() - contrato AS dias_trabajados, year(date()) - edad AS año_nacimiento
+FROM empleados 
+
+4 -----------------------------
+SELECT * FROM clientes ORDER BY repclie
+
+5 -----------------------------
+SELECT * FROM oficinas ORDER BY region, ciudad, oficina DESC
+
+6 -----------------------------
+SELECT * FROM pedidos ORDER BY fechapedido
+
+7 -----------------------------
+SELECT TOP 4 * FROM pedidos ORDER BY importe DESC
+
+8 -----------------------------
+SELECT TOP 5 numpedido, fab, producto, cant, importe / cant AS precioUnit, importe
+FROM pedidos ORDER BY 5
+
+9 -----------------------------
+SELECT * FROM pedidos WHERE MONTH(fechapedido) = 3
+
+10 -----------------------------
+SELECT numemp FROM empleados WHERE oficina IS NOT NULL
+
+11 -----------------------------
+SELECT oficina FROM oficinas WHERE dir IS NULL
+
+12 -----------------------------
+SELECT * FROM oficinas WHERE region IN ('norte','este') ORDER BY region DESC
+
+13 -----------------------------
+SELECT * FROM empleados WHERE nombre LIKE 'Julia *'
+
+14 -----------------------------
+SELECT * FROM productos WHERE idproducto LIKE '*x'
+
+-------------------------------------------------------------
+SEGUNDA PARTE -----------------------------------------------
+-------------------------------------------------------------
+
+1 -----------------------------
+SELECT oficinas.oficina, ciudad, numemp, nombre
+FROM empleados RIGHT JOIN oficinas ON oficinas.oficina = empleados.oficina
+WHERE region = 'este'
+
+2 -----------------------------
+SELECT numpedido, importe, clientes.nombre AS cliente, limitecredito
+FROM pedidos INNER JOIN clientes ON pedidos.clie = clientes.numclie 
+
+3 -----------------------------
+SELECT empleados.*, ciudad, region
+FROM empleados LEFT JOIN oficinas ON empleados.oficina = oficinas.oficina
+
+4 -----------------------------
+SELECT oficinas.*, nombre AS director FROM empleados RIGHT JOIN oficinas 
+ON empleados.numemp = oficinas.dir WHERE objetivo > 600000

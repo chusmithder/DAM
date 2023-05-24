@@ -1,0 +1,12 @@
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\bin\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.exe.config
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\bin\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\bin\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.pdb
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\bin\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.vbproj.AssemblyReference.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\_15___Tarea12___Tecnologías_Net_para_procesar_Xml.Form1.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\_15___Tarea12___Tecnologías_Net_para_procesar_Xml.Resources.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.vbproj.GenerateResource.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.vbproj.CoreCompileInputs.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\15 - Tarea12 - Tecnologías Net para procesar Xml\15 - Tarea12 - Tecnologías Net para procesar Xml\obj\Debug\15 - Tarea12 - Tecnologías Net para procesar Xml.pdb

@@ -1,0 +1,8 @@
+------Los derechos del gato------
+1- jugar
+2- estudiar
+3- pedir ayuda
+4- comer
+5- salud
+6- nueva linea 1
+7- nueva linea 2

@@ -1,0 +1,12 @@
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\bin\Debug\Tarea5-Repaso.exe.config
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\bin\Debug\Tarea5-Repaso.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\bin\Debug\Tarea5-Repaso.pdb
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\bin\Debug\Tarea5-Repaso.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.vbproj.AssemblyReference.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5_Repaso.Form1.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5_Repaso.Resources.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.vbproj.GenerateResource.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.vbproj.CoreCompileInputs.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\Tarea5-Repaso\Tarea5-Repaso\obj\Debug\Tarea5-Repaso.pdb

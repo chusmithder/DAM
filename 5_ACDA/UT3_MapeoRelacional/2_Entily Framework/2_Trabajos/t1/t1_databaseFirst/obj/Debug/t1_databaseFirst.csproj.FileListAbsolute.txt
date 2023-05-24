@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\t1_databaseFirst.exe.config
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\t1_databaseFirst.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\t1_databaseFirst.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\EntityFramework.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\EntityFramework.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\obj\Debug\t1_databaseFirst.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\obj\Debug\t1_databaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\obj\Debug\t1_databaseFirst.csproj.CopyComplete
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\obj\Debug\t1_databaseFirst.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT3\2\t1_databaseFirst\t1_databaseFirst\obj\Debug\t1_databaseFirst.pdb

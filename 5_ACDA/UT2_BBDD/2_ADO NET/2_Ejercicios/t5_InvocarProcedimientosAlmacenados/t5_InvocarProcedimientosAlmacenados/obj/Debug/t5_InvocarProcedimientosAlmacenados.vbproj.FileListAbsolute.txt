@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\bin\Debug\t5_InvocarProcedimientosAlmacenados.exe.config
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\bin\Debug\t5_InvocarProcedimientosAlmacenados.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\bin\Debug\t5_InvocarProcedimientosAlmacenados.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\bin\Debug\t5_InvocarProcedimientosAlmacenados.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.Form1.resources
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.Resources.resources
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\t5_InvocarProcedimientosAlmacenados\t5_InvocarProcedimientosAlmacenados\obj\Debug\t5_InvocarProcedimientosAlmacenados.pdb

@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=ODBC Driver 17 for SQL Server
+TrustServerCertificate=No
+DATABASE=pubs
+WSID=3MASANZA06-11
+APP=Sistema operativo Microsoft® Windows®
+Trusted_Connection=Yes
+SERVER=(localdb)\MSSQLLocalDB

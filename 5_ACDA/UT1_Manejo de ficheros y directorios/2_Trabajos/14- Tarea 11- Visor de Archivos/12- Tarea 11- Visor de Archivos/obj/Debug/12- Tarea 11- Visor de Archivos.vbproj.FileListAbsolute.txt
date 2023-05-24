@@ -1,0 +1,12 @@
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\bin\Debug\12- Tarea 11- Visor de Archivos.exe.config
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\bin\Debug\12- Tarea 11- Visor de Archivos.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\bin\Debug\12- Tarea 11- Visor de Archivos.pdb
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\bin\Debug\12- Tarea 11- Visor de Archivos.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.vbproj.AssemblyReference.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\_12__Tarea_11__Visor_de_Archivos.Form1.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\_12__Tarea_11__Visor_de_Archivos.Resources.resources
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.vbproj.GenerateResource.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.vbproj.CoreCompileInputs.cache
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.exe
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.xml
+C:\Users\alumMA\Desktop\Trabajos\ACDA\12- Tarea 11- Visor de Archivos\12- Tarea 11- Visor de Archivos\obj\Debug\12- Tarea 11- Visor de Archivos.pdb

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Libros>
+  <Libro>
+    <IDLibro>15</IDLibro>
+    <ISBN>84-7615-234-5</ISBN>
+    <TItulo>Manual del microprocesador 80386</TItulo>
+    <Autor>Chris H.Pappas&amp;William H.Murray, III</Autor>
+    <Editorial>2</Editorial>
+    <Precio>40</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>14</IDLibro>
+    <ISBN>84-415-1145-4</ISBN>
+    <TItulo>Introducción a la programación</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>24,04</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>13</IDLibro>
+    <ISBN>84-415-1132-2</ISBN>
+    <TItulo>Guía práctica para usuarios de Kylix</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,52</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>12</IDLibro>
+    <ISBN>84-415-1202-7</ISBN>
+    <TItulo>Guía práctica para usuarios de Excel 2002</TItulo>
+    <Autor>Francisco Charte/M.Jesús Luque</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,52</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>11</IDLibro>
+    <ISBN>84-415-1230-2</ISBN>
+    <TItulo>Manual avanzado Excel 2002</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>21,04</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>10</IDLibro>
+    <ISBN>84-415-1255-8</ISBN>
+    <TItulo>Guía práctica para usuarios de Delphi 6</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,52</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>9</IDLibro>
+    <ISBN>84-415-1261-2</ISBN>
+    <TItulo>Programación con Delphi 6 y Kylix</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>37,26</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>8</IDLibro>
+    <ISBN>84-415-1291-4</ISBN>
+    <TItulo>Guía práctica para usuarios de Visual Studio .NET</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,52</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>7</IDLibro>
+    <ISBN>84-415-1290-6</ISBN>
+    <TItulo>Guía práctica para usuarios de Visual Basic .NET</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,75</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>6</IDLibro>
+    <ISBN>84-415-1351-1</ISBN>
+    <TItulo>Programación con Visual Basic .NET</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>39</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>5</IDLibro>
+    <ISBN>84-415-1376-7</ISBN>
+    <TItulo>Programación con Visual Studio .NET</TItulo>
+    <Autor>Francisco Charte/Jorge Serrano</Autor>
+    <Editorial>1</Editorial>
+    <Precio>40</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>4</IDLibro>
+    <ISBN>84-415-1392-9</ISBN>
+    <TItulo>Programación con Visual C# .NET</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>39</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>3</IDLibro>
+    <ISBN>84-415-1324-4</ISBN>
+    <TItulo>Guía práctica para usuarios JBuilder 7</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,75</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>1</IDLibro>
+    <ISBN>1-893115-94-1</ISBN>
+    <TItulo>User Interface Design for Programmers</TItulo>
+    <Autor>Joel Spolsky</Autor>
+    <Editorial>3</Editorial>
+    <Precio>31</Precio>
+  </Libro>
+  <Libro>
+    <IDLibro>2</IDLibro>
+    <ISBN>84-415-1136-5</ISBN>
+    <TItulo>SQL Server 2000</TItulo>
+    <Autor>Francisco Charte</Autor>
+    <Editorial>1</Editorial>
+    <Precio>10,75</Precio>
+  </Libro>
+  <Editoriales>
+    <IDEditorial>1</IDEditorial>
+    <Nombre>Anaya Multimedia</Nombre>
+    <Direccion>Juan Ignacio Luca de Tena, 15</Direccion>
+  </Editoriales>
+  <Editoriales>
+    <IDEditorial>2</IDEditorial>
+    <Nombre>McGraw-Hill</Nombre>
+    <Direccion>Edificio Valrealty, 1ª planta</Direccion>
+  </Editoriales>
+  <Editoriales>
+    <IDEditorial>3</IDEditorial>
+    <Nombre>Apress</Nombre>
+    <Direccion>901 Grayson Street</Direccion>
+  </Editoriales>
+</Libros>

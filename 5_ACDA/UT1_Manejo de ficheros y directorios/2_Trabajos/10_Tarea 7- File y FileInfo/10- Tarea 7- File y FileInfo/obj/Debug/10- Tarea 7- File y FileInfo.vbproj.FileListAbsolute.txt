@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\bin\Debug\10- Tarea 7- File y FileInfo.exe.config
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\bin\Debug\10- Tarea 7- File y FileInfo.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\bin\Debug\10- Tarea 7- File y FileInfo.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\bin\Debug\10- Tarea 7- File y FileInfo.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\_10__Tarea_7__File_y_FileInfo.Form1.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\_10__Tarea_7__File_y_FileInfo.Resources.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\UT1\10- Tarea 7- File y FileInfo\10- Tarea 7- File y FileInfo\obj\Debug\10- Tarea 7- File y FileInfo.pdb

@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\bin\Debug\13- Tarea 10- Path.exe.config
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\bin\Debug\13- Tarea 10- Path.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\bin\Debug\13- Tarea 10- Path.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\bin\Debug\13- Tarea 10- Path.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\_13__Tarea_10__Path.Form1.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\_13__Tarea_10__Path.Resources.resources
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.xml
+C:\Users\chusm\Desktop\DAM2 Trabajos\ACDA\13- Tarea 10- Repaso\13- Tarea 10- Path\obj\Debug\13- Tarea 10- Path.pdb

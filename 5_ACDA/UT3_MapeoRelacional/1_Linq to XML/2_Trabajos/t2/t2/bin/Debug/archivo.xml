@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<datosGenerales>
+  	<datosPersona>
+        <nombre>Fernando</nombre>
+        <edad>18</edad>
+  	</datosPersona>
+  	<datosPersona>
+    		<nombre>Rosa</nombre>
+    		<edad>17</edad>
+  	</datosPersona>
+  	<datosPersona>
+    		<nombre>Carlos</nombre>
+    		<edad>21</edad>
+  	</datosPersona>
+</datosGenerales>

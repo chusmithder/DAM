@@ -1,0 +1,12 @@
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\bin\Debug\proyecto1.exe.config
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\bin\Debug\proyecto1.exe
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\bin\Debug\proyecto1.pdb
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\bin\Debug\proyecto1.xml
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.vbproj.AssemblyReference.cache
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.Resources.resources
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.vbproj.GenerateResource.cache
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.vbproj.CoreCompileInputs.cache
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.exe
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.xml
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.pdb
+C:\Users\alumMA\source\repos\proyecto1\proyecto1\obj\Debug\proyecto1.formulario.resources

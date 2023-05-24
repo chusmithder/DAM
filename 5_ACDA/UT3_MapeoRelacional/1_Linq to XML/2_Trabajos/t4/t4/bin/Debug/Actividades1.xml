@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Actividades>
+  <actividad>
+    <nombre>Tango</nombre>
+    <precio cuota="mensual">37</precio>
+    <profesor>Juan Diego</profesor>
+  </actividad>
+  <actividad>
+    <nombre>Cha-cha-cha</nombre>
+    <precio cuota="trimestral">90</precio>
+    <profesor>Maitetxu</profesor>
+  </actividad>
+  <actividad>
+    <nombre>Rock</nombre>
+    <precio cuota="mensual">43</precio>
+    <profesor>Saioa</profesor>
+  </actividad>
+  <actividad>
+    <nombre>Bachata</nombre>
+    <precio cuota="mensual">25</precio>
+    <profesor>Paco</profesor>
+  </actividad>
+  <actividad>
+    <nombre>Salsa</nombre>
+    <precio cuota="trimestral">75</precio>
+    <profesor>Marieta</profesor>
+  </actividad>
+  <actividad>
+    <nombre>Pasodoble</nombre>
+    <precio cuota="anual">180</precio>
+    <profesor>Fatima</profesor>
+  </actividad>
+</Actividades>

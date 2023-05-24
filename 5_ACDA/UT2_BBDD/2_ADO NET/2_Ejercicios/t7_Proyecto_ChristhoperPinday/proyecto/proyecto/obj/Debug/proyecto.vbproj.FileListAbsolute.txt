@@ -1,0 +1,12 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\bin\Debug\proyecto.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\bin\Debug\proyecto.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\bin\Debug\proyecto.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.vbproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.Form1.resources
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.Resources.resources
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.vbproj.GenerateResource.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.vbproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.xml
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\ACDA\UT2 - bd\2\proyecto\proyecto\obj\Debug\proyecto.pdb

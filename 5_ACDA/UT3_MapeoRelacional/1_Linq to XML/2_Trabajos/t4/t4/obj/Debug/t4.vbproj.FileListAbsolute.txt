@@ -1,0 +1,12 @@
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\bin\Debug\t4.exe.config
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\bin\Debug\t4.exe
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\bin\Debug\t4.pdb
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\bin\Debug\t4.xml
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.vbproj.AssemblyReference.cache
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.Form1.resources
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.Resources.resources
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.vbproj.GenerateResource.cache
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.vbproj.CoreCompileInputs.cache
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.exe
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.xml
+C:\Users\alumMA\Desktop\0- Trabajos\ACDA\UT3\t4\t4\obj\Debug\t4.pdb

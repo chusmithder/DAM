@@ -1,0 +1,16 @@
+[ODBC]
+DRIVER=Microsoft dBase Driver (*.dbf)
+UID=admin
+UserCommitSync=Yes
+Threads=3
+Statistics=0
+SafeTransactions=0
+PageTimeout=5
+MaxScanRows=8
+MaxBufferSize=2048
+FIL=dBase 5.0
+DriverId=533
+Deleted=0
+DefaultDir=C:\USERS\ALUMMA\DESKTOP\0- TRABAJOS\2-ACDA\UT2 - BD\RESOURCES\ILLINOIS
+DBQ=C:\USERS\ALUMMA\DESKTOP\0- TRABAJOS\2-ACDA\UT2 - BD\RESOURCES\ILLINOIS
+CollatingSequence=ASCII
