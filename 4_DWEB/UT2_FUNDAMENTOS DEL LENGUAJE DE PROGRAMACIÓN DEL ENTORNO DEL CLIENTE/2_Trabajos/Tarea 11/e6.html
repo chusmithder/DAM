@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const alumno = {
+                nombre: "Luis",
+                edad: 18,
+                notas: {
+                    geometria: 8,
+                    aritmetica: 10,
+                    algebra: 10,
+                    trigonometria: 9
+                }
+            }
+            str = "Nombre: " + alumno.nombre + 
+            "<br>Edad: " + alumno.edad + "<br>Notas: ";
+            for (let nota in alumno.notas) {
+                str += alumno.notas[nota] + " ";
+            }
+
+
+            document.getElementById("demo").innerHTML = str;
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 6</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

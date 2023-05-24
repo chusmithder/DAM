@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        const A = [1,4,5,9];
+            const B = [10, 100, 1000, 10000];
+            const C = [];
+        //inicializamos el array suma y lo muestra
+        function ejecutar() {
+            for (let i = 0; i < A.length; i++) {
+                C[i] = A[i] + B[i];
+            }
+            document.getElementById("demo").innerHTML = A + "<br>" + B + "<br>------------------------<br>" + C;
+        }
+        
+
+        
+    </script>
+</body>
+</html>

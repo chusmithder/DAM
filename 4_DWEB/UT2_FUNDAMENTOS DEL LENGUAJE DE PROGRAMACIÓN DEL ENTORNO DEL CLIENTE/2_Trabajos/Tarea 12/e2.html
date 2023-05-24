@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const coche = {
+                puertas: 2,
+                ruedas: 4,
+                set cambiarPuertas(valor) {
+                    this.puertas = valor;
+                }
+            };
+
+            coche.cambiarPuertas = 4;
+            document.getElementById("demo").innerHTML = coche.puertas;
+
+        }   
+    </script>
+</head>
+<body>
+    <h1>E1</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

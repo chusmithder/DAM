@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular(numero1, numero2, numero3) {
+            let mayor;
+            if (numero1 > numero2)  {
+                mayor = numero1;
+            }
+            else    {
+                mayor = numero2;
+            }
+            if (numero3 > mayor)  {
+                mayor = numero3;
+            }
+            return mayor;
+        }   
+        function ejecutar() {
+            document.getElementById("result").innerHTML = "MAYOR DE LOS NUMEROS: " + calcular(1,5,19);
+        }
+    </script>
+</head>
+<body>
+    <h1>CALCULAR MENOR DE 3 NUMEROS</h1>
+    <p id="result"></p>
+    <button onclick="ejecutar()">EJECUTRAR</button>
+</body>
+</html>

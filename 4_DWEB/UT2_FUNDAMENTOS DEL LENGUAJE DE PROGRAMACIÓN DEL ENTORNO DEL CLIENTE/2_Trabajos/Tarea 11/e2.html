@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const persona = {
+                nombre: "Juana",
+                apellido: "Calamidad",
+                edad: 34
+            };
+            let str = "DATOS DE PERSONA<br>";
+            for (let x in persona) {
+                str += x + ":" + persona[x] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = str;
+        }   
+    </script>
+</head>
+<body>
+    <h1>E2 - MOSTRAR PROPIEDADES DEL OBJETO CON FOR IN</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

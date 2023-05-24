@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Propagación del evento</title>
+
+<style type="text/css">
+ #tabla1 { border: 1px solid red }
+ #c1,#c2 { background-color: pink; }
+</style>
+
+</head>
+
+<body>
+
+<table id="tabla1">
+ <tr id="fila1">
+  <td id="c1">uno</td>
+  <td id="c2">dos</td>
+ </tr>
+ <tr id="fila2">
+  <td id="c3">tres</td>
+  <td id="c4">cuatro</td>
+ </tr>
+</table>
+<script type="text/javascript">
+       
+      let f1 = document.getElementById("fila1");
+      f1.addEventListener("click",function(){alert("click en fila1")},false);
+      let c2 = document.getElementById("c2");
+      c2.addEventListener("click",function(){alert("el click en c2 burbujea")},false);
+      
+      let f2 = document.getElementById("fila2");
+      f2.addEventListener("click",function(){alert("click en fila2")},true);
+      let c4 = document.getElementById("c4");
+      c4.addEventListener("click",function(){alert("el click en c4 se captura")},true);
+     
+    </script>
+</body>
+</html>

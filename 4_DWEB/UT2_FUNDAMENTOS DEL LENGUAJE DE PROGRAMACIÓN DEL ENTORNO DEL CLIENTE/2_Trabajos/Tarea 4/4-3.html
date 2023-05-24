@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo de operadores aritmeticos y de asignacion de
+con variables x=10 e y=5</h2>
+<p id="demo"></p>
+
+<script>
+let x = 10;
+let y = 5;
+
+let suma = x + y;
+let resta = x - y;
+let mult = x * y;
+let division = x / y;
+let resto = x % y;
+
+let texto = "La suma de las variables es: " + suma + 
+	"<br>La resta de las variables: " + resta +
+	"<br>La multiplicacion de las variables: " + mult + 
+	"<br>La division de las variables: " + division +
+	"<br>El resto de la division de las variables: " + resto + 
+	"<br>Usando el operador += se ha incrementado en 5 la variable x; <b>se ha obtenido</b> " + (x += 5) +
+	"<br>Usando el operador -= se ha decrementado en 5 la variable x; <b>se ha obtenido</b> " + (x -= 5) +	
+	"<br>Usando el operador *= se ha multiplicado por 5 la variable x; <b>se ha obtenido</b> " + (x *= 5) +	
+	"<br>Usando el operador *= se ha dividido entre 5 la variable x; <b>se ha obtenido</b> " + (x /= 5) +
+	"<br>Usando el operador *= se ha obtenido el resto de dividir x entre 5; <b>se ha obtenido</b> " + (x %= 5) +
+	"";
+let doc = document.getElementById("demo");
+doc.innerHTML = texto;
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Tarea</h2>
+
+<p id="demo"></p>
+
+<script>
+	let palabra = window.prompt("Ingrese alguna de estas 4 palabras (casa, mesa, perro, gato)", "");
+    palabra = palabra.toLowerCase();
+    let traduccion = "";
+    
+    switch (palabra) {
+        case "casa":    traduccion = "house";
+            break;
+        case "mesa":    traduccion = "table";
+            break;
+        case "perro":   traduccion = "dog";
+            break;
+        case "gato":    traduccion = "cat";
+            break;
+        default: 
+            break;
+    }
+    window.alert(palabra + ": " + traduccion);
+  
+</script>
+
+</body>
+</html>

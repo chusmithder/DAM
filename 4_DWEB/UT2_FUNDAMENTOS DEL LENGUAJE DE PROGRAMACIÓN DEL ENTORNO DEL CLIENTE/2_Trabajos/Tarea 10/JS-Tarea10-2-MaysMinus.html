@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mayúsculas minúsculas o ambas</title>
+</head>
+<body>
+	<h1>Mayúsculas o minúsculas</h1>
+	<button onclick="MayusMinus()">Comprobar</button>
+	<p id="resultado"></p>
+<script>
+    let MayusMinus = () => {
+        let str = "";
+        let entrada = window.prompt("introduce la palabra: ");
+
+            if ( entrada.toUpperCase() == entrada) {
+                str = "todos sus caracteres son mayusculas";
+            } else if (entrada.toLowerCase() == entrada) { //o todos minuscula o variado
+                str = "todos sus caracteres son minusculas";
+            } else {
+                str = "Sus caracterez son mixtos";
+            }
+        document.getElementById("resultado").innerHTML = str;
+    }
+
+</script>
+</body>
+</html>
+

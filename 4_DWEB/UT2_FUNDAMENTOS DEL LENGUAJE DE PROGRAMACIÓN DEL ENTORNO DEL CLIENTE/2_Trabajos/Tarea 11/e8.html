@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const alumno = {
+                nombre: "Juan Pérez Martínez",
+                curso: "DAM2",
+                calificaciones: [ //array de objetos
+                    {modulo: "Acceso a datos", RAS: [7,4,7,8,10,8]},
+                    {modulo: "Desarrollo web", RAS: [6,7,6,8,5,9,7,5]},
+                    {modulo: "Sistemas de gestión empresarial", RAS: [5, 5, 6, 6, 8]},
+                    {modulo: "Programación de servicios y procesos", RAS:  [5, 5, 4, 6, 8]}
+                ]
+            }
+            //pedir datos
+            for (let i = 1; i < 5; i++) {
+
+            }
+
+            //pedir calificaciones
+            let cal = window.prompt("Introduzca calificacion 1 de ")
+
+
+            const cal1 = devolverArrayConCalficaciones("Desarrollo de Interfaces");
+            const cal2 = devolverArrayConCalficaciones("Programación multimedia y dispositivos móviles");
+
+            alumno.calificaciones[4] = {modulo: "Desarrollo de Interfaces", RAS: cal1};
+            alumno.calificaciones[5] = {modulo: "Programación multimedia y dispositivos móviles", RAS: cal2};
+
+            let str = "El alumno <b>" + alumno.nombre + "</b> ha obtenido las siguientes calificaciones:<br><br>"
+            for (let i in alumno.calificaciones) {
+                str += "<b>" + alumno.calificaciones[i].modulo + "</b>";
+                for (let j in alumno.calificaciones[i].RAS) {
+                    str += " - " + alumno.calificaciones[i].RAS[j];
+                }
+                str += "<br>";
+            }
+            
+            document.getElementById("demo").innerHTML = str;
+        }   
+
+        function devolverArrayConCalficaciones(modulo) {
+            const array = [];
+            for (let i = 0; i < 5; i++) {
+                let num = Number(window.prompt("introduzca calificacion del RA " + (i+ 1) + " del modulo de " + modulo));
+                array[i] = num;
+            }
+            return array;
+        }
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 7 - OBJETOS ANIDADOS Y MATRICES</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

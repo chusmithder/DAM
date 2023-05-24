@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<button type="button" onclick="myFunction(0)">Letra Grande</button>
+	<button type="button" onclick="myFunction(1)">Letra Pequeña</button>
+	<p>Maria</p>
+	<p>Ana</p>
+	<p>Sanz</p>
+
+	<script>
+
+		function myFunction(x) {
+			const parrafos = document.getElementsByTagName("p");
+            for(let i = 0; i < parrafos.length; i++) {
+                if (x == 0) {
+                    parrafos[i].style.fontSize = "40px";
+                    parrafos[i].style.color = "blue";
+
+                } else {
+                    parrafos[i].style.fontSize = "10px";
+                    parrafos[i].style.color = "red";
+                }
+            }
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+		table, th, td {
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <!-- <button onclick="ejecutar()">COMENZAR</button> -->
+    <p id="demo"></p>
+    <p>Define, mediante notación literal de objeto JavaScript, el objeto persona con las propiedades nombre, apellido, <br>
+        twitter y edad (valores: Juan, Gómez-Jurado, @JuanGomezJurado, 47).  Muestra la información maquetada en una tabla html como la de la imagen.
+    </p>
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>@nombredeusuario</td>
+            <td>Edad</td>
+        </tr>
+        <tr>
+            <td id="c1"></td>
+            <td id="c2"></td>
+            <td id="c3"></td>
+            <td id="c4"></td>
+        </tr>
+    </table>
+    <script>
+        // Escribe un ejemplo de función flecha que retorne un objeto
+        const persona = {
+            nombre: "Juan",
+            apellido: "Gomez",
+            twitter: "@JuanGomezJurado",
+            edad: 47
+        };
+        let col = 1;
+        for (let prop in persona) {
+            document.getElementById(`c${col}`).innerHTML = persona[prop];
+            col++;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+		table, th, td {
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <!-- <button onclick="ejecutar()">COMENZAR</button> -->
+    <p id="demo"></p>
+    <p>Define el array personas como un array de objetos y muestralo en una tabla como la de la imagen.</p>
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>@nombredeusuario</td>
+            <td>Edad</td>
+        </tr>
+        <tr>
+            <td id="c11"></td>
+            <td id="c12"></td>
+            <td id="c13"></td>
+            <td id="c14"></td>
+        </tr>
+    </table>
+        
+    <script>
+        const arrayPersonas = [
+            {nombre: "Juan", apellido: "Gomez", twitter: "@JuanGomezJurado", edad: 47},
+            {nombre: "aaaa", apellido: "aaaaa", twitter: "@aaaaa", edad: 50},
+            {nombre: "bbbb", apellido: "bbbb", twitter: "@bbbb", edad: 47},
+        ];
+        let col = 1;
+        for (let p in arrayPersonas) {
+            document.getElementById(`c${col}`).innerHTML = persona[prop];
+            col++;
+        }
+    </script>
+</body>
+</html>

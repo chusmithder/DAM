@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <p><i>5- Dado un vector de secuencias de caracteres mostrar la longitud de cada una de ellas.</i></p>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        const array = ["ho", "hol", "hola", "holal"];
+        let text = array + "<br>-------------------------<br>";
+        //inicializamos el array suma y lo muestra
+        function ejecutar() {
+            //usaremos un forEach para recorrer cada elemento del array
+            array.forEach(mostrarLonitudElementosArray);
+
+            document.getElementById("demo").innerHTML = text;
+        }
+        
+        
+
+        function mostrarLonitudElementosArray(elemento) {
+            text += elemento + ":" + elemento.length + "<br>";
+        }
+
+        
+    </script>
+</body>
+</html>

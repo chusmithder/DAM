@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ocultar() {
+            var doc = document.getElementById("p1");
+                doc.style.display = "none";
+        }
+        function mostrar() {
+            var doc = document.getElementById("p1");
+                doc.style.display = "block";
+        }
+    </script>
+</head>
+<body style="background: skyblue;">
+    <h1>OCULTAR CONTENIDO DE UN PARRAFO</h1>
+    <p id="p1">La clasificación de los tipos de texto permite organizarlos según su propósito o intención (contar una historia, ofrecer un argumento, etc.), sus contenidos (científico, periodístico, entre otros), sus características (objetivo, subjetivo, entre otros) y su formato (impresos o digitales).</p>
+    <button onclick="ocultar()">OCULTAR</button>
+    <button onclick="mostrar()">MOSTRAR</button>
+</body>
+</html>

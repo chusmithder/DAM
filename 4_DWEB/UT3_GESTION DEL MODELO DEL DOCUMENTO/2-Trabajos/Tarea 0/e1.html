@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 0 - Tarea 1</h1>
+    <p id="demo">parrafo con id</p>
+
+    <p class="s">parrafo con clase s</p>
+    <p class="s">parrafo con clase s</p>
+    <p class="s">parrafo con clase s</p>
+
+    <div>hola</div>
+    <div>Adios</div><br><br><br>
+
+    <button onclick="ejecutar()">EJECUTAR</button>
+    <script>
+        function ejecutar(){
+            document.getElementById("demo").innerHTML = "Modificado parrafo con id demo";
+
+            const parrafosS = document.getElementsByClassName("s");
+            for (let i = 0; i < parrafosS.length; i++) {
+                parrafosS[i].innerHTML = "Modificado parrafo con clase s";
+            }
+
+            const divs = document.getElementsByTagName("div");
+            for (let i = 0; i < divs.length; i++) {
+                divs[i].innerHTML = "Modificado elementos con tagName div";
+            }
+            // document.getElementsByTagNameNS
+        }
+        
+    </script>
+</body>
+</html>

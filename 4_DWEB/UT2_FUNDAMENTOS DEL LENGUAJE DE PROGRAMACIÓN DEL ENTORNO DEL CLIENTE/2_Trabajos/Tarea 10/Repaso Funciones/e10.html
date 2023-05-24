@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular(n) {
+                let cifras = 0;
+                while (n > 0) {
+                    cifras = cifras + 1;
+                    n = n / 10;
+                }
+                return cifras;
+        }   
+        function ejecutar() {
+            let num = Number(window.prompt("Introduce numero entero positivo", "1234"));
+            window.alert("NUMERO DE DIGITOS DE " + num + ": " + calcular(num));
+        }
+    </script>
+</head>
+<body>
+    <h1>CALCULAR CANTIDAD DE DIGITOS DE UN VALOR</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">EJECUTAR</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular(lado) {
+            return 4 * lado;
+        }   
+        function ejecutar() {
+            document.getElementById("demo").innerHTML = "PERIMETRO DEL CUADRADO: " + calcular(20);
+        }
+    </script>
+</head>
+<body>
+    <h1>PERIMETRO DE CUADRADO</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">EJECUTRAR</button>
+</body>
+</html>

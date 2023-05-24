@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 15</title>
+   
+</head>
+<body>
+    <h1>Manejando Arrays...Tarea 15</h1>
+    <p>Introduce un texto:</p>
+    <textarea id="myTextarea" ></textarea>
+    <button onclick="analizar()">Púlsame</button>
+    <script>
+        function analizar() {
+            //let palabras = document.querySelector("textarea").value.split(" ");
+            let palabras = document.getElementById("myTextarea").value.split(" ");
+            let res = "<h1>Información sobre el texto introducido</h1><br>";
+            res += `Número de palabras: ${palabras.length}<br>`;
+            res += `Primera palabra: ${palabras[0]}<br>`;
+            res += `Última palabra: ${palabras[palabras.length - 1]}<br>`;
+            res += `Palabras en orden inverso: ${palabras.reverse().join(" * ")}<br>`;
+            res += `Palabras en orden alfabético: ${palabras.sort().join(" * ")}<br>`;
+            res += `Palabras en orden alfabético inverso: ${palabras.reverse().join(" * ")}<br>`;
+            res += "<h1>Hecho</h1>"
+            let ventana = window.open();
+            ventana.document.write(res);
+        }
+    </script>
+</body>
+</html>

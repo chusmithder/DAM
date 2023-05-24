@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <p><i>6- Definir un array y pasarlo como parámetro a una función Cargar que servirá para cargarlo con los valores correspondientes a los sueldos de 5 
+        <br>empleados. Una segunda función calcularGastos() recibirá como parámetro el array y obtendrá la suma de todos los sueldos. La página debe 
+        <br>listar todos los sueldos y el total de sueldos.</i><p>
+    
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        //definir un array
+        const sueldos = [];
+        
+        function ejecutar() {
+            cargar(sueldos);
+            let total = calcularGastos(sueldos);
+            let text = "Sueldos: " + sueldos.join(" * ") + "<br>Total de sueldos: " + total;
+            document.getElementById("demo").innerHTML = text;
+        }
+
+        //agrega al array los sueldos de 5 empleados
+        function cargar(array) {
+            for (let i = 0; i < 5; i++) {
+                //aleatorio entero entre 1000 y 5000
+                array[i] = Math.floor(Math.random() * 4000) + 1000;
+            }
+        }
+        
+        //toma como parametro el array y otiene la suma de sus elementos
+        function calcularGastos(array) {
+            let total = 0;
+            array.forEach((value) => {
+                total += value;
+            });
+            return total;
+            
+        }
+
+        
+    </script>
+</body>
+</html>

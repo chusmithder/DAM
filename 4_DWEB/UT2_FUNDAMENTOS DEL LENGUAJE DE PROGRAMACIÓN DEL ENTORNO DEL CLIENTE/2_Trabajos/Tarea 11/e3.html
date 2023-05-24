@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const persona = {
+                nombre: "Juana",
+                apellido: "Calamidad",
+                edad: 34
+            };
+            persona.nacionalidad = "Americana";
+            let arrayPersona = Object.values(persona);
+
+            document.getElementById("demo").innerHTML = arrayPersona;
+        }   
+    </script>
+</head>
+<body>
+    <h1>E3 - MOSTRAR PROPIEDADES DEL OBJETO Object.values()</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

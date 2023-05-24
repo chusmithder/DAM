@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const persona = {
+                nombre: "Camilo",
+                edad: 22,
+                hablar: function() {
+                    return "Hola soy " + this.nombre + " y tengo " + this.edad + " años";
+                }
+            };
+
+            document.getElementById("demo").innerHTML = persona.hablar();
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 5</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

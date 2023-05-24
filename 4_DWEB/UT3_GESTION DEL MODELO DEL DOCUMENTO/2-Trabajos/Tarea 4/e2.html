@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM HTML - estilos -</title>
+	<style>
+		body {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="id1">DOM - Cambiando el estilo de elementos HTML </h1>
+	<p>Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus primis, mi natoque sagittis mauris tristique cursus maecenas phasellus elementum felis, hac facilisis non nam interdum fames curae senectus. Molestie phasellus in magnis lectus inceptos tincidunt aenean, ultrices nulla hendrerit tristique vulputate integer, duis sed fermentum conubia dapibus suscipit. Vestibulum mattis semper arcu diam in ornare tristique habitasse, molestie nec litora lacinia potenti sociosqu fermentum.</p> <p>Sagittis felis per pretium nulla velit curae consequat aliquam, aliquet class donec commodo sociosqu condimentum proin, tortor ad habitant dapibus et mauris curabitur. Integer pellentesque fermentum dictum elementum penatibus a montes ligula ridiculus est, varius magnis porta lacinia lobortis erat tempor nulla nostra.</p>
+	<button type="button" onclick="document.getElementById('id1').style.color = 'red'"> Pusa para escribir el encabezado en rojo </button> </br> <p></p>
+
+	<button type="button" onclick="document.getElementById('id1').style.fontSize = '20px'"> Pulsa para aumentar fuente a 20px </button> </br><p>
+
+		<button type="button" onclick="document.getElementById('enlaces').style.fontFamily='arial'"> Pulsa para aumentar fuente a 20px </button> </br><p>
+	<section id="enlaces"> 
+	<a href="javascript:void(document.body.style.fontSize='16px')">Pulsa para volver tamaño fuente a 16px</a> <p>
+
+	<a href="javascript:void(document.body.style.background = 'yellow')">Cambia el color de fondo a yellow</a> <p>
+
+	<a href="javascript:void(document.body.style.background = '#CDCDCD')">Cambia color fondo a - '#CDCDCD' -</a> <p>
+
+	<a href="javascript:void(this.style.fontSize = '80px')">Aumenta tamaño de la fuente solo de esta sección</a><p>
+	<a >Tamaño normal</a> <p>
+
+	<a href="javascript:void(document.getElementById('enlaces').style.background='pink')">Cambia el color del fondo de esta sección</a><p>
+
+	<a href="javascript:void(document.getElementById('enlaces').style.background='white')">Color normal - 'white' -</a> <p>
+
+	<a href="javascript:void(document.getElementById('enlaces').style.fontFamily= 'sans-serif')" >Cambia la fuente de esta sección a Comic Sans al situar el ratón encima de este vínculo - retorna a Verdana al situar el ratón fuera del vículo </a></br>
+	</section>
+</body>
+</html>

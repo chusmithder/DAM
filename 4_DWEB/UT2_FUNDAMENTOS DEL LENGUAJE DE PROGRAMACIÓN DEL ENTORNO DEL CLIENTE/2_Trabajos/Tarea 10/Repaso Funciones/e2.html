@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function aumentar() {
+            let doc = document.getElementById("p1");
+            doc.style.fontSize = "40px";
+        }   
+        function disminuir() {
+            let doc = document.getElementById("p1");
+            doc.style.fontSize = "10px";
+        }
+    </script>
+</head>
+<body>
+    <h1>CAMBIAR EL TAMAÑO DE TEXTO</h1>
+    <p id="p1" style="font-size: 20px;">La clasificación de los tipos de texto permite organizarlos según su propósito o intención (contar una historia, ofrecer un argumento, etc.), sus contenidos (científico, periodístico, entre otros), sus características (objetivo, subjetivo, entre otros) y su formato (impresos o digitales).</p>
+    <button onclick="aumentar()">AUMENTAR TAMAÑO</button>
+    <button onclick="disminuir()">DISMINUIR TAMAÑO</button>
+</body>
+</html>

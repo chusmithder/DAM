@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The prompt() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+
+	let nombre = window.prompt("Ingresa tu nombre:", "xxxxxxxxx");
+	let apellido = window.prompt("Ingresa tus apeallidos:", "xxxxxxxxx");
+	let n1 = parseInt(window.prompt("Ingresa el primer numero:", 0));
+	let n2 = parseInt(window.prompt("Ingresa el segundo numero:", 0));
+
+	let suma = n1 + n2;
+	let resta = n1 - n2;
+	let mult = n1 * n2;
+	let division = n1 / n2;
+  
+	let texto = "Nombre: " + nombre + 
+		"<br>Apellido" + apellido +
+		"<br>Numeros tecleados han sido " + n1 + " y "  + n2 + 
+		"<br>Suma: " + suma +
+		"<br>Resta: " + resta +
+		"<br>Multiplicacion: " + mult +
+		"<br>Division: " + division + "";
+  
+  document.getElementById("demo").innerHTML = texto;
+</script>
+
+</body>
+</html>

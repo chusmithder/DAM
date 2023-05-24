@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08 Fuciones(I)</title>
+</head>
+<body>
+<h1>Números primos del 1 al 100</h1>
+<p id="demo"></p>
+<script>
+function esPrimo(num) {
+	// aquí el código de la función
+	// bucle hasta la raíz cuadrada
+	for( let e = 2; e <= parseInt(Math.sqrt(num)); e++){
+		if( num % e === 0)
+			return false;
+	}
+	return true;
+}
+
+//llamadas a la función
+for (let i = 2; i <= 100; i++) {
+	if(esPrimo(i)) {
+		document.getElementById("demo").innerHTML += (i + "</br>");
+	}
+}
+</script>
+</body>
+</html>

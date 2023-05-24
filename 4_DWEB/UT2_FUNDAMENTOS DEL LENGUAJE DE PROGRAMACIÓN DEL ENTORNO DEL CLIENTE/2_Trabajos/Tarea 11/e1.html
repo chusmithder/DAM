@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const coche = {
+                puertas: 2,
+                ruedas: 4,
+                color: "azul"
+            };
+            let resul = "Puertas: " + coche.puertas + "<br>Ruedas: " 
+                + coche.ruedas + "<br>Color: " + coche.color;
+            document.getElementById("demo").innerHTML = resul;
+        }   
+    </script>
+</head>
+<body>
+    <h1>E1 - MOSTRAR PROPIEDADES DEL OBJETO POR NOMBRE</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+	#caja {
+		background-color: #F78181;
+	    border: 1px solid;
+	    padding: 50px;
+	    color: black;
+	}
+	#myDiv{
+	    background-color: #9370DB;
+	    border: 1px solid;
+	    padding: 50px;
+	    color: black;
+	}
+</style>
+<body>
+
+<div id="caja">
+	<p id="myP"><strong>Marte</strong> es el cuarto <a href="http://es.wikipedia.org/wiki/Planeta" title="Planeta">planeta</a> del <a href="http://es.wikipedia.org/wiki/Sistema_Solar" title="Sistema Solar">Sistema Solar</a> más cercano al Sol. Llamado así por el dios de la guerra de la mitología romana <a href="http://es.wikipedia.org/wiki/Marte_(mitolog%C3%ADa)" title="Marte (mitología)">Marte</a>, recibe a veces el apodo de <em>Planeta rojo</em> debido a la apariencia rojiza que le confiere el <a href="http://es.wikipedia.org/wiki/%C3%93xidos_de_hierro" title="Óxidos de hierro">óxido de hierro</a> que domina su superficie. Tiene una <a href="http://es.wikipedia.org/wiki/Atm%C3%B3sfera" title="Atmósfera">atmósfera</a> delgada formada por dióxido de carbono, y dos satélites: <a href="http://es.wikipedia.org/wiki/Fobos_(sat%C3%A9lite)" title="Fobos (satélite)">Fobos</a> y <a href="http://es.wikipedia.org/wiki/Deimos_(sat%C3%A9lite)" title="Deimos (satélite)">Deimos</a>. Forma parte de los llamados <a href="http://es.wikipedia.org/wiki/Planeta_terrestre" title="Planeta terrestre">planetas telúricos</a> (de naturaleza rocosa, como la <a href="http://es.wikipedia.org/wiki/Tierra" title="Tierra">Tierra</a>) y es el <a href="http://es.wikipedia.org/wiki/Planeta_interior" title="Planeta interior">planeta interior</a> más alejado del <a href="http://es.wikipedia.org/wiki/Sol" title="Sol">Sol</a>. Es, en muchos aspectos, el más parecido a la Tierra.</p>
+	<p id="myP2">Aunque en apariencia podría parecer un planeta muerto, no lo es. Sus campos de dunas siguen siendo mecidos por el viento marciano, sus casquetes polares cambian con las estaciones e incluso parece que hay algunos pequeños flujos estacionales de agua</p>
+	<p id="myP3"><a href="http://es.wikipedia.org/wiki/Tycho_Brahe" title="Tycho Brahe">Tycho Brahe</a> midió con gran precisión el movimiento de Marte en el cielo. Los datos sobre el movimiento retrógrado aparente (los llamados &quot;lazos&quot;)<a href="http://es.wikipedia.org/wiki/Marte_(planeta)#cite_note-4"> nota 1</a> permitieron a <a href="http://es.wikipedia.org/wiki/Johannes_Kepler" title="Johannes Kepler">Kepler</a> hallar la naturaleza elíptica de su órbita y determinar las leyes del movimiento planetario conocidas como<a href="http://es.wikipedia.org/wiki/Leyes_de_Kepler" title="Leyes de Kepler"> leyes de Kepler</a>.</p>
+	
+</div>
+
+<div id="myDiv"	>
+	<button  id="b1">Fijar número aleatorio </button>
+	<button  id="b2">Saludar</button>
+	<p id="texto1">0.00</p>
+	<p id="texto2">.</p>
+	<p id="texto3">.</p>
+</div>
+
+<script>
+	document.getElementById("caja").addEventListener("mousemove", numeroAleatorio);
+		
+	let x = document.getElementById("b1");
+	x.addEventListener("mouseover", dentro);
+	x.addEventListener("mouseout", fuera);
+	x.addEventListener("click", clicked);
+	
+	let y = document.getElementById("b2");
+	y.addEventListener("click", function(){let a=Number(prompt("escribe un numero: ", 0)); let b=Number(prompt("escribe otro num: ", 0)); sumar(a,b)}); 
+	
+	
+
+	function numeroAleatorio() {
+	    document.getElementById("texto1").innerHTML = Math.random();
+	}
+	
+	function fuera() {
+		document.getElementById("texto2").innerHTML += "Ratoncito Fuera!  - ";
+		
+	}
+	function dentro() {
+    document.getElementById("texto2").innerHTML += "Ratoncito Dentro!  - ";
+	
+	}
+
+	function clicked() {
+		document.getElementById("caja").removeEventListener("mousemove", numeroAleatorio);
+		let x = document.getElementById("b1");
+		x.removeEventListener("mouseover", dentro);
+		x.removeEventListener("mouseout", fuera);
+		document.getElementById("texto2").innerHTML = "Stop!";
+		document.getElementById("caja").style.background = "#F78181";
+
+	}
+
+	function sumar(a,b) {
+		document.getElementById("texto3").innerHTML = "la suma es: " + (a+b);
+		
+	}
+
+</script>
+
+</body>
+</html>

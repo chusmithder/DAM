@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            function Personaje(primerNombre, edadAños, estadoCivil) {
+                this.primerNombre = primerNombre;
+                this.edadAños = edadAños;
+                this.estadoCivil = estadoCivil;
+            }
+            
+            const personaje1 = new Personaje("Bob", 30, "soltero");
+            const personaje2 = new Personaje("Sandy", 10, "soltero");
+            personaje2.nacionalidad = "Rusia";
+            
+            document.getElementById("demo").innerHTML= `${personaje1.primerNombre} 
+            tiene ${personaje1.edadAños}y es de ${personaje1.nacionalidad}.<br> ${personaje2.primerNombre} tiene ${personaje2.edadAños}
+            y es de ${personaje2.nacionalidad}`;
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 2</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

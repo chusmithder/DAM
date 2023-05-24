@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            function Personaje(primerNombre, edadAños, estadoCivil) {
+                this.primerNombre = primerNombre;
+                this.edadAños = edadAños;
+                this.estadoCivil = estadoCivil;
+            }
+            //añadir propiedad colorOjos
+            Personaje.prototype.colorOjos = "azul";
+
+            //añadir método infoTotal().
+            Personaje.prototype.infototal = function() {
+                return `${this.primerNombre} 
+                tiene ${this.edadAños} y esta ${this.estadoCivil}.`;
+            };
+
+            const personaje1 = new Personaje("Bob", 30, "casado");
+            const personaje2 = new Personaje("Sandy", 10, "soltero");
+
+            let personaje1Array = Object.values(personaje1);
+            
+            document.getElementById("demo").innerHTML= personaje1Array + "<br>" + JSON.stringify(personaje2);
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 5</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

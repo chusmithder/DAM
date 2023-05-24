@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            function Personaje(primerNombre, edadAños, estadoCivil) {
+                this.primerNombre = primerNombre;
+                this.edadAños = edadAños;
+                this.estadoCivil = estadoCivil;
+            }
+            
+            const personaje1 = new Personaje("Bob", 30, "soltero");
+            const personaje2 = new Personaje("Sandy", 10, "soltero");
+            
+            //agregar solo a personaje2 metodo infoTotal()
+            personaje2.infoTotal = function() {
+                return `${this.primerNombre} 
+                tiene ${this.edadAños} y esta ${this.estadoCivil}.`;
+            }            
+            document.getElementById("demo").innerHTML= personaje2.infoTotal();
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 3</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            const persona = {
+                nombre: "Rodrigo",
+                edad: 4
+            };
+
+            Object.defineProperty(persona, "cambiarNombre", {
+            set : function (nuevo) {this.nombre = nuevo;}
+            });
+
+            Object.defineProperty(persona, "obtenerNombre", {
+            get : function () {return this.nombre;}
+            });
+            
+            persona.cambiarNombre = "Mario";    
+        
+            document.getElementById("demo").innerHTML = persona.nombre;
+
+        }   
+    </script>
+</head>
+<body>
+    <h1>E1</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

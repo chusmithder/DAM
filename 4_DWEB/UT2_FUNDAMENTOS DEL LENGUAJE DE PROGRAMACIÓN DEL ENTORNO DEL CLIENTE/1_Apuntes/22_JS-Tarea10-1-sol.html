@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par o Impar</title>
+   
+   
+
+    
+</head>
+<body>
+    <p id="demo"></p>   
+    <script>
+        function parImparDeclarada(num)
+        {
+            return num % 2 == 0;
+        }
+        let parImparAnon = function (num) {return num % 2 == 0};
+        let parImparFlecha = (num) => {return num % 2 == 0};
+        let num = window.prompt("Introduzca número");
+
+        /*
+        //escrituras con document.write
+        document.writeln(`Con función declarada: ¿Es ${num} par? ${parImparDeclarada(num)}<br>`);
+        document.writeln(`Con función anónima: ¿Es ${num} par? ${parImparAnon(num)}<br>`);
+        document.writeln(`Con función flecha: ¿Es ${num} par? ${parImparFlecha(num)}<br>`);
+        */
+
+
+        //escrituras con el DOM
+       document.getElementById("demo").innerHTML = `Con función declarada: ¿Es ${num} par? ${parImparDeclarada(num)}<br>
+                                                    Con función anónima: ¿Es ${num} par? ${parImparAnon(num)}<br>
+                                                    Con función flecha: ¿Es ${num} par? ${parImparFlecha(num)}<br>`;
+    </script>
+</body>
+</html>

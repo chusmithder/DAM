@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        const nombres = [];
+        
+        function ejecutar() {
+            for (let i = 1; i <= 3; i++) {
+                let entrada = window.prompt("Introduce elemento " + i + " del array");
+                nombres[i - 1] = entrada;
+            }
+            window.alert(nombres)
+        }
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    
+</body>
+</html>

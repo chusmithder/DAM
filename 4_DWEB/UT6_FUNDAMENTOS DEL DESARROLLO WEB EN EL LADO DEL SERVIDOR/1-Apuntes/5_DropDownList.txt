@@ -1,0 +1,14 @@
+
+EL CONTROL DROPDOWNLIST
+
+Este control es muy parecido al ListBox. La única diferencia entre ambos es que con DropDownList sólo se muestra el elemento seleccionado en la lista, junto a un pequeño botón desplegable. Cuando el usuario utiliza este botón, puede ver todos los elementos de la lista y elegir uno de ellos. En este caso no hay una versión de selección múltiple.
+
+
+
+Este ocupa mucho menos espacio en pantalla, ya que sus opciones sólo se muestran cuando se despliega la lista. Inicialmente se muestra la primera opción añadida.
+
+La mayor parte de las cosas que ya conoces respecto a un ListBox te servirá en el caso de un DropDownList.
+
+
+
+Añade al formulario "AspNet-Tarea5.aspx" un control DropDownList que mediante código cargue en el mismo los valores: Contrareembolso, Tarjeta de crédito, Tarjeta de débito y Transferencia

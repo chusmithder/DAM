@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <h1>MANEJANDO ARRAYS</h1>
+    <textarea id="myTextarea">Hola amigos de VSCode</textarea>
+
+    <button onclick="ejecutar()">PULSAME</button>
+    <p id="demo"></p>
+    <script>
+
+        //Número de palabras, 
+        // primera palabra, 
+        // última palabra, 
+        // las palabras colocadas en orden inverso, 
+        // las palabras ordenadas de la a la z y 
+        // las palabras ordenadas de la z a la a. 
+        // Sacar toda esta información e
+        let resul = "<center><h3>Información sobre el texto introducido</h3><br>";
+        function ejecutar() {
+           
+           var texto = document.getElementById("myTextarea").value;
+           const palabras = texto.split(" ");
+            
+           resul += palabras + "<br>";
+
+           //numero de palabras
+           let num = palabras.length;
+            resul += "Número de palabras<b>" + num  + "</b><br>";
+           //primera palabra
+            let primeraPalabra = palabras[0];
+            resul += "Primera palabra:<b>" + primeraPalabra + "</b><br>";
+
+            //ultima palabra
+            let ultimaPalabra = palabras[num - 1];
+            resul += "última palabra: <br>" + ultimaPalabra  + "</b><br>";
+            
+            //palabras colocadas en orden inverso
+            const palabrasReves = palabras.reverse();
+            resul += "Colocadas al revés:<br><b>" + palabrasReves.join("..") + "</b><br>";
+
+            // las palabras ordenadas de la a la z y 
+            
+            resul += "Ordenadas de la a a la z:<br><b>"  + palabras.sort().join("..") + "</b><br>";
+
+            // las palabras ordenadas de la z la a y 
+            resul += "Ordenadas de la 'z' a la 'a':<br><b>"  + palabras.reverse().join("..") + "</b><br></center>";
+
+            var myWindow = window.open("", "",  "width=800,height=500");
+            myWindow.document.write(resul);
+
+           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function calcular(n1, n2, n3, n4, n5) {
+                return (n1 + n2 + n3 + n4 + n5);  
+        }   
+        function ejecutar() {
+            let n1 = Number(window.prompt("Introduce primer numero", "10"));
+            let n2 = Number(window.prompt("Introduce segundo numero", "20"));
+            let n3 = Number(window.prompt("Introduce tercer numero", "30"));
+            let n4 = Number(window.prompt("Introduce tercer numero", "40"));
+            let n5 = Number(window.prompt("Introduce tercer numero", "50"));
+            window.alert("SUMA DE LOS NUMEROS: " + calcular(n1, n2, n3, n4, n5));
+        }
+    </script>
+</head>
+<body>
+    <h1>CALCULAR PROMEDIO DE 3 NUMEROS</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">EJECUTAR</button>
+</body>
+</html>

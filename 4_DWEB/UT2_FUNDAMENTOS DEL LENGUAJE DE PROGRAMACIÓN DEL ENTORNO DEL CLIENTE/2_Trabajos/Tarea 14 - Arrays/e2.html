@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        const numeros = [];
+        
+        function ejecutar() {
+            pedirDatos();
+            let text = multiplicar();
+            mostrarResultado(text);
+        }
+        function pedirDatos() {
+            for (let i = 1; i <= 5; i++) {
+                let entrada = Number(window.prompt("Introduce elemento numerico " + i + " del array"));
+                numeros[i - 1] = entrada;
+            }
+        }
+        function multiplicar() {
+            // Multiplicamos por 5 los números introducidos: 1*5 = 5, 3*5 = 15, 9*5 = 45, 10*5 = 50 y 7*5 =35.
+            let text = "Multiplicamos por 5 los números introducidos: ";
+            for (let i = 0; i < numeros.length; i++) {
+                text += numeros[i] + "*5 = " + (numeros[i] * 5) + ", "
+            }
+            return text;
+        }
+        function mostrarResultado(mensaje) {
+            document.getElementById("demo").innerHTML = mensaje; 
+        }
+    </script>
+</body>
+</html>

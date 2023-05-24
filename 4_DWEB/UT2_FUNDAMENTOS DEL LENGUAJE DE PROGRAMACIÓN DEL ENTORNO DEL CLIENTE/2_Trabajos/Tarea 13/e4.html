@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function ejecutar() {
+            function Personaje(primerNombre, edadAños, estadoCivil) {
+                this.primerNombre = primerNombre;
+                this.edadAños = edadAños;
+                this.estadoCivil = estadoCivil;
+                //asi se podria agregar a propiedad
+                this.colorOjos = "azul";
+            }
+            
+            const personaje1 = new Personaje("Bob", 30, "soltero");
+            const personaje2 = new Personaje("Sandy", 10, "soltero");
+            
+            //No es posible agragar propiedad de la misma manera a que un objeto
+            document.getElementById("demo").innerHTML= `${personaje1.colorOjos} <br> ${personaje1.colorOjos}`;
+        }   
+    </script>
+</head>
+<body>
+    <h1>EJERCICIO 4</h1>
+    <p id="demo"></p>
+    <button onclick="ejecutar()">MOSTRAR</button>
+
+</body>
+</html>

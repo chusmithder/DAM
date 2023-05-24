@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+  <p><strong>Marte</strong> es el cuarto <a href="http://es.wikipedia.org/wiki/Planeta" title="Planeta">planeta</a> 
+    del <a href="http://es.wikipedia.org/wiki/Sistema_Solar" title="Sistema Solar">Sistema Solar</a> más cercano al Sol.
+    Llamado así por el dios de la guerra de la mitología romana <a href="http://es.wikipedia.org/wiki/Marte_(mitolog%C3%ADa)" title="Marte (mitología)">Marte</a>, 
+    recibe a veces el apodo de <em>Planeta rojo</em> debido a la apariencia rojiza que le confiere el <a href="http://es.wikipedia.org/wiki/%C3%93xidos_de_hierro" title="Óxidos de hierro">óxido de hierro</a> 
+    que domina su superficie. Tiene una <a href="http://es.wikipedia.org/wiki/Atm%C3%B3sfera" title="Atmósfera">atmósfera</a> delgada formada por dióxido de carbono, y dos satélites: <a href="http://es.wikipedia.org/wiki/Fobos_(sat%C3%A9lite)" title="Fobos (satélite)">Fobos</a> y <a href="http://es.wikipedia.org/wiki/Deimos_(sat%C3%A9lite)" title="Deimos (satélite)">Deimos</a>. Forma parte de los llamados <a href="http://es.wikipedia.org/wiki/Planeta_terrestre" title="Planeta terrestre">planetas telúricos</a> (de naturaleza rocosa, como la <a href="http://es.wikipedia.org/wiki/Tierra" title="Tierra">Tierra</a>) y es el <a href="http://es.wikipedia.org/wiki/Planeta_interior" title="Planeta interior">planeta interior</a> más alejado del <a href="http://es.wikipedia.org/wiki/Sol" title="Sol">Sol</a>. Es, en muchos aspectos, el más parecido a la Tierra.</p>
+  <p id="p2">Aunque en apariencia podría parecer un planeta muerto, no lo es. Sus campos de dunas siguen siendo mecidos por el viento marciano, sus casquetes polares cambian con las estaciones e incluso parece que hay algunos pequeños flujos estacionales de agua</p>
+  <p name="p3"><a href="http://es.wikipedia.org/wiki/Tycho_Brahe" title="Tycho Brahe">Tycho Brahe</a> midió con gran precisión el movimiento de Marte en el cielo. Los datos sobre el movimiento retrógrado aparente (los llamados &quot;lazos&quot;)<a href="http://es.wikipedia.org/wiki/Marte_(planeta)#cite_note-4"> nota 1</a> permitieron a <a href="http://es.wikipedia.org/wiki/Johannes_Kepler" title="Johannes Kepler">Kepler</a> hallar la naturaleza elíptica de su órbita y determinar las leyes del movimiento planetario conocidas como<a href="http://es.wikipedia.org/wiki/Leyes_de_Kepler" title="Leyes de Kepler"> leyes de Kepler</a>.</p>
+
+  <button type="button" onclick="myFunction1()">Pulsame</button>
+
+  <p id="res1"></p>
+  <p id="res2"></p>
+  <p id="res3"></p>
+  <p id="res4"></p>
+
+<script>
+  function myFunction1() {
+    
+    //numero de links
+    const links = document.getElementsByTagName("a");
+    let numLinks = links.length;
+    document.getElementById("res1").innerHTML = `Número de links: ${numLinks}`
+    
+     
+    //penultimo enlace
+    const penultimoLink = links[links.length - 2];
+    let href = penultimoLink.href;
+    
+    document.getElementById("res2").innerHTML = `El penultimo enlace apunta a : ${href}`
+
+    //El numero de enlaces que apuntan a http://es.wikipedia.org/wiki/Tycho_Brahe es: 1
+    let numApuntan = 0;
+    for (let i = 1; i < links.length; i++) {
+      if (links[i].getAttribute("href") == "http://es.wikipedia.org/wiki/Tycho_Brahe") {
+        numApuntan++;
+      }
+    }
+    document.getElementById("res3").innerHTML = `El numero de enlaces que apuntan a http://es.wikipedia.org/wiki/Tycho_Brahe es: ${numApuntan}` 
+
+    // Número de enlaces del tercer párrafo
+    // const tercerParrafo = document.getElementsByName("p3")[0];
+    // const enlacesTercerparrafo = tercerParrafo.getElementsByTagName("a");
+    // alert(enlacesTercerparrafo.length);
+
+    // const tercerParrafo = document.querySelectorAll("p[name='p3']");
+    const tercerParrafo = document.getElementsByName("p3")[0];
+    const hijos = tercerParrafo.children;
+    let numEnlaces3 = 0;
+
+    for (let i = 0; i < hijos.length; i++) {
+      if (hijos[i].tagName = "a") {
+        numEnlaces3++;
+      }
+    }
+    // alert(document.links[0].href);
+    document.getElementById("res4").innerHTML = `Número de enlaces del tercer párrafo: ${numEnlaces3}`
+  }
+</script>
+
+</body>
+</html>

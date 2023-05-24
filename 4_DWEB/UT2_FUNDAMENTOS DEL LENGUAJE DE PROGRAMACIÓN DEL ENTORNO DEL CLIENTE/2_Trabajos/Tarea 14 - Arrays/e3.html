@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        const numeros = [];
+        
+        function ejecutar() {
+            pedirDatos();
+            let mayor = obtenerMayorDelVector();
+            window.alert("El mayor de los numeros del vector es: " + mayor);
+        }
+        
+        //Pide los numeros para inicializar el vector con el numero de elementos proporcionados
+        function pedirDatos() {
+            let n = Number(window.prompt("Introduce la cantidad de elementos que quieres que tenga el vector"));
+            for (let i = 1; i <= n; i++) {
+                let entrada = Number(window.prompt("Introduce elemento numerico " + i + " del vector"));
+                numeros[i - 1] = entrada;
+            }
+        }
+        
+
+        //Obtiene el elemento mayor del array
+        function obtenerMayorDelVector() {
+            const numerosCopia = [...numeros];
+            numerosCopia.sort(function(a, b){return a - b});
+            return numerosCopia[numeros.length - 1];
+        }
+
+        
+    </script>
+</body>
+</html>

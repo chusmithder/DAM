@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body style="background: skyblue;">
+    <h1>OPERACIONES CON NUMEROS INTRODUCIDOS</h1>
+    <label for="n1">Primer numero:</label>
+    <input type="text" id="n1"><br><br>
+    <label for="n2">Segundo numero:</label>
+    <input type="text" id="n2"><br><br>
+    <br><br>
+    <button onclick="sumar()">SUMAR</button>
+    <button onclick="restar()">RESTAR</button>
+    <button onclick="multiplicar()">MULTIPLICAR</button>
+    <button onclick="dividir()">DIVIDIR</button>
+    <p id="demo"></p>
+
+    <script>
+        
+        
+        function sumar() {
+            let n1 = Number(document.getElementById("n1").value);
+            let n2 = Number(document.getElementById("n2").value);
+            let suma = n1 + n2;
+            document.getElementById("demo").innerHTML = "SUMA DE LOS NUMEROS: " + suma;
+        }
+        function restar() {
+            let n1 = Number(document.getElementById("n1").value);
+            let n2 = Number(document.getElementById("n2").value);
+            let resta = n1 - n2;
+            document.getElementById("demo").innerHTML = "RESTA DE LOS NUMEROS: " + resta;
+        }
+        function multiplicar() {
+            let n1 = Number(document.getElementById("n1").value);
+            let n2 = Number(document.getElementById("n2").value);
+            let resul = n1 * n2;
+            document.getElementById("demo").innerHTML = "MULTIPLICACION DE LOS NUMEROS: " + resul;
+        }
+        function dividir() {
+            let n1 = Number(document.getElementById("n1").value);
+            let n2 = Number(document.getElementById("n2").value);
+            let resul = n1 / n2;
+            document.getElementById("demo").innerHTML = "DIVISION DE LOS NUMEROS: " + resul;
+        }
+        
+</script>
+
+</body>
+</html>

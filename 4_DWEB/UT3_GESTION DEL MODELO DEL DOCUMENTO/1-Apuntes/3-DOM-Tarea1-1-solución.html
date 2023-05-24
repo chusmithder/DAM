@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<p id="p1">Aquí, tras pulsar el botón ha de aparecer tu nombre. Para ello usarás getElementById</p> 
+<p>Aquí ha de aparecer tu apellido. Ocurre que este párrafo no tiene Id definido, así que accedemos a él por su TagName</p>
+<div id="d1">
+<p id="p3">Este párrafo es sencillo de localizar ...</p> 
+<p >Este un poco más delicado.......</p> 
+</div>
+<button type="button" onclick="myFunction1()">Pulsame</button>
+<script>
+function myFunction1() {
+    document.getElementById("p1").innerHTML = "Lucia";
+	document.getElementsByTagName("p")[1].innerHTML = "Méndez";
+	document.getElementById("p3").innerHTML = "Localizado sin problema";
+	let x = document.getElementById("d1");
+	let y = x.getElementsByTagName("p");
+	y[1].innerHTML = "Ok!!";
+
+	//también podemos usar el método querySelectorAll
+	//document.querySelectorAll("div p")[1].innerHTML = "Ok!!";
+}
+
+
+</script>
+
+</body>
+</html>

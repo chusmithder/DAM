@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Adivinar aleatorio entre 1 y 10</h2>
+
+<button onclick="jugar()">JUGAR</button>
+<p id="demo"></p>
+
+<script>
+    function jugar() {
+        let aleatorio = Math.floor(Math.random() * 10) + 1;
+        let intento = 1;
+        let control = false;
+        while (intento <= 5 && !control) {
+            let numero = Number(window.prompt("Adivina el numero el numero, intento " + intento + " de 5" ));
+            if (numero == aleatorio) {
+                window.alert("Muy bien. adivinaste el numero en el intento " + intento);
+                control = true;
+            } else {
+                if (numero < aleatorio) {
+                    window.alert("el numero es menor que el generado");
+                } else {
+                    window.alert("el numero es mayor que el generado");
+                }
+                intento++;
+            }
+        }
+        if (intento > 5) {
+                window.alert(`No acertaste el número. El número era ${aleatorio}`)
+            }
+    }
+
+</script>
+
+</body>
+</html>

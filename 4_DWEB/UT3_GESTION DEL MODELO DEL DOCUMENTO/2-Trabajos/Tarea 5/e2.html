@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<title>Propagación del evento</title>
+
+<style type="text/css">
+ #tabla1 { border: 1px solid red }
+ #c1,#c2 { background-color: pink; }
+</style>
+
+</head>
+
+<body>
+
+<table id="tabla1">
+ <tr id="fila1">
+  <td id="c1">uno</td>
+  <td id="c2">dos</td>
+ </tr>
+ <tr id="fila2">
+  <td id="c3">tres</td>
+  <td id="c4">cuatro</td>
+ </tr>
+</table>
+<script type="text/javascript">
+		document.getElementById("fila1").addEventListener("click", function() { alert("Clic sobre fila 1")}, false);
+		document.getElementById("c2").addEventListener("click", function() { alert("Clic sobre columna 2")});
+
+
+		document.getElementById("fila2").addEventListener("click", function() { alert("Clic sobre fila 2")}, true);
+		document.getElementById("c4").addEventListener("click", function() { alert("Clic sobre celda 4")});
+
+    </script>
+</body>
+</html>

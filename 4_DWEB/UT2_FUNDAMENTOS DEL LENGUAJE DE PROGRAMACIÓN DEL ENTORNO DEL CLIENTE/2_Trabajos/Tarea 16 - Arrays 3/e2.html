@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <h1>EJERCICIO</h1>
+    <button onclick="ejecutar()">COMENZAR</button>
+    <p id="demo"></p>
+
+    <script>
+        function ejecutar() {
+        const personas = [
+            { nombre: "Juan", edad: 22 }, 
+            { nombre: "Perico", edad: 50 }, 
+            { nombre: "Andrés", edad: 100 }
+        ];
+
+        const pSimplificado = personas.map((value) => {
+            return {nombre: value.nombre};
+        });
+        
+        let txt = "";
+        for (let i = 0; i < pSimplificado.length; i++) {
+            txt += JSON.stringify(pSimplificado[i])  + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
