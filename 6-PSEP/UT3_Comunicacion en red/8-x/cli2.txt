@@ -1,0 +1,83 @@
+using System;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+
+namespace clientesincrono {
+    public class SynchronousSocketClient {
+
+        public static void StartClient() {
+            
+                //configuracion para conectar con el servidor
+                IPAddress iPAddress = getLocalIpAddress();
+                IPEndPoint remoteEP = new IPEndPoint(IPAddress.Parse("192.168.1.127"), 11000);
+
+                try {
+                    Socket sender = new Socket(iPAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    
+                    //establecemos conexion
+                    sender.Connect(remoteEP);
+                    Console.WriteLine("Conectado al servidor");
+
+                    string comando = "";
+                    //permite mandar muchos mensajes al servidor
+                    while (comando != "exit") {
+                        //recibimos mensjae del usuario
+                        Console.WriteLine("Ingrese mensjae para el servidor");
+                        comando = Console.ReadLine();
+
+                        //convertimos el mensaje a bytes para enviar
+                        byte[] msg = Encoding.ASCII.GetBytes(comando + "<EOF>");
+                        
+                        //enviamos el mensaje
+                        int byteSend = sender.Send(msg);
+
+                        //recibimos respuesta del servidor
+                        byte[] bytes = new byte[1024];
+                        int byteRec = sender.Receive(bytes);
+                        string texto = Encoding.ASCII.GetString(bytes, 0, byteRec);
+                        Console.WriteLine("Servidor: {0}", texto);
+                    }
+
+                    sender.Shutdown(SocketShutdown.Both);
+                    sender.Close();
+                }
+                catch (Exception e) {
+                    Console.WriteLine(e.ToString());
+            }
+        }
+
+        static IPAddress getLocalIpAddress() {
+            IPAddress ipAddress = null;
+            try {
+                foreach (var netInterface in NetworkInterface.GetAllNetworkInterfaces()) {
+                    if (netInterface.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 ||
+                        netInterface.NetworkInterfaceType == NetworkInterfaceType.Ethernet) {
+                        foreach (var addrInfo in netInterface.GetIPProperties().UnicastAddresses) {
+                            if (addrInfo.Address.AddressFamily == AddressFamily.InterNetwork) {
+                                ipAddress = addrInfo.Address;
+                            }
+                        }
+                    }
+                }
+                if (ipAddress == null) {
+                    IPHostEntry ipHostInfo = Dns.GetHostEntry("127.0.0.1");
+                    ipAddress = ipHostInfo.AddressList[0];
+                }
+            } catch (Exception) { }
+            return ipAddress;
+        }
+
+        public static int Main(String[] args) {
+            //En MACOS porque no se puede ordenar el orden de arranque: servidor, cliente
+            Thread.Sleep(4000);
+            StartClient();
+            return 0;
+        }
+    }
+}
+// > dotnet run
+// Socket connected to 192.168.1.104:11000
+// Echoed test = This is a test

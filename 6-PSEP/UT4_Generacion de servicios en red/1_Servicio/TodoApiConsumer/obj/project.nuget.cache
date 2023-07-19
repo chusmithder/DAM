@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uHEOcTJrkX6JfV/q4UIgCf6Mf2zEz0RejJsXqWTvDSMCDsaJ4bUA1elfMrlccPeR8pk8yhU9qSWD/kM48hKxlA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\4- UT4- Generacion de servicios en red\\1_Servicio\\TodoApiConsumer\\TodoApiConsumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chusm\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

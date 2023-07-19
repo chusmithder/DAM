@@ -1,0 +1,171 @@
+Ir al contenido principal
+Iniciar sesión
+Buscar
+Filtrar por título
+Documentación de C#
+Información general
+Configurar la versión del lenguaje
+Instrucciones de iteración
+Instrucciones de selección
+Instrucciones de salto
+lock (instrucción)
+Código no seguro y punteros
+Directivas de preprocesador
+Mensajes del compilador
+ Guía de C#  Referencia del lenguaje 
+Instrucción lock (Referencia de C#)
+Artículo
+22/09/2022
+Tiempo de lectura: 2 minutos
+3 colaboradores
+En este artículo
+Instrucciones
+Ejemplo
+Especificación del lenguaje C#
+Vea también
+La instrucción lock adquiere el bloqueo de exclusión mutua de un objeto determinado, ejecuta un bloque de instrucciones y luego libera el bloqueo. Mientras se mantiene un bloqueo, el subproceso que lo mantiene puede volver a adquirir y liberar el bloqueo. Ningún otro subproceso puede adquirir el bloqueo y espera hasta que se libera.
+
+La instrucción lock tiene el formato
+
+C#
+
+Copiar
+lock (x)
+{
+    // Your code...
+}
+donde x es una expresión de un tipo de referencia. Es exactamente equivalente a
+
+C#
+
+Copiar
+object __lockObj = x;
+bool __lockWasTaken = false;
+try
+{
+    System.Threading.Monitor.Enter(__lockObj, ref __lockWasTaken);
+    // Your code...
+}
+finally
+{
+    if (__lockWasTaken) System.Threading.Monitor.Exit(__lockObj);
+}
+Puesto que el código usa un bloque try... finally, el bloqueo se libera aunque se produzca una excepción dentro del cuerpo de una instrucción lock.
+
+No se puede usar el operador await en el cuerpo de una instrucción lock.
+
+Instrucciones
+Al sincronizar el acceso del subproceso al recurso compartido, bloquee una instancia dedicada de objeto (por ejemplo, private readonly object balanceLock = new object();) u otra instancia cuyo empleo como objeto de bloqueo sea poco probable por parte de elementos no relacionados del código. Evite el uso de la misma instancia de objeto de bloqueo para distintos recursos compartidos, ya que se podría producir un interbloqueo o una contención de bloqueo. En particular, evite utilizar lo siguiente como objetos de bloqueo:
+
+this, porque los autores de llamadas podrían usarlo como un bloqueo.
+Instancias Type, porque el operador o la reflexión typeof podrían obtenerlas.
+Instancias de cadena, incluidos literales de cadena, porque podrían internarse.
+Mantenga el bloqueo durante el menor tiempo posible para reducir la contención de bloqueo.
+
+Ejemplo
+En el ejemplo siguiente se define una clase Account que sincroniza el acceso a su campo privado balance mediante el bloqueo de una instancia dedicada balanceLock. El empleo de la misma instancia para bloquear garantiza que el campo balance no sea actualizado al mismo tiempo por dos subprocesos que intentan llamar a los métodos Debit o Credit simultáneamente.
+
+C#
+
+Copiar
+using System;
+using System.Threading.Tasks;
+
+public class Account
+{
+    private readonly object balanceLock = new object();
+    private decimal balance;
+
+    public Account(decimal initialBalance) => balance = initialBalance;
+
+    public decimal Debit(decimal amount)
+    {
+        if (amount < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "The debit amount cannot be negative.");
+        }
+
+        decimal appliedAmount = 0;
+        lock (balanceLock)
+        {
+            if (balance >= amount)
+            {
+                balance -= amount;
+                appliedAmount = amount;
+            }
+        }
+        return appliedAmount;
+    }
+
+    public void Credit(decimal amount)
+    {
+        if (amount < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "The credit amount cannot be negative.");
+        }
+
+        lock (balanceLock)
+        {
+            balance += amount;
+        }
+    }
+
+    public decimal GetBalance()
+    {
+        lock (balanceLock)
+        {
+            return balance;
+        }
+    }
+}
+
+class AccountTest
+{
+    static async Task Main()
+    {
+        var account = new Account(1000);
+        var tasks = new Task[100];
+        for (int i = 0; i < tasks.Length; i++)
+        {
+            tasks[i] = Task.Run(() => Update(account));
+        }
+        await Task.WhenAll(tasks);
+        Console.WriteLine($"Account's balance is {account.GetBalance()}");
+        // Output:
+        // Account's balance is 2000
+    }
+
+    static void Update(Account account)
+    {
+        decimal[] amounts = { 0, 2, -3, 6, -2, -1, 8, -5, 11, -6 };
+        foreach (var amount in amounts)
+        {
+            if (amount >= 0)
+            {
+                account.Credit(amount);
+            }
+            else
+            {
+                account.Debit(Math.Abs(amount));
+            }
+        }
+    }
+}
+Especificación del lenguaje C#
+Para más información, consulte la sección sobre la instrucción lock de la especificación del lenguaje C#.
+
+Vea también
+Referencia de C#
+System.Threading.Monitor
+System.Threading.SpinLock
+System.Threading.Interlocked
+Información general sobre las primitivas de sincronización
+Introducción a System.Threading.Channels
+Administrar cookies
+Versiones anteriores
+Blog
+Contribuir
+Privacidad
+Términos de uso
+Marcas comerciales
+© Microsoft 2022

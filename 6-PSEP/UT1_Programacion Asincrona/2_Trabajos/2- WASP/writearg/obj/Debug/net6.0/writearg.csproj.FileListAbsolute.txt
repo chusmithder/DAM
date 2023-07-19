@@ -1,0 +1,30 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\bin\Debug\net6.0\writearg.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\bin\Debug\net6.0\writearg.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\bin\Debug\net6.0\writearg.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\bin\Debug\net6.0\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\bin\Debug\net6.0\writearg.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\refint\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\writearg.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\writearg\obj\Debug\net6.0\ref\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\bin\Debug\net6.0\writearg.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\bin\Debug\net6.0\writearg.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\bin\Debug\net6.0\writearg.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\bin\Debug\net6.0\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\bin\Debug\net6.0\writearg.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\refint\writearg.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\writearg.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\2- WASP\writearg\obj\Debug\net6.0\ref\writearg.dll

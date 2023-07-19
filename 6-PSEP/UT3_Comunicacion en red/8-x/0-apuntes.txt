@@ -1,0 +1,33 @@
+1. http.get -> PETICION, obtener informacion (decir al servidor que me 
+    regrese informacion) ej: traer usuario, conversacion, traeme 
+    datos de tal persona
+2. luego servidor responde al cliente
+3. dependiendo de la respuesta, el cliente hace algo. genera pantalla
+    del chat, muestra conversacion, ...
+de esta manera, si se estan eviando mensajes dos ordenadores,
+la maquina emisora recibira las actualizaciones solo cuando haga
+peticiones http.get.
+
+Sockets: 
+    - es la solucion a lo anterior. Establece una com. activo
+    activo a la que los usuarios son notificados constantemente
+    cuando hayan actualizaciones
+    - notifica cuando un usuario se desconecta
+    - notifica cuando un usuario se conecta
+    - notifica cuando un usuario se vuelve a conectar
+    - Podemos disparar eventos personalizados (lo que deseamos hacer.
+        ej: si tenemos una grafica, podemos recibir not. del servidor
+        cuando haya info. nueva que modifique a la grafica.
+        ej2: en un chat, podemos ser notificados cuando hay nuevos
+        mensajes)
+    el usuario se puede volver a conectar y obtener la misma 
+        sesion con la que estaba trabajando
+
+//SERIALIZE
+Cerveza cerveza = new Cerveza(10, "Cerveza");
+string miJson = JsonSearializer.Serialize(cerveza);
+File.writealltext("objeto.txt", miJson);
+
+//DESERIALIZE
+string miJson = File.readalltext("objeto.txt");
+Cerveza cerveza = JsonSearializer.Deserialize<Cerveza>(miJson);

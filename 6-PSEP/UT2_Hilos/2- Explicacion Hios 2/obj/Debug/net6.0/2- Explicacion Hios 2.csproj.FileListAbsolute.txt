@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\bin\Debug\net6.0\2- Explicacion Hios 2.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\bin\Debug\net6.0\2- Explicacion Hios 2.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\bin\Debug\net6.0\2- Explicacion Hios 2.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\bin\Debug\net6.0\2- Explicacion Hios 2.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\bin\Debug\net6.0\2- Explicacion Hios 2.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\refint\2- Explicacion Hios 2.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\2- Explicacion Hios 2.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\2- UT2- Hilos\2- Explicacion Hios 2\obj\Debug\net6.0\ref\2- Explicacion Hios 2.dll

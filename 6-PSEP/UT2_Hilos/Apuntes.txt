@@ -1,0 +1,321 @@
+﻿------------------------------------------------------------------------------------------------------------------
+EXPLICACION CLASE
+------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Threading;
+
+
+public class Tarea1 {
+    public static void metodo() {
+        // var ran = new Random();
+        // int random = ran.Next(1, 5);
+        Thread actual = Thread.CurrentThread;
+        // Console.WriteLine("el hllo es: {0}", actual.ManagedThreadId);
+        Console.WriteLine("el hllo es: {0}", actual.Name);
+        // Thread.Sleep(random * 1000);
+        Thread.Sleep(3000);
+    }
+
+
+    public static void Main() {
+        Console.WriteLine("Creador de hilos");
+        for (int i = 0; i < 5; i++) {
+            Thread hilo = new Thread(new ThreadStart(metodo));
+            hilo.Name = i.ToString();
+            //
+            // ThreadState estado = h.ThreadState;
+            
+            switch(i) {
+                case 0:     hilo.Priority = ThreadPriority.Lowest;
+                    // lock (h) {
+                    //     Monitor.TryEnter(h, TimeSpan.FromMilliseconds(4000), false);
+                    // }
+                    break;
+                case 1:     hilo.Priority = ThreadPriority.BelowNormal;
+                    break;
+                case 2:     hilo.Priority = ThreadPriority.Normal;
+                    break;
+                case 3:     hilo.Priority = ThreadPriority.AboveNormal;
+                    break;
+                case 4:     hilo.Priority = ThreadPriority.Highest;
+                    break;  
+            }
+            hilo.Start();
+            // hilo.Join();
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Threading;
+
+// Simple threading scenario:  Start a static method running
+// on a second thread.
+public class ThreadExample {
+    // The ThreadProc method is called when the thread starts.
+    // It loops ten times, writing to the console and yielding
+    // the rest of its time slice each time, and then ends.
+    public static void ThreadProc() {
+        for (int i = 0; i < 10; i++) {
+            Console.WriteLine("ThreadProc: {0}", i);
+            // Yield the rest of the time slice.
+            Thread.Sleep(10);
+        }
+    }
+
+    public static void Main() {
+        Console.WriteLine("Main thread: Start a second thread.");
+        // The constructor for the Thread class requires a ThreadStart
+        // delegate that represents the method to be executed on the
+        // thread.  C# simplifies the creation of this delegate.
+        Thread t = new Thread(new ThreadStart(ThreadProc));
+
+        // Start ThreadProc.  Note that on a uniprocessor, the new
+        // thread does not get any processor time until the main thread
+        // is preempted or yields.  Uncomment the Thread.Sleep that
+        // follows t.Start() to see the difference.
+        t.Start();
+        Thread.Sleep(0);
+
+        for (int i = 0; i < 4; i++) {
+            Console.WriteLine("Main thread: Do some work.");
+            Thread.Sleep(20);
+        }
+
+        Console.WriteLine("Main thread: Call Join(), to wait until ThreadProc ends.");
+        // t.Join();
+        Console.WriteLine("Main thread: ThreadProc.Join has returned.  Press Enter to end program.");
+        Console.ReadLine();
+    }
+}
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Diagnostics;
+using System.Threading;
+
+public class Example
+{
+   public static void Main()
+   {
+      var th = new Thread(ExecuteInForeground);
+      th.Start();
+      Thread.Sleep(1000);
+      Console.WriteLine("Main thread ({0}) exiting...",
+                        Thread.CurrentThread.ManagedThreadId);
+   }
+
+   private static void ExecuteInForeground()
+   {
+      var sw = Stopwatch.StartNew();
+      Console.WriteLine("Thread {0}: {1}, Priority {2}",
+                        Thread.CurrentThread.ManagedThreadId,
+                        Thread.CurrentThread.ThreadState,
+                        Thread.CurrentThread.Priority);
+      do {
+         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
+                           Thread.CurrentThread.ManagedThreadId,
+                           sw.ElapsedMilliseconds / 1000.0);
+         Thread.Sleep(500);
+      } while (sw.ElapsedMilliseconds <= 5000);
+      sw.Stop();
+   }
+}
+// The example displays output like the following:
+//       Thread 3: Running, Priority Normal
+//       Thread 3: Elapsed 0.00 seconds
+//       Thread 3: Elapsed 0.51 seconds
+//       Main thread (1) exiting...
+//       Thread 3: Elapsed 1.02 seconds
+//       Thread 3: Elapsed 1.53 seconds
+//       Thread 3: Elapsed 2.05 seconds
+//       Thread 3: Elapsed 2.55 seconds
+//       Thread 3: Elapsed 3.07 seconds
+//       Thread 3: Elapsed 3.57 seconds
+//       Thread 3: Elapsed 4.07 seconds
+//       Thread 3: Elapsed 4.58 seconds
+
+------------------------------------------------------------------------------------------------------------------
+JOIN
+------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Threading;
+
+public class Example
+{
+    static Thread thread1, thread2;
+    public static void Main() {
+        //crear hilos, establecer nombre e iniciarlos (start)
+        thread1 = new Thread(new ThreadStart(ThreadProc));
+        thread1.Name = "Thread 1";
+        thread1.Start();
+
+        thread2 = new Thread(new ThreadStart(ThreadProc));
+        thread2.Name = "Thread 2";
+        thread2.Start();
+    }
+    private static void ThreadProc() {
+        Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+        //bloquearemos el hilo 2 cuando este este arrancado, para que el hilo 1 se detenga y reanude
+        //hasta que termine hilo 2
+        if (Thread.CurrentThread.Name == "Thread 1" && thread2.ThreadState != ThreadState.Unstarted) {
+            thread2.Join();
+        }
+        Thread.Sleep(4000);
+        Console.WriteLine("\nCurrent Thread: {0}", Thread.CurrentThread.Name);
+        Console.WriteLine("Thread 1: {0}", thread1.ThreadState);
+        Console.WriteLine("Thread 2: {0}", thread2.ThreadState);
+    }
+
+}
+// The example displays output like the following:
+//       Current thread: Thread1
+//       
+//       Current thread: Thread2
+//       
+//       Current thread: Thread2
+//       Thread1: WaitSleepJoin
+//       Thread2: Running
+//       
+//       
+//       Current thread: Thread1
+//       Thread1: Running
+//       Thread2: Stopped
+
+------------------------------------------------------------------------------------------------------------------
+PRIORITY
+------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Threading;
+using Timers = System.Timers;
+
+namespace prioridadeshilos
+{
+
+    class Test
+    {
+        static void Main()
+        {
+            PriorityTest priorityTest = new PriorityTest();
+
+            Thread thread1 = new Thread(priorityTest.ThreadMethod);
+            thread1.Name = "ThreadOne";
+            Thread thread2 = new Thread(priorityTest.ThreadMethod);
+            thread2.Name = "ThreadTwo";
+            thread2.Priority = ThreadPriority.BelowNormal;
+            Thread thread3 = new Thread(priorityTest.ThreadMethod);
+            thread3.Name = "ThreadThree";
+            thread3.Priority = ThreadPriority.AboveNormal;
+
+            thread1.Start();
+            thread2.Start();
+            thread3.Start();
+            // Allow counting for 10 seconds.
+            Thread.Sleep(10000);
+            priorityTest.LoopSwitch = false;
+        }
+    }
+
+    class PriorityTest
+    {
+        //Use the static modifier to declare a static member, which belongs to the type itself rather than to a specific object.
+        //The volatile keyword indicates that a field might be modified by multiple threads that are executing at the same time.
+        static volatile bool loopSwitch;
+        //ThreadStatic indicates that the value of a static field is unique for each thread.
+        [ThreadStatic] static long threadCount = 0;
+
+        public PriorityTest()
+        {
+            loopSwitch = true;
+        }
+
+        public bool LoopSwitch
+        {
+            set { loopSwitch = value; }
+        }
+
+        public void ThreadMethod()
+        {
+            while (loopSwitch)
+            {
+                threadCount++;
+            }
+            Console.WriteLine("{0,-11} with {1,11} priority " +
+                "has a count = {2,13}", Thread.CurrentThread.Name,
+                Thread.CurrentThread.Priority.ToString(),
+                threadCount.ToString("N0"));
+        }
+    }
+
+}
+// > dotnet run
+// ThreadThree with AboveNormal priority has a count =   639,008,945
+// ThreadOne   with      Normal priority has a count =   608,231,359
+// ThreadTwo   with BelowNormal priority has a count =   572,596,797
+
+------------------------------------------------------------------------------------------------------------------
+LOCK
+------------------------------------------------------------------------------------------------------------------
+//lock hace que solo un hilo a la vez entre a la seccion critica
+using System;
+using System.Threading;
+
+namespace EjemploLock
+{
+    class Program {
+        private static int conteo = 0;
+        private static bool ejecutar = true;
+
+        //usamos este objeto para crear el lock
+        private static object control = new object();
+        private static int id1 = 0;
+        private static int id2 = 0;
+
+        public static void Main() {
+            //crear hilos
+            Thread hilo1 = new Thread(new ThreadStart(incremento));
+            hilo1.Start();
+            id1 = hilo1.ManagedThreadId;
+
+            Thread hilo2 = new Thread(new ThreadStart(incremento));
+            hilo2.Start();
+            id2 = hilo2.ManagedThreadId;
+
+            while (ejecutar) {
+                if (conteo > 50) {
+                    ejecutar = false;
+                }
+            }
+        }
+
+        static void incremento() {
+            while (ejecutar) {
+                //lock hace que solo un hilo a la vez entre a la seccion critica
+                lock(control) {
+                    //cambiamos color consola dependiendo del hilo actual
+                    if (Thread.CurrentThread.ManagedThreadId == id1) {
+                        Console.ForegroundColor = ConsoleColor.White;
+                    } if (Thread.CurrentThread.ManagedThreadId == id2) {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    }
+
+                    conteo = conteo + 1;
+                    Console.WriteLine("-----");
+                    Console.WriteLine(Thread.CurrentThread.ManagedThreadId + " -> " + conteo);
+                    Thread.Sleep(200);
+                }
+            }
+        }        
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

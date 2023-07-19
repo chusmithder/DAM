@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\bin\Debug\net6.0\3- Tarea 1.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\bin\Debug\net6.0\3- Tarea 1.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\bin\Debug\net6.0\3- Tarea 1.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\bin\Debug\net6.0\3- Tarea 1.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\bin\Debug\net6.0\3- Tarea 1.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\refint\3- Tarea 1.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\3- Tarea 1.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\3- Tarea 1\obj\Debug\net6.0\ref\3- Tarea 1.dll

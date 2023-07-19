@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\bin\Debug\net6.0\startprog.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\bin\Debug\net6.0\startprog.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\bin\Debug\net6.0\startprog.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\bin\Debug\net6.0\startprog.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\bin\Debug\net6.0\startprog.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\refint\startprog.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\startprog.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1-WASP\startprog\obj\Debug\net6.0\ref\startprog.dll

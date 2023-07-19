@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\bin\Debug\net6.0\2- Serializacion JSON.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\bin\Debug\net6.0\2- Serializacion JSON.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\bin\Debug\net6.0\2- Serializacion JSON.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\bin\Debug\net6.0\2- Serializacion JSON.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\bin\Debug\net6.0\2- Serializacion JSON.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\refint\2- Serializacion JSON.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\2- Serializacion JSON.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\2- Serializacion JSON\obj\Debug\net6.0\ref\2- Serializacion JSON.dll

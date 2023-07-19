@@ -1,0 +1,711 @@
+Ir al contenido principal
+ Partes de este tema pueden estar traducidos automáticamente.
+
+Learn  .NET  Explorador de API de .NET  System.Threading 
+Thread Clase
+Referencia
+
+
+Definición
+Espacio de nombres:
+System.Threading
+Ensamblado:
+System.Threading.Thread.dll
+Crea y controla un subproceso, establece su prioridad y obtiene su estado.
+
+En este artículo
+Definición
+Ejemplos
+Comentarios
+Constructores
+Propiedades
+Métodos
+Se aplica a
+Seguridad para subprocesos
+Consulte también
+C#
+
+Copiar
+public sealed class Thread : System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+Herencia
+Object
+CriticalFinalizerObject
+Thread
+Ejemplos
+En el ejemplo siguiente se muestra la funcionalidad de subprocesamiento simple.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+// Simple threading scenario:  Start a static method running
+// on a second thread.
+public class ThreadExample {
+    // The ThreadProc method is called when the thread starts.
+    // It loops ten times, writing to the console and yielding
+    // the rest of its time slice each time, and then ends.
+    public static void ThreadProc() {
+        for (int i = 0; i < 10; i++) {
+            Console.WriteLine("ThreadProc: {0}", i);
+            // Yield the rest of the time slice.
+            Thread.Sleep(0);
+        }
+    }
+
+    public static void Main() {
+        Console.WriteLine("Main thread: Start a second thread.");
+        // The constructor for the Thread class requires a ThreadStart
+        // delegate that represents the method to be executed on the
+        // thread.  C# simplifies the creation of this delegate.
+        Thread t = new Thread(new ThreadStart(ThreadProc));
+
+        // Start ThreadProc.  Note that on a uniprocessor, the new
+        // thread does not get any processor time until the main thread
+        // is preempted or yields.  Uncomment the Thread.Sleep that
+        // follows t.Start() to see the difference.
+        t.Start();
+        //Thread.Sleep(0);
+
+        for (int i = 0; i < 4; i++) {
+            Console.WriteLine("Main thread: Do some work.");
+            Thread.Sleep(0);
+        }
+
+        Console.WriteLine("Main thread: Call Join(), to wait until ThreadProc ends.");
+        t.Join();
+        Console.WriteLine("Main thread: ThreadProc.Join has returned.  Press Enter to end program.");
+        Console.ReadLine();
+    }
+}
+Este código genera una salida similar a la siguiente:
+
+
+Copiar
+[VB, C++, C#]  
+Main thread: Start a second thread.  
+Main thread: Do some work.  
+ThreadProc: 0  
+Main thread: Do some work.  
+ThreadProc: 1  
+Main thread: Do some work.  
+ThreadProc: 2  
+Main thread: Do some work.  
+ThreadProc: 3  
+Main thread: Call Join(), to wait until ThreadProc ends.  
+ThreadProc: 4  
+ThreadProc: 5  
+ThreadProc: 6  
+ThreadProc: 7  
+ThreadProc: 8  
+ThreadProc: 9  
+Main thread: ThreadProc.Join has returned.  Press Enter to end program.  
+Comentarios
+Cuando se inicia un proceso, Common Language Runtime crea automáticamente un único subproceso en primer plano para ejecutar el código de la aplicación. Junto con este subproceso principal en primer plano, un proceso puede crear uno o varios subprocesos para ejecutar una parte del código del programa asociado al proceso. Estos subprocesos se pueden ejecutar en primer plano o en segundo plano. Además, puede usar la clase para ejecutar código en subprocesos de trabajo ThreadPool administrados por Common Language Runtime.
+
+En esta sección
+
+Inicio de un subproceso
+Recuperar objetos Thread
+Subprocesos en primer plano y en segundo plano
+Referencia cultural y subprocesos
+Obtención y control de subprocesos
+
+
+Inicio de un subproceso
+Para iniciar un subproceso, proporcione un delegado que represente el método que el subproceso va a ejecutar en su constructor de clase. A continuación, llame Start al método para comenzar la ejecución.
+
+Los constructores pueden tomar cualquiera de los dos tipos de delegado, dependiendo de si puede pasar un argumento al método Thread que se va a ejecutar:
+
+Si el método no tiene argumentos, se pasa ThreadStart un delegado al constructor. Tiene la firma :
+
+C#
+
+Copiar
+public delegate void ThreadStart()  
+En el ejemplo siguiente se crea e inicia un subproceso que ejecuta el ExecuteInForeground método . El método muestra información sobre algunas propiedades del subproceso y, a continuación, ejecuta un bucle en el que se pausa durante medio segundo y muestra el número transcurrido de segundos. Cuando el subproceso se ha ejecutado durante al menos cinco segundos, el bucle finaliza y el subproceso finaliza la ejecución.
+
+C#
+
+Copiar
+using System;
+using System.Diagnostics;
+using System.Threading;
+
+public class Example
+{
+   public static void Main()
+   {
+      var th = new Thread(ExecuteInForeground);
+      th.Start();
+      Thread.Sleep(1000);
+      Console.WriteLine("Main thread ({0}) exiting...",
+                        Thread.CurrentThread.ManagedThreadId);
+   }
+
+   private static void ExecuteInForeground()
+   {
+      var sw = Stopwatch.StartNew();
+      Console.WriteLine("Thread {0}: {1}, Priority {2}",
+                        Thread.CurrentThread.ManagedThreadId,
+                        Thread.CurrentThread.ThreadState,
+                        Thread.CurrentThread.Priority);
+      do {
+         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
+                           Thread.CurrentThread.ManagedThreadId,
+                           sw.ElapsedMilliseconds / 1000.0);
+         Thread.Sleep(500);
+      } while (sw.ElapsedMilliseconds <= 5000);
+      sw.Stop();
+   }
+}
+// The example displays output like the following:
+//       Thread 3: Running, Priority Normal
+//       Thread 3: Elapsed 0.00 seconds
+//       Thread 3: Elapsed 0.51 seconds
+//       Main thread (1) exiting...
+//       Thread 3: Elapsed 1.02 seconds
+//       Thread 3: Elapsed 1.53 seconds
+//       Thread 3: Elapsed 2.05 seconds
+//       Thread 3: Elapsed 2.55 seconds
+//       Thread 3: Elapsed 3.07 seconds
+//       Thread 3: Elapsed 3.57 seconds
+//       Thread 3: Elapsed 4.07 seconds
+//       Thread 3: Elapsed 4.58 seconds
+Si el método tiene un argumento , se pasa un ParameterizedThreadStart delegado al constructor . Tiene la firma :
+
+C#
+
+Copiar
+public delegate void ParameterizedThreadStart(object obj)  
+El método ejecutado por el delegado puede convertir (en C#) o convertir (en Visual Basic) el parámetro al tipo adecuado.
+
+El ejemplo siguiente es idéntico al anterior, salvo que llama al Thread(ParameterizedThreadStart) constructor . Esta versión del método tiene un único parámetro que representa el número aproximado ExecuteInForeground de milisegundos que se va a ejecutar el bucle.
+
+C#
+
+Copiar
+using System;
+using System.Diagnostics;
+using System.Threading;
+
+public class Example
+{
+   public static void Main()
+   {
+      var th = new Thread(ExecuteInForeground);
+      th.Start(4500);
+      Thread.Sleep(1000);
+      Console.WriteLine("Main thread ({0}) exiting...",
+                        Thread.CurrentThread.ManagedThreadId);
+   }
+
+   private static void ExecuteInForeground(Object obj)
+   {
+      int interval;
+      try {
+         interval = (int) obj;
+      }
+      catch (InvalidCastException) {
+         interval = 5000;
+      }
+      var sw = Stopwatch.StartNew();
+      Console.WriteLine("Thread {0}: {1}, Priority {2}",
+                        Thread.CurrentThread.ManagedThreadId,
+                        Thread.CurrentThread.ThreadState,
+                        Thread.CurrentThread.Priority);
+      do {
+         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
+                           Thread.CurrentThread.ManagedThreadId,
+                           sw.ElapsedMilliseconds / 1000.0);
+         Thread.Sleep(500);
+      } while (sw.ElapsedMilliseconds <= interval);
+      sw.Stop();
+   }
+}
+// The example displays output like the following:
+//       Thread 3: Running, Priority Normal
+//       Thread 3: Elapsed 0.00 seconds
+//       Thread 3: Elapsed 0.52 seconds
+//       Main thread (1) exiting...
+//       Thread 3: Elapsed 1.03 seconds
+//       Thread 3: Elapsed 1.55 seconds
+//       Thread 3: Elapsed 2.06 seconds
+//       Thread 3: Elapsed 2.58 seconds
+//       Thread 3: Elapsed 3.09 seconds
+//       Thread 3: Elapsed 3.61 seconds
+//       Thread 3: Elapsed 4.12 seconds
+No es necesario conservar una referencia a un Thread objeto una vez iniciado el subproceso. El subproceso continúa ejecutándose hasta que se complete el procedimiento del subproceso.
+
+
+Recuperar objetos Thread
+Puede usar la propiedad estática ( en Visual Basic) para recuperar una referencia al subproceso que se está ejecutando actualmente desde el código que el subproceso Shared CurrentThread está ejecutando. En el ejemplo siguiente se usa la propiedad para mostrar información sobre el subproceso de aplicación principal, otro subproceso en primer plano, un subproceso en segundo plano y un CurrentThread subproceso del grupo de subprocesos.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+public class Example
+{
+   static Object obj = new Object();
+   
+   public static void Main()
+   {
+      ThreadPool.QueueUserWorkItem(ShowThreadInformation);
+      var th1 = new Thread(ShowThreadInformation);
+      th1.Start();
+      var th2 = new Thread(ShowThreadInformation);
+      th2.IsBackground = true;
+      th2.Start();
+      Thread.Sleep(500);
+      ShowThreadInformation(null); 
+   }
+   
+   private static void ShowThreadInformation(Object state)
+   {
+      lock (obj) {
+         var th  = Thread.CurrentThread;
+         Console.WriteLine("Managed thread #{0}: ", th.ManagedThreadId);
+         Console.WriteLine("   Background thread: {0}", th.IsBackground);
+         Console.WriteLine("   Thread pool thread: {0}", th.IsThreadPoolThread);
+         Console.WriteLine("   Priority: {0}", th.Priority);
+         Console.WriteLine("   Culture: {0}", th.CurrentCulture.Name);
+         Console.WriteLine("   UI culture: {0}", th.CurrentUICulture.Name);
+         Console.WriteLine();
+      }   
+   }
+}
+// The example displays output like the following:
+//       Managed thread #6:
+//          Background thread: True
+//          Thread pool thread: False
+//          Priority: Normal
+//          Culture: en-US
+//          UI culture: en-US
+//       
+//       Managed thread #3:
+//          Background thread: True
+//          Thread pool thread: True
+//          Priority: Normal
+//          Culture: en-US
+//          UI culture: en-US
+//       
+//       Managed thread #4:
+//          Background thread: False
+//          Thread pool thread: False
+//          Priority: Normal
+//          Culture: en-US
+//          UI culture: en-US
+//       
+//       Managed thread #1:
+//          Background thread: False
+//          Thread pool thread: False
+//          Priority: Normal
+//          Culture: en-US
+//          UI culture: en-US
+
+Subprocesos de primer y segundo plano
+Las instancias de la clase Thread representan subprocesos en primer plano o subprocesos en segundo plano. Los subprocesos en segundo plano son idénticos a los subprocesos en primer plano con una excepción: un subproceso en segundo plano no mantiene un proceso en ejecución si todos los subprocesos en primer plano han finalizado. Una vez que se han detenido todos los subprocesos en primer plano, el tiempo de ejecución detiene todos los subprocesos en segundo plano y se apaga.
+
+De forma predeterminada, los siguientes subprocesos se ejecutan en primer plano:
+
+Subproceso de aplicación principal.
+
+Todos los subprocesos creados mediante una llamada a un Thread constructor de clase.
+
+Los subprocesos siguientes se ejecutan en segundo plano de forma predeterminada:
+
+Subprocesos del grupo de subprocesos, que son un grupo de subprocesos de trabajo que mantiene el tiempo de ejecución. Puede configurar el grupo de subprocesos y programar el trabajo en subprocesos del grupo de subprocesos mediante la ThreadPool clase .
+
+ Nota
+
+Las operaciones asincrónicas basadas en tareas se ejecutan automáticamente en subprocesos del grupo de subprocesos. Las operaciones asincrónicas basadas en tareas usan Task las clases y para implementar el patrón asincrónico basado en Task<TResult> tareas.
+
+Todos los subprocesos que entran en el entorno de ejecución administrado desde código no administrado.
+
+Puede cambiar un subproceso para que se ejecute en segundo plano estableciendo la IsBackground propiedad en cualquier momento. Los subprocesos en segundo plano son útiles para cualquier operación que deba continuar mientras se ejecuta una aplicación, pero no debe impedir que la aplicación finalice, como supervisar los cambios del sistema de archivos o las conexiones de socket entrantes.
+
+En el ejemplo siguiente se muestra la diferencia entre los subprocesos en primer plano y en segundo plano. Es como el primer ejemplo de la sección Iniciar un subproceso, salvo que establece el subproceso que se va a ejecutar en segundo plano antes de iniciarlo. Como se muestra en la salida, el bucle se interrumpe antes de que se ejecute durante cinco segundos.
+
+C#
+
+Copiar
+using System;
+using System.Diagnostics;
+using System.Threading;
+
+public class Example
+{
+   public static void Main()
+   {
+      var th = new Thread(ExecuteInForeground);
+      th.IsBackground = true;
+      th.Start();
+      Thread.Sleep(1000);
+      Console.WriteLine("Main thread ({0}) exiting...",
+                        Thread.CurrentThread.ManagedThreadId);
+   }
+
+   private static void ExecuteInForeground()
+   {
+      var sw = Stopwatch.StartNew();
+      Console.WriteLine("Thread {0}: {1}, Priority {2}",
+                        Thread.CurrentThread.ManagedThreadId,
+                        Thread.CurrentThread.ThreadState,
+                        Thread.CurrentThread.Priority);
+      do {
+         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
+                           Thread.CurrentThread.ManagedThreadId,
+                           sw.ElapsedMilliseconds / 1000.0);
+         Thread.Sleep(500);
+      } while (sw.ElapsedMilliseconds <= 5000);
+      sw.Stop();
+   }
+}
+// The example displays output like the following:
+//       Thread 3: Background, Priority Normal
+//       Thread 3: Elapsed 0.00 seconds
+//       Thread 3: Elapsed 0.51 seconds
+//       Main thread (1) exiting...
+
+Referencia cultural y subprocesos
+Cada subproceso tiene una referencia cultural, representada por la propiedad , y una referencia cultural de interfaz de CurrentCulture usuario, representada por la CurrentUICulture propiedad . La referencia cultural actual admite operaciones que tienen en cuenta la referencia cultural, como el análisis y el formato, la comparación y ordenación de cadenas, y también controla el sistema de escritura y el calendario usados por un subproceso. La referencia cultural de la interfaz de usuario actual proporciona la recuperación de recursos en archivos de recursos que tienen en cuenta la referencia cultural.
+
+ Importante
+
+Las CurrentCulture propiedades y no funcionan de forma confiable cuando se usan con cualquier subproceso que no sea el subproceso CurrentUICulture actual. En .NET Framework, la lectura de estas propiedades es confiable, aunque no es posible establecer estas propiedades para un subproceso que no sea el subproceso actual. En .NET Core, se produce una excepción si un subproceso intenta leer o InvalidOperationException escribir estas propiedades en un subproceso diferente. Se recomienda usar las propiedades CultureInfo.CurrentCulture y para recuperar y establecer la referencia cultural CultureInfo.CurrentUICulture actual.
+
+Cuando se crea una instancia de un nuevo subproceso, la referencia cultural y la referencia cultural de la interfaz de usuario se definen mediante la referencia cultural del sistema actual y la referencia cultural de la interfaz de usuario, y no por la referencia cultural y la referencia cultural de la interfaz de usuario del subproceso a partir del cual se crea el nuevo subproceso. Esto significa, por ejemplo, que si la referencia cultural actual del sistema es inglés (Estados Unidos) y la referencia cultural actual del subproceso de aplicación principal es francés (Francia), la referencia cultural de un subproceso nuevo creado llamando al constructor desde el subproceso principal es inglés (Estados Unidos) y no francés Thread(ParameterizedThreadStart) (Francia). Para obtener más información, vea la sección "Referencia cultural y subprocesos" del tema CultureInfo de clase .
+
+ Importante
+
+Esto no sucede con los subprocesos que ejecutan operaciones asincrónicas para aplicaciones destinadas a .NET Framework 4.6 y versiones posteriores. En este caso, la referencia cultural y la referencia cultural de la interfaz de usuario forman parte del contexto de una operación asincrónica; el subproceso en el que se ejecuta una operación asincrónica hereda de forma predeterminada la referencia cultural y la referencia cultural de la interfaz de usuario del subproceso desde el que se inició la operación asincrónica. Para obtener más información, vea la sección "Referencia cultural y operaciones asincrónicas basadas en tareas" del tema sobre la clase CultureInfo.
+
+Puede hacer cualquiera de las siguientes acciones para asegurarse de que todos los subprocesos que se ejecutan en una aplicación comparten la misma referencia cultural y referencia cultural de la interfaz de usuario:
+
+Puede pasar un objeto CultureInfo que represente esa referencia cultural al ParameterizedThreadStart delegado o al método ThreadPool.QueueUserWorkItem(WaitCallback, Object) .
+
+En el caso de las aplicaciones que se ejecutan en .NET Framework 4.5 y versiones posteriores, puede definir la referencia cultural y la referencia cultural de la interfaz de usuario que se asignarán a todos los subprocesos creados en un dominio de aplicación estableciendo el valor de las propiedades y CultureInfo.DefaultThreadCurrentCulture CultureInfo.DefaultThreadCurrentUICulture . Tenga en cuenta que se trata de una configuración de dominio por aplicación.
+
+Para obtener más información y ejemplos, vea la sección "Referencia cultural y subprocesos" del tema CultureInfo de clase.
+
+
+Obtención y control de subprocesos
+Puede recuperar varios valores de propiedad que proporcionan información sobre un subproceso. En algunos casos, también puede establecer estos valores de propiedad para controlar el funcionamiento del subproceso. Estas propiedades de subproceso incluyen:
+
+Un nombre. Name es una propiedad de una escritura que puede usar para identificar un subproceso. Su valor predeterminado es null.
+
+Código hash que se puede recuperar llamando al GetHashCode método . El código hash se puede usar para identificar de forma única un subproceso; durante la duración del subproceso, su código hash no colisionará con el valor de ningún otro subproceso, independientemente del dominio de aplicación del que obtenga el valor.
+
+Identificador de subproceso. El tiempo de ejecución asigna el valor de la propiedad de solo lectura e identifica de forma única ManagedThreadId un subproceso dentro de su proceso.
+
+ Nota
+
+Un ThreadId de sistema operativo no tiene una relación fija con un subproceso administrado, ya que un host no administrado puede controlar la relación entre subprocesos administrados y no administrados. En concreto, un host sofisticado puede usar la API de hospedaje clr para programar muchos subprocesos administrados en el mismo subproceso del sistema operativo, o para mover un subproceso administrado entre distintos subprocesos del sistema operativo.
+
+Estado actual del subproceso. Mientras dure su existencia, un subproceso siempre está en uno o varios de los estados definidos por la ThreadState propiedad .
+
+Nivel de prioridad de programación, definido por la ThreadPriority propiedad . Aunque puede establecer este valor para solicitar la prioridad de un subproceso, no se garantiza que el sistema operativo lo respeta.
+
+Propiedad de solo IsThreadPoolThread lectura, que indica si un subproceso es un subproceso del grupo de subprocesos.
+
+Propiedad IsBackground Para obtener más información, vea la sección Subprocesos en primer plano y en segundo plano.
+
+Constructores
+Thread(ParameterizedThreadStart)	
+Inicializa una nueva instancia de la clase Thread, especificando un delegado que permite pasar un objeto al subproceso cuando este último se inicia.
+
+Thread(ParameterizedThreadStart, Int32)	
+Inicializa una nueva instancia de la clase Thread y, para ello, especifica un delegado que permite pasar un objeto al subproceso cuando este último se inicia; además, especifica el tamaño de pila máximo para el subproceso.
+
+Thread(ThreadStart)	
+Inicializa una nueva instancia de la clase Thread.
+
+Thread(ThreadStart, Int32)	
+Inicializa una nueva instancia de la clase Thread, especificando el tamaño de pila máximo para el subproceso.
+
+Propiedades
+ApartmentState	
+Obsoleto.
+Obtiene o establece el estado de apartamento de este subproceso.
+
+CurrentCulture	
+Obtiene o establece la referencia cultural del subproceso actual.
+
+CurrentPrincipal	
+Obtiene o establece la entidad de seguridad actual del subproceso (de la seguridad basada en roles).
+
+CurrentThread	
+Obtiene el subproceso actualmente en ejecución.
+
+CurrentUICulture	
+Obtiene o establece la referencia cultural actual utilizada por el administrador de recursos para buscar recursos específicos de la referencia cultural en tiempo de ejecución.
+
+ExecutionContext	
+Obtiene un objeto ExecutionContext que contiene información sobre los distintos contextos del subproceso actual.
+
+IsAlive	
+Obtiene un valor que indica el estado de ejecución del subproceso actual.
+
+IsBackground	
+Obtiene o establece un valor que indica si un subproceso es o no un subproceso en segundo plano.
+
+IsThreadPoolThread	
+Obtiene un valor que indica si un subproceso pertenece al grupo de subprocesos administrados o no.
+
+ManagedThreadId	
+Obtiene un identificador único para el actual subproceso administrado.
+
+Name	
+Obtiene o establece el nombre del subproceso.
+
+Priority	
+Obtiene o establece un valor que indica la prioridad de programación de un subproceso.
+
+ThreadState	
+Obtiene un valor que contiene los estados del subproceso actual.
+
+Métodos
+Abort()	
+Produce una excepción ThreadAbortException en el subproceso en el que se invoca, para iniciar el proceso de finalización del subproceso. Normalmente, una llamada a este método finaliza el subproceso.
+
+Abort(Object)	
+Produce una excepción ThreadAbortException en el subproceso en el que se invoca, para iniciar el proceso de finalización del subproceso, proporcionando al mismo tiempo información sobre excepciones relativa a la terminación del subproceso. Normalmente, una llamada a este método finaliza el subproceso.
+
+AllocateDataSlot()	
+Asigna una ranura de datos sin nombre en todos los subprocesos. Para mejorar el rendimiento, en su lugar use campos marcados con el atributo ThreadStaticAttribute.
+
+AllocateNamedDataSlot(String)	
+Asigna una ranura de datos con nombre en todos los subprocesos. Para mejorar el rendimiento, en su lugar use campos marcados con el atributo ThreadStaticAttribute.
+
+BeginCriticalRegion()	
+Notifica a un host que la ejecución está a punto de entrar en una región del código donde los efectos de una anulación del subproceso o de una excepción no controlada podrían constituir un riesgo para otras tareas del dominio de aplicaciones.
+
+BeginThreadAffinity()	
+Notifica a un host que el código administrado está a punto de ejecutar instrucciones que dependen de la identidad del subproceso del sistema operativo físico actual.
+
+DisableComObjectEagerCleanup()	
+Desactiva la limpieza automática de contenedores RCW (Runtime Callable Wrappers) para el subproceso actual.
+
+EndCriticalRegion()	
+Notifica a un host que la ejecución está a punto de entrar en una región de código donde los efectos de una anulación del subproceso o de una excepción no controlada se limitan a la tarea actual.
+
+EndThreadAffinity()	
+Notifica a un host que el código administrado ha terminado de ejecutar instrucciones que dependen de la identidad del subproceso del sistema operativo físico actual.
+
+Equals(Object)	
+Determina si el objeto especificado es igual que el objeto actual.
+
+(Heredado de Object)
+Finalize()	
+Se asegura de que los recursos se liberan y que se llevan a cabo otras operaciones de limpieza cuando el recolector de elementos no utilizados recupere el objeto Thread.
+
+FreeNamedDataSlot(String)	
+Elimina la asociación entre un nombre y una ranura en todos los subprocesos del proceso. Para mejorar el rendimiento, en su lugar use campos marcados con el atributo ThreadStaticAttribute.
+
+GetApartmentState()	
+Devuelve un valor ApartmentState que indica el estado del apartamento.
+
+GetCompressedStack()	
+Obsoleto.
+Devuelve un objeto CompressedStack que se puede utilizar para capturar la pila correspondiente al subproceso actual.
+
+GetCurrentProcessorId()	
+Obtiene un identificador que se usa para indicar en qué procesador se ejecuta el subproceso actual.
+
+GetData(LocalDataStoreSlot)	
+Recupera el valor de la ranura especificada en el subproceso actual, dentro del dominio actual del subproceso. Para mejorar el rendimiento, en su lugar use campos marcados con el atributo ThreadStaticAttribute.
+
+GetDomain()	
+Devuelve el dominio en el que se está ejecutando el subproceso actual.
+
+GetDomainID()	
+Devuelve un identificador único del dominio de la aplicación.
+
+GetHashCode()	
+Devuelve un código hash para el subproceso actual.
+
+GetNamedDataSlot(String)	
+Busca una ranura de datos con nombre. Para mejorar el rendimiento, en su lugar use campos marcados con el atributo ThreadStaticAttribute.
+
+GetType()	
+Obtiene el Type de la instancia actual.
+
+(Heredado de Object)
+Interrupt()	
+Interrumpe un subproceso que se encuentra en estado de subproceso WaitSleepJoin.
+
+Join()	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza, pero continúa bombeando SendMessage y COM estándar.
+
+Join(Int32)	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+Join(TimeSpan)	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+MemberwiseClone()	
+Crea una copia superficial del Object actual.
+
+(Heredado de Object)
+MemoryBarrier()	
+Sincroniza el acceso a la memoria de la siguiente forma: el procesador que ejecuta el subproceso actual no puede reordenar las instrucciones de forma que los accesos a la memoria anteriores a la llamada a MemoryBarrier() se ejecuten después de los accesos a memoria que siguen a la llamada a MemoryBarrier().
+
+ResetAbort()	
+Cancela un método Abort(Object) solicitado para el subproceso actual.
+
+Resume()	
+Obsoleto.
+Reanuda un subproceso que se ha suspendido.
+
+SetApartmentState(ApartmentState)	
+Establece el estado del apartamento de un subproceso antes de iniciarse.
+
+SetCompressedStack(CompressedStack)	
+Obsoleto.
+Aplica un objeto CompressedStack capturado al subproceso actual.
+
+SetData(LocalDataStoreSlot, Object)	
+Establece los datos de la ranura especificada en el subproceso actualmente en ejecución, para el dominio actual de dicho subproceso. Para obtener un mejor rendimiento, utilice en su lugar los campos marcados con el atributo ThreadStaticAttribute.
+
+Sleep(Int32)	
+Suspende el subproceso actual durante el número de milisegundos especificado.
+
+Sleep(TimeSpan)	
+Suspende el subproceso actual durante la cantidad de tiempo especificada.
+
+SpinWait(Int32)	
+Hace que un subproceso espere el número de veces definido por el parámetro iterations.
+
+Start()	
+Hace que el sistema operativo cambie el estado de la instancia actual a Running.
+
+Start(Object)	
+Hace que el sistema operativo cambie el estado de la instancia actual a Running; también puede proporcionar un objeto que contiene datos para que los use el método ejecutado por el subproceso.
+
+Suspend()	
+Obsoleto.
+Suspende el subproceso o, si este ya se ha suspendido, no tiene efecto alguno.
+
+ToString()	
+Devuelve una cadena que representa el objeto actual.
+
+(Heredado de Object)
+TrySetApartmentState(ApartmentState)	
+Establece el estado del apartamento de un subproceso antes de iniciarse.
+
+VolatileRead(Byte)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Double)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Int16)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Int32)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Int64)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(IntPtr)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Object)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(SByte)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(Single)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(UInt16)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(UInt32)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(UInt64)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileRead(UIntPtr)	
+Lee el valor de un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura tras este método en el código, el procesador no puede moverla antes de este método.
+
+VolatileWrite(Byte, Byte)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Double, Double)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Int16, Int16)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Int32, Int32)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Int64, Int64)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(IntPtr, IntPtr)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Object, Object)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(SByte, SByte)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(Single, Single)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(UInt16, UInt16)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(UInt32, UInt32)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(UInt64, UInt64)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+VolatileWrite(UIntPtr, UIntPtr)	
+Escribe un valor en un campo. En los sistemas que lo requieren, inserta una barrera de memoria que impide que el procesador reordene las operaciones de memoria del modo siguiente: si aparece una operación de lectura o de escritura antes de este método en el código, el procesador no puede moverla después de este método.
+
+Yield()	
+Hace que el subproceso que realiza la llamada ceda la ejecución a otro subproceso que está listo para ejecutarse en el procesador actual. El sistema operativo selecciona el subproceso al que se va a ceder la ejecución.
+
+Se aplica a
+Producto	Versiones
+.NET	Core 1.0, Core 1.1, Core 2.0, Core 2.1, Core 2.2, Core 3.0, Core 3.1, 5, 6, 7
+.NET Framework	1.1, 2.0, 3.0, 3.5, 4.0, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8
+.NET Standard	2.0, 2.1
+Xamarin.iOS	10.8
+Xamarin.Mac	3.0
+Seguridad para subprocesos
+Este tipo es seguro para la ejecución de subprocesos.
+
+Consulte también
+Subprocesos y subprocesamiento
+Utilizar subprocesos y subprocesamiento
+Origen de referencia para la clase Thread
+Contenido recomendado
+Thread.Join Método (System.Threading)
+Bloquea el subproceso de llamada hasta que finaliza el subproceso representado por esta instancia.
+ParameterizedThreadStart Delegado (System.Threading)
+Representa el método que se ejecuta en Thread.
+Thread.Start Método (System.Threading)
+Hace que se programe un subproceso para su ejecución.
+ThreadStart Delegado (System.Threading)
+Representa el método que se ejecuta en Thread.
+Administrar cookies
+Versiones anteriores
+Blog
+Contribuir
+Privacidad
+Términos de uso
+Marcas comerciales
+© Microsoft 2022

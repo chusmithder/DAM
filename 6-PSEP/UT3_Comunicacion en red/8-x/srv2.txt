@@ -1,0 +1,120 @@
+using System;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Net.Sockets;
+using System.Text;
+
+namespace servidorsincrono
+{
+    public class SynchronousSocketListener
+    {
+
+        public static void StartListening()
+        {
+            //configuracion para recibir las conexiones
+            IPAddress ipAddress = getLocalIpAddress();//MAC OS
+            IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Parse("192.168.1.127"), 11000);
+
+            try
+            {
+                //Socket para escuchar conexiones
+                Socket listener = new Socket(ipAddress.AddressFamily,
+                SocketType.Stream, ProtocolType.Tcp);
+
+                //Unimos al endpoint
+                listener.Bind(localEndPoint);
+
+                //cantidad de peticiones antes de responder
+                listener.Listen(10);
+
+                //bucle infinito para estar siempre a la espera de nuevas conexiones
+                
+                    Console.WriteLine("Esperando conexion...");
+
+                    //Recibimos la conexion y la manejamos
+                    Socket handler = listener.Accept();
+                    Console.WriteLine("Conexion establecida con el cliente...");
+
+
+                    while (true) {
+                        //almacenar datos
+                        string data = "";
+                        //para recibir datos del cliente
+                        byte[] bytes = null;
+
+                        while (true) 
+                        {
+                            bytes = new byte[1024];
+
+                            //recibimos el mensaje del cliente
+                            int byteRec = handler.Receive(bytes);
+
+                            //convertimos el mensaje de bytes a string
+                            data += Encoding.ASCII.GetString(bytes, 0, byteRec);
+                            if (data.IndexOf("<EOF>") > -1) {
+                                //se termina el paso de mensajes
+                                break;
+                            }
+                        }
+                            Console.WriteLine(data.Replace("<EOF>", ""));
+                            byte[] msg = Encoding.ASCII.GetBytes("recibido");
+                            handler.Send(msg);
+                    }
+                    
+
+                    // byte[] m = Encoding.ASCII.GetBytes(data);
+                    // handler.Send(m);
+                    // handler.Shutdown(SocketShutdown.Both);
+                    // handler.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            Console.WriteLine("\nPress ENTER to continue...");
+            Console.Read();
+
+        }
+
+        static IPAddress getLocalIpAddress()
+        {
+            IPAddress ipAddress = null;
+            try
+            {
+                foreach (var netInterface in NetworkInterface.GetAllNetworkInterfaces())
+                {
+                    if (netInterface.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 ||
+                        netInterface.NetworkInterfaceType == NetworkInterfaceType.Ethernet)
+                    {
+                        foreach (var addrInfo in netInterface.GetIPProperties().UnicastAddresses)
+                        {
+                            if (addrInfo.Address.AddressFamily == AddressFamily.InterNetwork)
+                            {
+                                ipAddress = addrInfo.Address;
+                            }
+                        }
+                    }
+                }
+                if (ipAddress == null)
+                {
+                    IPHostEntry ipHostInfo = Dns.GetHostEntry("127.0.0.1");
+                    ipAddress = ipHostInfo.AddressList[0];
+                }
+            }
+            catch (Exception) { }
+            return ipAddress;
+        }
+
+        public static int Main(String[] args)
+        {
+            StartListening();
+            return 0;
+        }
+    }
+}
+// > dotnet run
+// Waiting for a connection...
+// Text received : This is a test
+// Waiting for a connection...
+//

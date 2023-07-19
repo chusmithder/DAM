@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\bin\Debug\net6.0\5- Com y sincornizacion.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\bin\Debug\net6.0\5- Com y sincornizacion.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\bin\Debug\net6.0\5- Com y sincornizacion.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\bin\Debug\net6.0\5- Com y sincornizacion.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\bin\Debug\net6.0\5- Com y sincornizacion.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\refint\5- Com y sincornizacion.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\5- Com y sincornizacion.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\5- Com y sincornizacion\obj\Debug\net6.0\ref\5- Com y sincornizacion.dll

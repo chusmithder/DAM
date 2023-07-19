@@ -1,0 +1,169 @@
+Ir al contenido principal
+Iniciar sesión
+ Partes de este tema pueden estar traducidos automáticamente.
+
+Versión
+Buscar
+Buscar
+System.Threading
+ApartmentState
+ContextCallback
+EventResetMode
+IOCompletionCallback
+LazyThreadSafetyMode
+LockRecursionPolicy
+ParameterizedThreadStart
+SendOrPostCallback
+ThreadExceptionEventHandler
+ThreadPriority
+ThreadStart
+ThreadStartException
+ThreadState
+TimerCallback
+WaitCallback
+WaitOrTimerCallback
+System.Threading
+ThreadPriority Enumeración
+Referencia
+
+
+Definición
+Espacio de nombres:
+System.Threading
+Ensamblado:
+System.Threading.Thread.dll
+Especifica la prioridad de programación de Thread.
+
+En este artículo
+Definición
+Campos
+Ejemplos
+Comentarios
+Se aplica a
+Consulte también
+C#
+
+Copiar
+public enum ThreadPriority
+Herencia
+Object
+ValueType
+Enum
+ThreadPriority
+Campos
+AboveNormal	3	
+Thread puede programarse después de los subprocesos con prioridad Highest y antes que los subprocesos con prioridad Normal.
+
+BelowNormal	1	
+Thread puede programarse después de los subprocesos con prioridad Normal y antes que los subprocesos con prioridad Lowest.
+
+Highest	4	
+Thread puede programarse antes que los subprocesos que tengan cualquier otra prioridad.
+
+Lowest	0	
+Thread puede programarse después de los subprocesos que tengan cualquier otra prioridad.
+
+Normal	2	
+Thread puede programarse después de los subprocesos con prioridad AboveNormal y antes que los subprocesos con prioridad BelowNormal. Los subprocesos tienen prioridad Normal de forma predeterminada.
+
+Ejemplos
+En el ejemplo de código siguiente se muestra el resultado de cambiar la prioridad de un subproceso. Se crean tres subprocesos, la prioridad de un subproceso se establece en BelowNormal y la prioridad de un segundo se establece en AboveNormal. Cada subproceso incrementa una variable en un while bucle y se ejecuta durante un tiempo establecido.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+using Timers = System.Timers;
+
+class Test
+{
+    static void Main()
+    {
+        PriorityTest priorityTest = new PriorityTest();
+
+        Thread thread1 = new Thread(priorityTest.ThreadMethod);
+        thread1.Name = "ThreadOne";
+        Thread thread2 = new Thread(priorityTest.ThreadMethod);
+        thread2.Name = "ThreadTwo";
+        thread2.Priority = ThreadPriority.BelowNormal;
+        Thread thread3 = new Thread(priorityTest.ThreadMethod);
+        thread3.Name = "ThreadThree";
+        thread3.Priority = ThreadPriority.AboveNormal;
+
+        thread1.Start();
+        thread2.Start();
+        thread3.Start();
+        // Allow counting for 10 seconds.
+        Thread.Sleep(10000);
+        priorityTest.LoopSwitch = false;
+    }
+}
+
+class PriorityTest
+{
+    static volatile bool loopSwitch;
+    [ThreadStatic] static long threadCount = 0;
+
+    public PriorityTest()
+    {
+        loopSwitch = true;
+    }
+
+    public bool LoopSwitch
+    {
+        set{ loopSwitch = value; }
+    }
+
+    public void ThreadMethod()
+    {
+        while(loopSwitch)
+        {
+            threadCount++;
+        }
+        Console.WriteLine("{0,-11} with {1,11} priority " +
+            "has a count = {2,13}", Thread.CurrentThread.Name, 
+            Thread.CurrentThread.Priority.ToString(), 
+            threadCount.ToString("N0")); 
+    }
+}
+// The example displays output like the following:
+//    ThreadOne   with      Normal priority has a count =   755,897,581
+//    ThreadThree with AboveNormal priority has a count =   778,099,094
+//    ThreadTwo   with BelowNormal priority has a count =     7,840,984
+Comentarios
+ThreadPriority define el conjunto de todos los valores posibles para una prioridad de subproceso. Las prioridades de subproceso especifican la prioridad relativa de un subproceso frente a otro.
+
+Cada subproceso tiene una prioridad asignada. Los subprocesos creados en el entorno de ejecución se asignan inicialmente la Normal prioridad, mientras que los subprocesos creados fuera del tiempo de ejecución conservan su prioridad anterior cuando entran en el tiempo de ejecución. Puede obtener y establecer la prioridad de un subproceso accediendo a su Priority propiedad .
+
+Los subprocesos están programados para ejecutarse según su prioridad. El algoritmo de programación utilizado para determinar el orden de ejecución del subproceso varía con cada sistema operativo. El sistema operativo también puede ajustar la prioridad del subproceso dinámicamente a medida que el foco de la interfaz de usuario se mueve entre el primer plano y el fondo.
+
+La prioridad de un subproceso no afecta al estado del subproceso; el estado del subproceso debe ser Running antes de que el sistema operativo pueda programarlo.
+
+Se aplica a
+Producto	Versiones
+.NET	Core 2.0, Core 2.1, Core 2.2, Core 3.0, Core 3.1, 5, 6, 7
+.NET Framework	1.1, 2.0, 3.0, 3.5, 4.0, 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8
+.NET Standard	2.0, 2.1
+Xamarin.iOS	10.8
+Xamarin.Mac	3.0
+Consulte también
+Thread
+Programación de subprocesos
+Contenido recomendado
+Monitor.Pulse(Object) Método (System.Threading)
+Notifica un cambio de estado del objeto bloqueado al subproceso que se encuentra en la cola de espera.
+WaitCallback Delegado (System.Threading)
+Representa un método de devolución de llamada que debe ejecutar un subproceso del grupo de subprocesos.
+BlockingCollection<T>.TryTake Método (System.Collections.Concurrent)
+Intenta quitar un elemento de BlockingCollection<T>.
+TaskCreationOptions Enumeración (System.Threading.Tasks)
+Especifica las marcas que controlan el comportamiento opcional de la creación y ejecución de tareas.
+Administrar cookies
+Versiones anteriores
+Blog
+Contribuir
+Privacidad
+Términos de uso
+Marcas comerciales
+© Microsoft 2022

@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\bin\Debug\net6.0\1-SrvSincXML.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\bin\Debug\net6.0\1-SrvSincXML.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\bin\Debug\net6.0\1-SrvSincXML.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\bin\Debug\net6.0\1-SrvSincXML.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\bin\Debug\net6.0\1-SrvSincXML.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\refint\1-SrvSincXML.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\1-SrvSincXML.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\4- Comunicacion XML\1-SrvSincXML\obj\Debug\net6.0\ref\1-SrvSincXML.dll

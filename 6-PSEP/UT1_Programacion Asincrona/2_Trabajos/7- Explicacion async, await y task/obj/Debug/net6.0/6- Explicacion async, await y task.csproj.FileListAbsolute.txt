@@ -1,0 +1,45 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\refint\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\ref\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\refint\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\EJERCICIOS\6- Explicacion async, await y task\obj\Debug\net6.0\ref\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\bin\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\refint\6- Explicacion async, await y task.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\6- Explicacion async, await y task.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\7- Explicacion async, await y task\obj\Debug\net6.0\ref\6- Explicacion async, await y task.dll

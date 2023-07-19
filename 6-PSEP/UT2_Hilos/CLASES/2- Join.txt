@@ -1,0 +1,394 @@
+Ir al contenido principal
+Iniciar sesión
+ Partes de este tema pueden estar traducidos automáticamente.
+
+Versión
+Buscar
+Buscar
+System.Threading
+ApartmentState
+ContextCallback
+EventResetMode
+IOCompletionCallback
+LazyThreadSafetyMode
+LockRecursionPolicy
+ParameterizedThreadStart
+SendOrPostCallback
+Thread
+Constructores
+Abort
+AllocateDataSlot
+AllocateNamedDataSlot
+BeginCriticalRegion
+BeginThreadAffinity
+DisableComObjectEagerCleanup
+EndCriticalRegion
+EndThreadAffinity
+Finalize
+FreeNamedDataSlot
+GetApartmentState
+GetCompressedStack
+GetCurrentProcessorId
+GetData
+GetDomain
+GetDomainID
+GetHashCode
+GetNamedDataSlot
+Interrupt
+Join
+MemoryBarrier
+ResetAbort
+Resume
+SetApartmentState
+SetCompressedStack
+SetData
+Sleep
+SpinWait
+Start
+Suspend
+TrySetApartmentState
+VolatileRead
+VolatileWrite
+Yield
+ThreadExceptionEventHandler
+ThreadPriority
+ThreadStart
+ThreadStartException
+ThreadState
+TimerCallback
+WaitCallback
+WaitOrTimerCallback
+ Thread  Métodos 
+Thread.Join Método
+Referencia
+
+
+Definición
+Espacio de nombres:
+System.Threading
+Ensamblado:
+System.Threading.Thread.dll
+Bloquea el subproceso de llamada hasta que finaliza el subproceso representado por esta instancia.
+
+En este artículo
+Definición
+Sobrecargas
+Join()
+Join(Int32)
+Join(TimeSpan)
+Sobrecargas
+Join()	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza, pero continúa bombeando SendMessage y COM estándar.
+
+Join(Int32)	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+Join(TimeSpan)	
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+Join()
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza, pero continúa bombeando SendMessage y COM estándar.
+
+C#
+
+Copiar
+public void Join ();
+Excepciones
+ThreadStateException
+El autor de la llamada ha intentado combinar un subproceso que se encuentra en el estado Unstarted.
+
+ThreadInterruptedException
+El subproceso se interrumpe mientras espera.
+
+Comentarios
+Join es un método de sincronización que bloquea el subproceso que realiza la llamada (es decir, el subproceso que llama al método ) hasta que se ha completado el subproceso cuyo Join método se llama. Use este método para asegurarse de que se ha terminado un subproceso. El autor de la llamada se bloqueará indefinidamente si el subproceso no finaliza. En el ejemplo siguiente, el Thread1 subproceso llama al método de , lo que hace que se Join() Thread2 Thread1 bloquee hasta que se haya Thread2 completado.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+public class Example
+{
+   static Thread thread1, thread2;
+   
+   public static void Main()
+   {
+      thread1 = new Thread(ThreadProc);
+      thread1.Name = "Thread1";
+      thread1.Start();
+      
+      thread2 = new Thread(ThreadProc);
+      thread2.Name = "Thread2";
+      thread2.Start();   
+   }
+
+   private static void ThreadProc()
+   {
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      if (Thread.CurrentThread.Name == "Thread1" && 
+          thread2.ThreadState != ThreadState.Unstarted)
+         thread2.Join();
+      
+      Thread.Sleep(4000);
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      Console.WriteLine("Thread1: {0}", thread1.ThreadState);
+      Console.WriteLine("Thread2: {0}\n", thread2.ThreadState);
+   }
+}
+// The example displays output like the following:
+//       Current thread: Thread1
+//       
+//       Current thread: Thread2
+//       
+//       Current thread: Thread2
+//       Thread1: WaitSleepJoin
+//       Thread2: Running
+//       
+//       
+//       Current thread: Thread1
+//       Thread1: Running
+//       Thread2: Stopped
+Si el subproceso ya ha finalizado cuando Join se llama a , el método devuelve inmediatamente.
+
+ Advertencia
+
+Nunca debe llamar al Join método del objeto que representa el subproceso actual desde el subproceso Thread actual. Esto hace que la aplicación deje de responder porque el subproceso actual espera indefinidamente.
+
+Este método cambia el estado del subproceso que realiza la llamada para incluir ThreadState.WaitSleepJoin . No se puede Join invocar en un subproceso que se encuentra en el estado ThreadState.Unstarted .
+
+Consulte también
+ThreadState
+Se aplica a
+.NET 7 y otras versiones
+Join(Int32)
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+C#
+
+Copiar
+public bool Join (int millisecondsTimeout);
+Parámetros
+millisecondsTimeout
+Int32
+Número de milisegundos durante los que se va a esperar a que el subproceso finalice.
+
+Devoluciones
+Boolean
+true si el subproceso ha terminado; false si el subproceso no ha terminado una vez transcurrido el período de tiempo especificado por el parámetro millisecondsTimeout.
+
+Excepciones
+ArgumentOutOfRangeException
+El valor de millisecondsTimeout es negativo y no es igual a Infinite en milisegundos.
+
+ThreadStateException
+No se ha iniciado el subproceso.
+
+ArgumentException
+millisecondsTimeout es menor que -1 (Timeout.Infinite).
+
+ThreadInterruptedException
+El subproceso se ha interrumpido mientras se esperaba.
+
+Comentarios
+Join(Int32) es un método de sincronización que bloquea el subproceso que realiza la llamada (es decir, el subproceso que llama al método ) hasta que se haya completado el subproceso cuyo método se llama o hasta que haya transcurrido el intervalo de Join tiempo de espera. En el ejemplo siguiente, el subproceso llama al método de , lo que hace que se bloquee hasta que haya finalizado o hayan transcurrido Thread1 Join() Thread2 Thread1 Thread2 2 segundos.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+public class Example
+{
+   static Thread thread1, thread2;
+   
+   public static void Main()
+   {
+      thread1 = new Thread(ThreadProc);
+      thread1.Name = "Thread1";
+      thread1.Start();
+      
+      thread2 = new Thread(ThreadProc);
+      thread2.Name = "Thread2";
+      thread2.Start();   
+   }
+
+   private static void ThreadProc()
+   {
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      if (Thread.CurrentThread.Name == "Thread1" && 
+          thread2.ThreadState != ThreadState.Unstarted)
+         if (thread2.Join(2000))
+            Console.WriteLine("Thread2 has termminated.");
+         else
+            Console.WriteLine("The timeout has elapsed and Thread1 will resume.");   
+      
+      Thread.Sleep(4000);
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      Console.WriteLine("Thread1: {0}", thread1.ThreadState);
+      Console.WriteLine("Thread2: {0}\n", thread2.ThreadState);
+   }
+}
+// The example displays the following output:
+//       Current thread: Thread1
+//       
+//       Current thread: Thread2
+//       The timeout has elapsed and Thread1 will resume.
+//       
+//       Current thread: Thread2
+//       Thread1: WaitSleepJoin
+//       Thread2: Running
+//       
+//       
+//       Current thread: Thread1
+//       Thread1: Running
+//       Thread2: Stopped
+Si se especifica para el parámetro , este método se comporta de forma idéntica a la sobrecarga del método, excepto Timeout.Infinite millisecondsTimeout para el valor Join() devuelto.
+
+Si el subproceso ya ha finalizado cuando Join se llama a , el método devuelve inmediatamente.
+
+Este método cambia el estado del subproceso que realiza la llamada para incluir ThreadState.WaitSleepJoin . No se puede Join invocar en un subproceso que se encuentra en el estado ThreadState.Unstarted .
+
+Consulte también
+ThreadState
+Se aplica a
+.NET 7 y otras versiones
+Join(TimeSpan)
+Bloquea el subproceso de llamada hasta que el subproceso representado por esta instancia finaliza o transcurre el tiempo especificado, pero continúa bombeando SendMessage y COM estándar.
+
+C#
+
+Copiar
+public bool Join (TimeSpan timeout);
+Parámetros
+timeout
+TimeSpan
+Un TimeSpan establecido en el período de tiempo durante el que se esperará a que espere el subproceso.
+
+Devoluciones
+Boolean
+true si el subproceso ha terminado; false si el subproceso no ha terminado una vez transcurrido el período de tiempo especificado por el parámetro timeout.
+
+Excepciones
+ArgumentOutOfRangeException
+El valor de timeout es negativo y no es igual a Infinite en milisegundos, o es superior a MaxValue milisegundos.
+
+ThreadStateException
+El autor de la llamada ha intentado combinar un subproceso que se encuentra en el estado Unstarted.
+
+Ejemplos
+En el ejemplo de código siguiente se muestra cómo usar TimeSpan un valor con el método Join .
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+class Test
+{
+    static TimeSpan waitTime = new TimeSpan(0, 0, 1);
+
+    public static void Main() 
+    {
+        Thread newThread = new Thread(Work);
+        newThread.Start();
+
+        if(newThread.Join(waitTime + waitTime)) {
+            Console.WriteLine("New thread terminated.");
+        }
+        else {
+            Console.WriteLine("Join timed out.");
+        }
+    }
+
+    static void Work()
+    {
+        Thread.Sleep(waitTime);
+    }
+}
+// The example displays the following output:
+//        New thread terminated.
+Comentarios
+Join(TimeSpan) es un método de sincronización que bloquea el subproceso que realiza la llamada (es decir, el subproceso que llama al método ) hasta que se haya completado el subproceso cuyo método se llama o hasta que haya transcurrido el intervalo de Join tiempo de espera. En el ejemplo siguiente, el subproceso llama al método de , lo que hace que se bloquee hasta que haya finalizado o hayan transcurrido Thread1 Join() Thread2 Thread1 Thread2 2 segundos.
+
+C#
+
+Copiar
+using System;
+using System.Threading;
+
+public class Example
+{
+   static Thread thread1, thread2;
+   
+   public static void Main()
+   {
+      thread1 = new Thread(ThreadProc);
+      thread1.Name = "Thread1";
+      thread1.Start();
+      
+      thread2 = new Thread(ThreadProc);
+      thread2.Name = "Thread2";
+      thread2.Start();   
+   }
+
+   private static void ThreadProc()
+   {
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      if (Thread.CurrentThread.Name == "Thread1" && 
+          thread2.ThreadState != ThreadState.Unstarted)
+         if (thread2.Join(TimeSpan.FromSeconds(2)))
+            Console.WriteLine("Thread2 has termminated.");
+         else
+            Console.WriteLine("The timeout has elapsed and Thread1 will resume.");   
+      
+      Thread.Sleep(4000);
+      Console.WriteLine("\nCurrent thread: {0}", Thread.CurrentThread.Name);
+      Console.WriteLine("Thread1: {0}", thread1.ThreadState);
+      Console.WriteLine("Thread2: {0}\n", thread2.ThreadState);
+   }
+}
+// The example displays the following output:
+//       Current thread: Thread1
+//       
+//       Current thread: Thread2
+//       The timeout has elapsed and Thread1 will resume.
+//       
+//       Current thread: Thread2
+//       Thread1: WaitSleepJoin
+//       Thread2: Running
+//       
+//       
+//       Current thread: Thread1
+//       Thread1: Running
+//       Thread2: Stopped
+Si se especifica para , este método se comporta de forma idéntica a la Timeout.Infinite timeout sobrecarga del Join() método, excepto para el valor devuelto.
+
+Si el subproceso ya ha finalizado cuando Join se llama a , el método devuelve inmediatamente.
+
+Este método cambia el estado del subproceso actual para incluir WaitSleepJoin . No se puede Join invocar en un subproceso que se encuentra en el estado ThreadState.Unstarted .
+
+Consulte también
+ThreadState
+Se aplica a
+.NET 7 y otras versiones
+Contenido recomendado
+Thread.Interrupt Método (System.Threading)
+Interrumpe un subproceso que se encuentra en estado de subproceso WaitSleepJoin.
+ThreadStart Delegado (System.Threading)
+Representa el método que se ejecuta en Thread.
+Thread Clase (System.Threading)
+Crea y controla un subproceso, establece su prioridad y obtiene su estado.
+Thread.Suspend Método (System.Threading)
+Suspende el subproceso o, si este ya se ha suspendido, no tiene efecto alguno.
+Administrar cookies
+Versiones anteriores
+Blog
+Contribuir
+Privacidad
+Términos de uso
+Marcas comerciales
+© Microsoft 2022

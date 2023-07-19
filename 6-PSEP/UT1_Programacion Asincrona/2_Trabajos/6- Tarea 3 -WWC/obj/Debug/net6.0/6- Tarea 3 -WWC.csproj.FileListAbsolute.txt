@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\bin\Debug\net6.0\6- Tarea 3 -WWC.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\bin\Debug\net6.0\6- Tarea 3 -WWC.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\bin\Debug\net6.0\6- Tarea 3 -WWC.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\bin\Debug\net6.0\6- Tarea 3 -WWC.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\bin\Debug\net6.0\6- Tarea 3 -WWC.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\refint\6- Tarea 3 -WWC.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\6- Tarea 3 -WWC.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\1- UT1- Programacion Asincrona\6- Tarea 3 -WWC\obj\Debug\net6.0\ref\6- Tarea 3 -WWC.dll

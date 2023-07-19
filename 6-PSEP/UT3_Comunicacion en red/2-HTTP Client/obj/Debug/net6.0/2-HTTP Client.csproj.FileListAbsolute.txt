@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\bin\Debug\net6.0\2-HTTP Client.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\bin\Debug\net6.0\2-HTTP Client.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\bin\Debug\net6.0\2-HTTP Client.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\bin\Debug\net6.0\2-HTTP Client.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\bin\Debug\net6.0\2-HTTP Client.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\refint\2-HTTP Client.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\2-HTTP Client.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\2-HTTP Client\obj\Debug\net6.0\ref\2-HTTP Client.dll

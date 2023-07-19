@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\bin\Debug\net6.0\1- Process Start y Kill.exe
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\bin\Debug\net6.0\1- Process Start y Kill.deps.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\bin\Debug\net6.0\1- Process Start y Kill.runtimeconfig.json
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\bin\Debug\net6.0\1- Process Start y Kill.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\bin\Debug\net6.0\1- Process Start y Kill.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.AssemblyInfo.cs
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\refint\1- Process Start y Kill.dll
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.pdb
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\1- Process Start y Kill.genruntimeconfig.cache
+C:\Users\chusm\Desktop\DAM2 Trabajos\PSEP\EJERCICIOS\1- Process Start y Kill\obj\Debug\net6.0\ref\1- Process Start y Kill.dll

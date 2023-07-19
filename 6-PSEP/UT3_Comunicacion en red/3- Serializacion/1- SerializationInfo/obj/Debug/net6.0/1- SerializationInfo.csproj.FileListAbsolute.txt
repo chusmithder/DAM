@@ -1,0 +1,15 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\bin\Debug\net6.0\1- SerializationInfo.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\bin\Debug\net6.0\1- SerializationInfo.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\bin\Debug\net6.0\1- SerializationInfo.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\bin\Debug\net6.0\1- SerializationInfo.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\bin\Debug\net6.0\1- SerializationInfo.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\refint\1- SerializationInfo.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\1- SerializationInfo.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Serializacion\1- SerializationInfo\obj\Debug\net6.0\ref\1- SerializationInfo.dll
