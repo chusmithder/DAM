@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Alarma
+comment0.text=\r\n\ REPRESNTA\ LA\ ALARMA\r\n\ \r\n\ @author\ \ \r\n\ @version\ \ \r\n
+comment1.params=
+comment1.target=Alarma()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=hora\ minutos
+comment2.target=void\ setHoraAlarma(int,\ int)
+comment2.text=\r\n\ \ Mutador\ para\ cambiar\ la\ hora\ de\ alarma\r\n\ \ \ \ \ \ \ \ \r\n
+comment3.params=
+comment3.target=java.lang.String\ getHoraAlarma()
+comment3.text=\r\n\ \ ACCESOR\ para\ la\ hora\ de\ alarma\r\n\ \ \ \ \ cadena\ formateada,\ formatend\r\n
+numComments=4

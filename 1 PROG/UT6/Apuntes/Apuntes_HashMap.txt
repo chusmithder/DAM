@@ -1,0 +1,7 @@
+------------------ Apuntes JAVA ------------------
+Linked list: lista enlazada. Tenia una serie de nodos.
+por detras hay una estructura de datos que almacena una tabla hash
+no da error
+
+Arbol binario de busqueda: mayor, va debajo a la derecha, menor, va a la izquierda
+

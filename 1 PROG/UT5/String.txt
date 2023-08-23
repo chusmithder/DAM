@@ -1,0 +1,179 @@
+-----------------------------------------
+String es una secuencia de caracteres
+String es un objeto
+El VALOR de un String se escribe entre ""
+
+-----------------------------------------
+CREAR UN STRING
+-----------------------------------------
+String cadena; // se crea una referencia que vale null
+String cadena = new String(); //crea una cadena vacia
+String cadena = new String("Ejemplo de cadena");
+
+Forma abreviada para crear e inicializar un String
+String cadena = "Hola";
+
+-----------------------------------------
+INMUTABILIDAD DE UN STRING
+-----------------------------------------
+- Un objeto String es inmutable
+- Una vez creado su contenido, no puede cambiar, contendra esa cadena
+	por siempre
+- Si se asigna un nuevo valor, java crea un nuevoo objeto y desreferencia
+	la variable que apuntaba a dicho objeto String
+
+-----------------------------------------
+LONGITUD DE UNA CADENA
+-----------------------------------------
+	int length()
+- Metodo accesor, no atributo publico
+String cadena = "Hola";
+int longitud = cadena.length(); // longitud vale 4
+
+-----------------------------------------
+ACCESO A LOS CARACTERES DE UN STRING
+-----------------------------------------
+	char charAt(int indice)
+String cadena = new String("Hola que tal");
+char carac = cadena.charAt(5); // carac = 'q'
+
+-----------------------------------------
+CONCATENACION DE CADENAS
+-----------------------------------------
+	String concat(String cadena)
+String str1 = "Hola ";
+String str2 = "Mundo";
+String resul = str1.concat(str2); // resul = "Hola Mundo"
+
+	operador +
+String str1 = "hola";
+String str2 = "	Mundo";
+String resul = str1 + " al" + str2;
+
+-----------------------------------------
+EXTRAER SUBCADENAS
+-----------------------------------------
+	String substring(int posInicial, int posFinal)
+Devuelve una subcadena (es un String) que comienza por posInicial 
+	hasta posFinal (sin incluir posFinal)
+	
+	String substring(int posInicial)
+Devuelve una subcadena desde posInicial hasta el final de la cadena
+
+String str1 = "Hola Mundo";
+String subcadena = str1.substring(3); // subcadena vale "a Mundo"
+subcadena = str1.substring(1,4); // subcadena vale "ola"
+
+-----------------------------------------
+COMPARACION DE CADENAS
+-----------------------------------------
+	boolean equals(Object obj)
+- Permite comparar dos objetos cualesquiera (tmb strings) 
+- true si los VALORES son iguales, no compare referencias (==)
+
+String str1 = "Hola";
+String str2 = "HOLA";
+boolean resul = str1.equals(str2); //resul = false
+
+	boolean equalsIgnoreCase(String s)
+- Ignora mayusculas y minusculas
+boolean resul = str1.equalsIgnoreCase(str2); // resul = true
+
+	int compareTo(String s)
+String str1 = "Hola";
+String str2 = "HOLA";
+int aux = str1.compareTo(str2); // aux vale 32
+int aux = str2.compareTo(str1); // aux vale -32
+aux = "aba".compareTo("aba"); // aux = 0
+aux = "aba".compareTo("abaaaa"); // aux < 0
+
+	int compareToIgnoreCase(String s)
+aux = str1.compareToIgnoreCase(str2); // aux = 0
+
+-----------------------------------------
+BUSQUEDA DE CADENAS
+-----------------------------------------
+	int indexOf(String s)
+	int indexOf(char c)
+	int indexOf(int c)
+Devuelve la posicion de la primera ocurrecia de s o -1 si no ecuentra.
+String mensaje = "Hola";
+int pos = mensaje.indexOf("la"); // pos = 2
+pos = mensaje.indexOf("pa"); // pos = -1
+pos = mensaje.indexOf('o'); //pos = 1
+
+	int indexOf(String s, int from)
+String mensaje = "Hola esto es un ejemplo";
+int pos = mensaje.indexOf("es", 7); // pos = 10
+pos = mensaje.indexOf("la", 5); // pos = -1
+
+	int lastIndexOf(String s)
+//posicion de la ultima ocurrencia de s
+String a = "ola hola la mareala";
+int resul = a.lastIndexOf(la); resul = 17
+
+-----------------------------------------
+MAYUSCULAS / MINUSCULAS
+-----------------------------------------
+	String toLowerCase()
+String mensaje = "HoLa";
+String minus = mensaje.toLowerCase(); //minus vale "HOLA"
+
+	String toUpperCase()
+String mayus = mensaje.toUpperCase(); //mayus vale "HOLA"
+
+-----------------------------------------
+
+-----------------------------------------
+	boolean startsWith(String s)
+String texto = "HoLa";
+bolean xx = texto.startsWith("Ho"); // xx = true
+
+	boolean endsWith(String s)
+String texto = "Hola que tal";
+boolean x = texto.endsWith("tal"); // x = true
+
+-----------------------------------------
+
+-----------------------------------------
+	boolean isEmpty()
+String m = "";
+boolean x = m.isEmpty(); // x = true
+m.length() = 0;
+
+	boolean contains(String s)
+String cadena = "Ox hmn x mareax";
+boolean resul = cadena.contains("x"); // resul = true
+
+-----------------------------------------
+
+-----------------------------------------
+	String replace(String s, String r)
+	String replaceAll(String s, string r)
+String texto = "Hola que tal";
+String c = texto.replace("a", 'x'); //c vale "Holx que txl" 
+
+-----------------------------------------
+
+-----------------------------------------
+	static String valueOf(type c)
+	type = char, boolean, int, double, ...
+int x = 7;
+String str = String.valueOf(x); //str vale "7"
+
+
+-----------------------------------------
+
+-----------------------------------------
+	String[] split(String delimitador)
+Trocea una cadena sgun un delimitador devolviendo un array con los trozos
+
+final String ESPACIO = " ";
+String frase = "la  casa de la  playa";
+String[] palabras = frase.split(ESPACIO);
+
+
+
+
+
+

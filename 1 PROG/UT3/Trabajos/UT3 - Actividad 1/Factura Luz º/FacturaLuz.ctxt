@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FacturaLuz
+comment0.text=\r\n\ Escriba\ la\ descripci\u00F3n\ de\ la\ clase\ FacturaLuz\ aqu\u00ED.\r\n\ La\ clase\ guarada\ inforamci\u00F3n\ acerca\ del\ consumo\ de\ luz\ efectuado\ \r\n\ en\ una\ factura\ de\ electricidad\ y\ obtienen\ el\ importe\ total\ facturado.\r\n\ @author\ \ Chris\r\n\ @version\ 27/09/2021\r\n
+comment1.params=anterior\ actual
+comment1.target=FacturaLuz(int,\ int)
+comment1.text=\r\n\ Crear\ factura\ asinando\ los\ valores\ de\ los\ parametros\r\n
+comment2.params=
+comment2.target=double\ obtenerConsumo()
+comment2.text=\r\n\ Accesor\r\n\ @return\ devuelve\ el\ numero\ de\ Kw\ consumidos\ \r\n
+comment3.params=
+comment3.target=double\ obtenerConsumoV1()
+comment3.text=\r\n\ Accesor\ /\ USANDO\ VARIABLE\ LOCAL\r\n\ @return\ devuelve\ el\ numero\ de\ Kw\ consumidos\ \r\n
+comment4.params=
+comment4.target=double\ obtenerImporteTotal()
+comment4.text=\r\n\ Accesor\ /\ USANDO\ VARIABLES\ LOCALES\r\n\ devuelve\ el\ importe\ correspondiente\ a\ la\ factura,\r\n\ lo\ que\ hay\ que\ pagar\ por\ consumo\r\n\ @return\ el\ valor\ a\ pagar\r\n
+comment5.params=
+comment5.target=double\ obtenerImporteTotalV1()
+comment5.text=\r\n\ Accesor\r\n\ @return\ devuelve\ el\ importe\ a\ pagar\ por\ lo\ que\ se\r\n\ ha\ consumido\ incluyendo\ el\ IVA\r\n
+numComments=6

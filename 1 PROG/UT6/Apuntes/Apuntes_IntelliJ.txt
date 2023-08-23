@@ -1,0 +1,11 @@
+---------------CONF INICIAL---------------
+setings - actions ans save
+terminal puedes hacer los commits de git
+F8 para bajar con el debug
+
+-------------------- DEBUG -------------------------
+sentencia donde quiero empezar a hacer ejecucion
+1. punto de ruptura
+2. clic derecho > debug > en la clase
+ 	step over : ejecutasiguiente sentencia
+

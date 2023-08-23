@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Cantante
+comment0.text=\r\n\ \ Este\ proyecto\ simula\r\n\ \r\n
+comment1.params=
+comment1.target=Cantante()
+comment1.text=\r\n\ Crear\ cantantes\ con\ un\ estado\ inicial\ feliz\ \ \r\n
+comment2.params=
+comment2.target=void\ cantar()
+comment2.text=\r\n\ Examina\ el\ estado\ de\ animo\r\n\ ACCESOR\ -\ Examina\ su\ estado\ de\ animo\ (atributo\ feliz)\ \r\n
+comment3.params=
+comment3.target=boolean\ estaTristeV1()
+comment3.text=\r\n\ VERSION\ IF\r\n
+comment4.params=
+comment4.target=boolean\ estaTristeV2()
+comment4.text=\r\n\ SIN\ IF\r\n
+comment5.params=
+comment5.target=boolean\ estaTristeV3()
+comment5.text=\r\n\ VERSION\ IF\ \r\n
+comment6.params=
+comment6.target=void\ cambiarEstadoAnimoV1()
+comment6.text=\r\n\ Cambiar\ estado\ de\ animo\r\n\ MUTADOR\r\n
+comment7.params=
+comment7.target=void\ cambiarEstadoAnimoV2()
+comment7.text=\r\n\ Cambiar\ estado\ de\ animo\r\n\ MUTADOR\ (sin\ sentencia\ if)\r\n
+numComments=8

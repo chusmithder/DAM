@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Cuadrado
+comment0.text=\r\n\ Representa\ a\ un\ cuadrado\ con\ un\ centro\ y\ un\ lado\r\n\ Escribe\ tres\ constructores\ sobrecargados\ en\ la\ clase\ Cuadrado\r\n\ a-\ sin\ paramentros.\ crea\ un\ cuadrado\ de\ centro\ (0,0)\ y\ lado\ \=0\r\n\ b-\ con\ tres\ parametros,\ queX\ quey\ queLado\r\n\ c-\ con\ dos\ parametros,\ un\ punto\ ya\ creado,\ quePunto(es\ el\ centro)\ \ y\r\n
+comment1.params=
+comment1.target=Cuadrado()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=queX\ queY\ queLado
+comment2.target=Cuadrado(int,\ int,\ double)
+comment2.text=\r\n\ Constructor\ \ \r\n
+comment3.params=queCentro\ queLado
+comment3.target=Cuadrado(Punto,\ double)
+comment3.text=\r\n\ Constructor\ \ \r\n
+comment4.params=
+comment4.target=double\ calcularArea()
+comment4.text=\r\n\ \ \r\n\r\n\ @param\ \ \r\n\ @return\ \ \ \ \ \ \r\n
+numComments=5

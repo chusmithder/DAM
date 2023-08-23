@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Moneda
+comment0.text=\r\n\ \ \r\n\ Clase\ que\ representa\ a\ una\ moneda\ con\ una\ cara\r\n
+comment1.params=
+comment1.target=Moneda()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=void\ tirar()
+comment2.text=\r\n\ \ \r\n\ \ Simula\ el\ lanzamiento\ de\ la\ moneda\r\n\ \ Se\ genera\ un\ n\u00BA\ aleatorio,\ si\ es\ 0\ suponemos\ cara,\ si\ es\ 1\ suponemos\ cruz\r\n\ \r\n
+comment3.params=
+comment3.target=boolean\ esCara()
+comment3.text=\r\n\ \r\n
+numComments=4

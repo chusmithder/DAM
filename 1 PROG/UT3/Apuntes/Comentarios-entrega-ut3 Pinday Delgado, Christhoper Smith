@@ -1,0 +1,95 @@
+Ejecución no del todo correcta, el tiempo total caminado no sale bien, el resto sí
+
+
+
+---------------------------
+**Constantes y atributos
+
+Aunque el constructor inicializa por defecto los atributos a 0 prefiero
+que hagas la inicialización explícita, tal como hemos hecho en clase
+
+
+
+
+
+**Constructor
+
+
+
+
+
+
+**Accesor
+
+
+
+
+
+**configurar()
+
+		if (sexo == HOMBRE){
+            double auxZH = ZANCADA_HOMBRE * altura;
+            longitudZancada = Math.ceil(auxZH); //en cm
+        }
+        else { //sexo == Mujer
+            double auxZM = ZANCADA_MUJER * altura;
+            longitudZancada = Math.floor(auxZM); //en cm
+        }
+
+Lo tienes bien pero que sepas Christopher que puedes dar el mismo nombre
+a la variable auxiliar en ambas partes del if, no tienen que ser diferente
+
+
+		if (sexo == HOMBRE){
+            double aux = ZANCADA_HOMBRE * altura;
+            longitudZancada = Math.ceil(aux); //en cm
+        }
+        else { //sexo == Mujer
+            double aux = ZANCADA_MUJER * altura;
+            longitudZancada = Math.floor(aux); //en cm
+        }
+
+**registrarCaminata()
+
+tiempo = (auxHoras * 60) + auxMinutos;  // no has acumulado
+No siempre el cálculo del tiempo te da bien
+
+Hora inicio 1345 Hora fin 1500 Te da minutos caminados 115
+
+es tiempo += (auxHoras * 60) + auxMinutos;
+
+
+
+
+**printConfiguracion()
+
+
+
+
+
+
+**printEstadísticas()
+
+
+
+
+
+
+**diaMayorNumeroPasos()
+
+ sobran aux1, aux2 y aux3, no son necesarias, trabaja directamente con los atributos
+
+
+
+
+
+**reset()
+
+
+
+
+
+
+
+
+

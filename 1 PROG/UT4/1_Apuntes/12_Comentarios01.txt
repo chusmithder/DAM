@@ -1,0 +1,135 @@
+Comentarios a la entrega1 UT4 Envío 
+-----------------------------------------------
+
+
+1) Los comentarios TODO se eliminan a medida que se completan los métodos
+
+-----------------------------------------------------------------------------
+
+2) Variable locales declarar e inicializar en la misma línea
+
+// así no
+double volumen = 0;
+volumen = dimension.getAlto()*dimension.getAncho()*dimension.getLargo();
+// así sí
+double volumen = dimension.getAlto()*dimension.getAncho()*dimension.getLargo();
+
+
+	
+	// Así no
+		Paquete paquete1;
+        Paquete paquete2;
+        Paquete paquete3;
+        Paquete copia;
+        Envio envio;
+        Dimension dimension;
+        
+        paquete1 = new Paquete();
+        paquete2 = new Paquete(40, 60, 40);
+		
+	// Así
+	
+Paquete paquete1 =  new Paquete();;
+Paquete paquete2 = new Paquete(40, 60, 40);
+.....................
+.....................
+
+
+-----------------------------------------------------------------------------
+
+3) Zen boolean
+
+if(envioCompleto() == true)   //así no
+
+if(envioCompleto()) //así sí
+
+-----------------------------------------------------------------------------
+
+
+
+4) Evitar ejecutar el mismo método varias veces en un if, por ejemplo, o en un while, o for
+Asignar el valor devuelto por el método a una variable local
+
+// A mejorar
+public double calcularPesoFacturable() { 
+        if (calcularPesoVolumetrico() > peso){           
+           return calcularPesoVolumetrico();
+        }
+       
+        return peso;
+    
+
+}
+
+// Mejorado
+public double calcularPesoFacturable() {
+		double pesoVolumetrico = calcularPesoVolumetrico();
+        if (pesoVolumetrico > peso ){
+            return pesoVolumetrico;
+        }
+        
+        return peso;
+
+}
+
+
+// A mejorar
+if(getNumeroPaquetes() == 0){
+                paquete1 = paquete;
+}
+else if(getNumeroPaquetes() == 1){
+	paquete2 = paquete;
+}
+else{
+	paquete3 = paquete;
+}
+			
+// Mejorado
+
+int totalPaquetes = this.getNumeroPaquetes();
+if(totalPaquetes == 0){
+                paquete1 = paquete;
+}
+else if(totalPaquetes == 1){
+	paquete2 = paquete;
+}
+else{
+	paquete3 = paquete;
+}		
+			
+			
+			
+			
+-----------------------------------------------------------------------------
+
+4) Calcular coste total de envío (y toString) en clase ENVIO
+
+Solución propuesta por un alumno del curso pasado a un problema similar a este
+
+double importe = 0;
+int n = getNumeroPaquetes();
+switch (n) {
+	case 3:  sumar a importe el coste del paquete 3
+	case 2:  sumar a importe el coste del paquete 2
+	case 1:  sumar a importe el coste del paquete 1
+
+}	
+
+
+No se repite código, no hay problema si el envío está vacío (todos los paquetes a null)
+			
+
+5) No hay que crear objetos innecesariamente, crear objetos es costoso 
+
+en addPaquete(Paquete paquete)
+
+	// así NO
+	if (paquete1 == null){
+                paquete1 = new Paquete(paquete.getDimension(), paquete.getPeso());
+    }
+	
+	
+	// así SÍ
+	if (paquete1 == null){
+                paquete1 = paquete
+    }

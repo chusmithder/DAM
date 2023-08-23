@@ -1,0 +1,203 @@
+-------------------------------------------------------
+	Comentarios a la entrega UT6 Festivales - PARTE A)
+-------------------------------------------------------
+
+
+0) //TODO  
+	se eliminan a medida que se hacen los métodos
+	En InteliJ hay una pestaña abajo (al lado de Terminal) para controlar los que hay
+	
+-----------------------------------------------------------------------------------------
+	
+1) No acortéis nombres de variables 
+	capn  MAL
+	nombreFest MAL
+
+2)	Hay que poner @author en todas las clases a completar. Si no se hace => Penalización
+
+-----------------------------------------------------------------------------------------
+
+3)  String datos[];    NOOO => así String[] datos;
+
+-----------------------------------------------------------------------------------------
+
+4)  
+	LocalDate fechaInicio;
+	
+	public Mes getMes() {
+        String fechaA = String.valueOf(fechaInicio.getMonth());
+        Mes mes = Mes.valueOf(fechaA.toUpperCase().trim());        
+        return mes;
+        
+    }
+
+
+	getMonth() devuelve un enumerado de tipo Month (Month.January, .....) pero no de tipo Mes
+	
+	// correcto
+	public Mes getMes() {
+        return Mes.values()[fechaInicio.getMonthValue() - 1];
+        
+    }
+	
+-----------------------------------------------------------------------------------------
+
+5) 	// no correcto
+	public boolean haConcluido() {
+        LocalDate hoy = LocalDate.now();
+
+        return hoy.isAfter(fechaInicio);
+
+    }
+
+	// correcto
+	public boolean haConcluido() {
+        return this.fechaInicio.plusDays(duracion).isBefore(LocalDate.now());
+
+    }
+
+-----------------------------------------------------------------------------------------
+
+6) 	 public String toString() {
+	
+		1º - concatenar nombre, estilos, lugar
+		2º - si duracion es 1 concatenar fecha inicio
+			 sino
+				concatenar fecha inicio (día y mes ) y fecha final
+		3º - si fecha finalizacion es menor que hoy  
+				concatenar  concluido 
+			sino si fechaInicio es menor que hoy
+				concatenar  ON 
+			sino 
+				concatenar los días que quedan
+	
+	 
+ 
+ -----------------------------------------------------------------------------------------
+ 
+7)   Añadir los estilos a partir de la línea
+
+		// a mejorar
+		String[] datos = lineaFestival.trim().split(":");
+		.........
+		HashSet<Estilo> estilos = new HashSet<>();
+        Estilo[] estilo = Estilo.values();
+        for (int i = 4; i < datos.length; i++) {
+            for (Estilo todos:estilo) {
+              if (datos[i].trim().equalsIgnoreCase(String.valueOf(todos))) {
+                    estilos.add(todos);
+                }
+            }
+        }
+		
+		// mejorado
+		String[] datos = lineaFestival.trim().split(":");
+		.........
+		HashSet<Estilo> estilos = new HashSet<>();
+        for (int i = 4; i < datos.length; i++) {
+             estilos.add(Estilo.valueOf(datos[i].trim().toUpperCase()) );
+        }
+			
+
+-----------------------------------------------------------------------------------------
+
+   
+		-------------------------------------------------------
+	Comentarios a la entrega UT6 Festivales - PARTE B)
+-------------------------------------------------------
+
+0) No ejecutar para probar lo que hacéis PENALIZACIÓN
+	Ha habido gente que no se ha molestado en descomentar el código de la clase de test, cómo sabe si le 
+	funciona o no???
+	
+-----------------------------------------------------------------------------------------	
+
+1) 	//MAL
+	private int obtenerPosicionDeInsercion(ArrayList<Festival> festivales, Festival festival) {
+        int pos = 0;
+        for (Festival item:festivales) {
+            if (festival.getNombre().compareTo(item.getNombre()) < 0){
+                pos++;
+            }
+        }
+        return pos;
+    }
+	
+	//CORRECTO
+	private int obtenerPosicionDeInsercion(ArrayList<Festival> festivales, Festival festival) {
+         
+        for (int i = 0; i < festivales.size(); i++) {
+            if (festivales.get(i).getNombre().compareTo(festivale.getNombre()) > 0){
+               return i;
+            }
+        }
+        return festivales.size();
+    }
+	
+	// A MEJORAR
+	int i = 0;
+	for (Festival festi :festivales){
+            if (festival.getNombre().compareTo(festi.getNombre()) > 0){
+
+            }
+            i++;
+
+    }
+
+	// MEJORADO
+	for (int i = 0; i < festivales.size(); i++){
+            if (festival.getNombre().compareTo(festi.getNombre()) < 0){
+				return i;
+            }
+            
+
+        }
+		
+			
+		
+	
+-----------------------------------------------------------------------------------------
+	
+2)  //MAL
+	 public TreeMap festivalesPorEstilo() 
+	 
+	 siempre se pone el tipo de la clave y el tipo del valor
+	 
+	 //BIEN
+	  public TreeMap<Estilo, TreeSet<String>> festivalesPorEstilo()	 
+
+
+	crear map nuevo TreeMap<Estilo, TreeSet<String>>
+	recorrer el map con el conjunto de claves o conjunto de entradas
+	Por cada mes	
+		obtener festivales en mes
+		por cada festival	
+			recorrer los estilos del festival
+				si un estilo ya está en el map nuevo se añade el nombre del festival
+				sino se crea  entrada nueva con ese estilo y un conjunto con el nombre del festival
+	 
+
+-----------------------------------------------------------------------------------------
+
+3) agenda.get(mes).remove(fest);  //MAL, Java no sabe cómo borrar con remove un objeto Festival
+
+-----------------------------------------------------------------------------------------
+  	
+
+	
+4) public int cancelarFestivales(HashSet<String> lugares, Mes mes) 
+
+	Conozco la clave, el mes, directamente accedo al map a coger los festivales de ese mes.
+	
+	NO TENGO QUE RECORRER TODOS LOS FESTIVALES DE TODOS LOS MESES y preguntar si tienen lugar ese mes, NO TIENE SENTIDO
+	
+	!!SE PENALIZA MUCHISIMO!! 
+	
+	 
+	 
+  
+  			
+	 
+	 
+	 
+  

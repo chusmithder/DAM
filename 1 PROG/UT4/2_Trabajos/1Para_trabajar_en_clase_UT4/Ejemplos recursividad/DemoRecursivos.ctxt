@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DemoRecursivos
+comment0.text=\r\n\ \ \r\n\ \r\n\ @author\ \ \r\n\ @version\ \ \r\n
+comment1.params=
+comment1.target=DemoRecursivos()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=n
+comment2.target=int\ factorial(int)
+comment2.text=\r\n\ \ \r\n\ \r\n\ @param\ \ \ \r\n\ \r\n
+comment3.params=n
+comment3.target=int\ factorialV2(int)
+comment3.text=\r\n\ \r\n
+numComments=4

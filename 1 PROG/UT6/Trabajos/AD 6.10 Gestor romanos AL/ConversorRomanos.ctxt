@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ConversorRomanos
+comment0.text=\r\n\ Clase\ ConversorRomanos\ representa\ a\ un\r\n\ objeto\ que\ puede\ convertir\ u\ n\u00BA\ romano\r\n\ a\ un\ n\u00BA\ ar\u00E1bigo\r\n
+comment1.params=
+comment1.target=ConversorRomanos()
+comment1.text=\r\n\ Constructor\ \r\n
+comment2.params=
+comment2.target=void\ inicializar()
+comment2.text=\r\n\ Da\ valores\ iniciales\ al\ map\r\n
+comment3.params=romano
+comment3.target=int\ convertir(java.lang.String)
+comment3.text=\r\n\ convierte\ el\ n\u00BA\ romano\ a\ ar\u00E1bigo\r\n\ @param\ el\ n\u00BA\ romano\ a\ convertir\r\n\ @return\ el\ n\u00BA\ ar\u00E1bigo\r\n
+numComments=4

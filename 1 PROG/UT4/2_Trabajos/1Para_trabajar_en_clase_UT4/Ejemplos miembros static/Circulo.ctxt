@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ \ \r\n\ \r\n\ Clase\ que\ contiene\ miembros\ static\r\n
+comment1.params=radio
+comment1.target=Circulo(double)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=double\ getPerimetro()
+comment2.text=\r\n\ \ \ \ \r\n\ \r\n
+comment3.params=
+comment3.target=int\ getContadorCirculos()
+comment3.text=\r\n\ \ \ \ \r\n\ \r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ \ \r\n
+numComments=5

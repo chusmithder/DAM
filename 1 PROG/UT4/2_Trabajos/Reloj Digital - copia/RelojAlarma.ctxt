@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=RelojAlarma
+comment0.text=\r\n\ \ \r\n\ Modela\ un\ reloj\ que\ incluye\ una\ alarma\r\n
+comment1.params=
+comment1.target=RelojAlarma()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=void\ metodo()
+comment2.text=\r\n\ \ \r\n\ \r\n\ @param\ \ \ \r\n\ \ \ \ \ \ \ \ \r\n
+numComments=3

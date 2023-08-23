@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Hucha
+comment0.text=\r\n\ \ La\ clase\ modela\ el\ comportamiento\ de\ una\ hucha\ que\ guarda\ una\ determinada\ cantidad\r\nde\ dinero\r\n
+comment1.params=
+comment1.target=Hucha()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=double\ getDinero()
+comment2.text=\r\n\ Accesor\ para\ ver\ la\ cantidad\ de\ dinero\ \r\n
+comment3.params=cantidad
+comment3.target=void\ meterDinero(double)
+comment3.text=\r\n\ \ Mutador\ para\ a\u00F1adir\ dinero\ \r\n
+comment4.params=cantidad
+comment4.target=void\ sacarDinero(double)
+comment4.text=\r\n\ \ Mutador\ para\ sacar\ dinero\r\n
+comment5.params=
+comment5.target=void\ printDetalles()
+comment5.text=\r\n\ \ \ M\u00E8todo\ para\ visualizar\ la\ cantidad\ en\ la\ hucha.\ \ \ \r\n
+numComments=6

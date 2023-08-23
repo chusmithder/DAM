@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Personaje
+comment0.text=\r\n\ \ Esta\ clase\ representa\ personajes\ de\ un\ videojuego\ (objetos)\r\n\ \r\n
+comment1.params=queNombre
+comment1.target=Personaje(java.lang.String)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=distancia
+comment2.target=void\ avanzar(int)
+comment2.text=\r\n\ MUTADOR\r\n\ Este\ m\u00E9todo\ modifica\ las\ coordenadas\ del\ personaje\r\n
+comment3.params=
+comment3.target=void\ girar()
+comment3.text=\r\n\ MUTADOR\r\n\ Cambia\ la\ orientacion\ del\ personaje\ que\ siempre\ gira\r\n\ en\ sentido\ horario\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ ACCESOR\r\n\ M\u00E9todo\ que\ representa\ visualmente\ la\ situaci\u00F3n\ del\ personaje\r\n
+numComments=5

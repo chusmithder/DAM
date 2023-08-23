@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Dinero
+comment0.text=\r\n\ \ Clase\ Dineroa\r\n\ \ \r\n
+comment1.params=queEuros
+comment1.target=Dinero(int)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=int\ getEuros()
+comment2.text=\r\n\ \ Accesor\ para\ ver\ cantidad\ de\ euros\r\n
+comment3.params=queEuros
+comment3.target=void\ setEuros(int)
+comment3.text=\r\n\ \ Mutador\ para\ modificar\ la\ cantidad\ de\ euros\r\n
+comment4.params=
+comment4.target=void\ printDescomposicionMonedas()
+comment4.text=\r\n\ \ Metodo\ que\ muestra\ la\ descomposicion\ del\ dinero\ en\ el\ minimos\ numero\ de\r\n\ \ billetes\ de\ 5,\ monedas\ de\ 2\ y\ monedas\ de\ 1\r\n
+numComments=5

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Numero
+comment0.text=\r\n\ \ Los\ objetos\ de\ esta\ clase\ permiten\ almacenar\ un\ numero\r\n\ \ y\ nos\ indican\ si\ ese\ numero\ es\ menos,\ mayor\ o\ igual\r\n\ \ que\ otro\ que\ reciben.\r\n
+comment1.params=queNumero
+comment1.target=Numero(int)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=otroNumero
+comment2.target=boolean\ esMayorQue(int)
+comment2.text=\r\n\ M\u00E8todo\r\n
+comment3.params=otroNumero
+comment3.target=boolean\ esMayorQueV1(int)
+comment3.text=\r\n\ M\u00E8todo\r\n
+comment4.params=otroNumero
+comment4.target=boolean\ esMenorQue(int)
+comment4.text=\r\n\ M\u00E9todo\r\n
+comment5.params=otroNumero
+comment5.target=boolean\ esIgualQue(int)
+comment5.text=\r\n\ es\ igual\ que\r\n
+comment6.params=otroNumero
+comment6.target=java.lang.String\ comprobarV1(int)
+comment6.text=\r\n\ \r\n
+numComments=7

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\ \r\nRepresenta\ a\ un\ circulo\r\n\ @\r\n\ @author-\ Chris\r\n\ @version\ -\ 1.2\r\n
+comment1.params=queRadio
+comment1.target=Circulo(double)
+comment1.text=\r\n\ Constructor\ \r\n
+comment2.params=
+comment2.target=double\ getRadio()
+comment2.text=\r\n\ accesor\ para\ el\ radio\r\n\r\n
+comment3.params=queRadio
+comment3.target=void\ setRadio(double)
+comment3.text=\r\n\ Mutador\ para\ el\ radio\r\n
+comment4.params=
+comment4.target=double\ calcularArea()
+comment4.text=\r\n\ Calcular\ y\ devolver\ el\ area\ del\ circulo\r\n\r\n
+comment5.params=
+comment5.target=double\ calcularPerimetro()
+comment5.text=\r\n\ Calcular\ y\ devolver\ el\ perimetro\ del\ circulo\r\n
+numComments=6

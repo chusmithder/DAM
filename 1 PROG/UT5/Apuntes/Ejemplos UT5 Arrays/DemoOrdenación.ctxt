@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DemoOrdenaci\u00F3n
+comment0.text=\r\n\ \ \r\n
+comment1.params=
+comment1.target=DemoOrdenaci\u00F3n()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=array
+comment2.target=void\ ordenarSeleccionDirecta(int[])
+comment2.text=\r\n\ \ Ordenar\ en\ orden\ ascendente\r\n
+comment3.params=array
+comment3.target=void\ ordenarInsercionDirecta(int[])
+comment3.text=\r\n\ \ Ordenar\ en\ orden\ ascendente\r\n
+numComments=4

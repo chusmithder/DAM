@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=GestorRomanos
+comment0.text=\r\n\ La\ clase\ GestorArabigos\ genera\ una\ lista\r\n\ de\ n\u00BAs\ ar\u00E1bigos\ con\ sus\ correspondientes\r\n\ n\u00BAs\ romanos.\r\n\ La\ lista\ est\u00E1\ ordenada\ por\ n\u00BA\ ar\u00E1bigo\r\n\ Para\ modelar\ la\ lista\ se\ utiliza\ un\ TreeMap\r\n
+comment1.params=conversor
+comment1.target=GestorRomanos(ConversorRomanos)
+comment1.text=\r\n\ Constructor\ \r\n
+comment2.params=romano
+comment2.target=void\ a\u00F1adirRomano(java.lang.String)
+comment2.text=\r\n\ A\u00F1adir\ un\ romano.\ Se\ a\u00F1ade\ la\ clave\ que\ es\ \r\n\ su\ valor\ ar\u00E1bigo\ y\ el\ valor\ asociado\ que\ es\r\n\ el\ n\u00BA\ romano\r\n\ \r\n\ @param\ \ romano\ el\ n\u00BA\ romano\ se\ a\u00F1ade\ como\ \r\n\ \ \ \ \ \ \ \ \ \ valor\ asociado.\r\n\ \r\n
+comment3.params=romanos
+comment3.target=void\ a\u00F1adirRomanos(java.lang.String[])
+comment3.text=\r\n\ A\u00F1adir\ varios\ romanos.\ \ \r\n\ \r\n\ @param\ \ el\ array\ con\ los\ n\u00BAs\ romanos\r\n\ \r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ representaci\u00F3n\ \ textual\ del\ map\r\n\r\n
+comment5.params=
+comment5.target=void\ escribirListaArabigos()
+comment5.text=\r\n\ Mostrar\ la\ lista\ de\ ar\u00E1bigos\ \ \ \r\n\ \ \r\n
+numComments=6

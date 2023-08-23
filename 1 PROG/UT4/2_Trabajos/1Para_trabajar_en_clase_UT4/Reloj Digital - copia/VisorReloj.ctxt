@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=VisorReloj
+comment0.text=\r\n\ La\ clase\ VisorReloj\ implementa\ un\ panel\ de\ un\ reloj\ digital\ para\ un\ reloj\r\n\ estilo\ 24\ horas\ europeo.\ El\ reloj\ muestra\ horas\ y\ minutos.\ El\ rango\ del\ reloj\ es\r\n\ 00\:00\ (medianoche)\ a\ 23\:59\ (un\ minuto\ antes\ de\ medianoche)\r\n\ \r\n\ El\ reloj\ recibe\ "ticks"\ (via\ m\u00E9todo\ emitirTicReloj)\ cada\ minuto\ y\ reacciona\ \r\n\ incrementando\ el\ visor.\ Esto\ se\ hace\ de\ la\ manera\ habitual\:\ la\ hora\ se\ incrementa\ \r\n\ cuando\ los\ minutos\ alcanzan\ de\ nuevo\ el\ valor\ cero.\r\n
+comment1.params=
+comment1.target=VisorReloj()
+comment1.text=\r\n\ Constructor\ de\ objetos\ VisorReloj.\ Este\ constructor\ crea\ un\ nuevo\r\n\ reloj\ puesto\ en\ hora\ a\ las\ 00\:00\r\n
+comment2.params=hora\ minuto\ segundo
+comment2.target=VisorReloj(int,\ int,\ int)
+comment2.text=\r\n\ Constructor\ de\ objetos\ VisorReloj.\ Este\ constructor\ crea\ un\ nuevo\r\n\ reloj\ puesto\ en\ hora\ a\ lpartir\ de\ los\ par\u00E1metros\ pasaados\ \r\n\ al\ constructor\r\n
+comment3.params=
+comment3.target=void\ emitirTic()
+comment3.text=\r\n\ Este\ m\u00E9todo\ deber\u00EDa\ llamarse\ una\ vez\ cada\ minuto\ -\ \r\n\ permite\ que\ el\ reloj\ avance\ un\ minuto\r\n
+comment4.params=hora\ minuto\ segundo
+comment4.target=void\ ponerEnHora(int,\ int,\ int)
+comment4.text=\r\n\ Pone\ la\ hora\ en\ el\ visor\ a\ un\ deternminado\ valor\ de\ hora\ y\ minuto\r\n
+comment5.params=
+comment5.target=java.lang.String\ getHora()
+comment5.text=\r\n\ Devuelve\ la\ hora\ actual\ en\ el\ formato\ HH\:MM.\r\n
+comment6.params=
+comment6.target=void\ actualizarReloj()
+comment6.text=\r\n\ Actualiza\ la\ cadena\ interna\ que\ representa\ el\ visor\r\n
+numComments=7

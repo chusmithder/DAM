@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Alumno
+comment0.text=\r\n\ Clase\ que\ modela\ a\ un\ alumno\r\n
+comment1.params=nombre
+comment1.target=Alumno(java.lang.String)
+comment1.text=\r\n\ @param\ nombre\ el\ nombre\ del\ alumno\r\n\ inicializa\ adecuadamente\ los\ atributos\r\n
+comment2.params=nota
+comment2.target=void\ registrarNota(int)
+comment2.text=\r\n\ @param\ nota\ la\ nota\ del\ alumno\ que\ hay\ que\ registrar\r\n
+numComments=3

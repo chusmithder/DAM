@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Rueda
+comment0.text=\r\n\ Representa\ a\ una\ rueda\ de\ una\ bicicleta\r\n
+comment1.params=presion
+comment1.target=Rueda(double)
+comment1.text=\r\n\ Constructor\r\n
+comment2.params=
+comment2.target=void\ inflar()
+comment2.text=\r\n\ inflar\ la\ rueda\r\n
+comment3.params=
+comment3.target=void\ desinflar()
+comment3.text=\r\n\ desinflar\ la\ rueda\r\n
+comment4.params=
+comment4.target=boolean\ estaDesinflada()
+comment4.text=\r\n\ true\ si\ est\u00E1\ desinflada\r\n
+numComments=5

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Dimension
+comment0.text=\r\n\ \ Representa\ una\ dimensi\u00F3n\r\n\ \ \r\n\ \ @author\ -\ Christhoper\ Pinday\ Delgado\r\n
+comment1.params=alto\ ancho\ largo
+comment1.target=Dimension(double,\ double,\ double)
+comment1.text=\r\n\ constructor\ \ \r\n
+comment2.params=
+comment2.target=double\ getAlto()
+comment2.text=\r\n\ accesor\ para\ \ el\ alto\r\n
+comment3.params=
+comment3.target=double\ getAncho()
+comment3.text=\r\n\ accesor\ para\ \ el\ ancho\r\n
+comment4.params=
+comment4.target=double\ getLargo()
+comment4.text=\r\n\ accesor\ para\ \ el\ largo\r\n
+comment5.params=
+comment5.target=Dimension\ obtenerCopia()
+comment5.text=\r\n\ Devuelve\ una\ copia\ exacta\ al\ objeto\ actual\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Repesentaci\u00F3n\ textual\ de\ la\ dimensi\u00F3n\r\n\ (leer\ enunciado)\r\n
+comment7.params=
+comment7.target=void\ print()
+comment7.text=\r\n\ Muestra\ en\ pantalla\ el\ objeto\ actual\r\n\ Este\ m\u00E9todo\ se\ incluye\ como\ m\u00E9todo\ de\ prueba\r\n\ de\ la\ clase\ Dimension\r\n
+numComments=8

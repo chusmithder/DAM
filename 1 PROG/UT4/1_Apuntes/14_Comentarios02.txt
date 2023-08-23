@@ -1,0 +1,132 @@
+-------------------------------------------------------------------
+	Comentarios a la entrega 2 UT4 PracticaBucles
+-------------------------------------------------------------------
+ 
+ 
+ 
+
+----------------------------------------------------------------------------
+
+1) Los nombres de variables además de descriptivos DEBEN ser sustantivos y empiezan en minúscula
+
+
+-----------------------------------------------------------------------------
+
+
+2)  //MAL
+	public boolean esImpar(int numero)   {
+        while(numero % 2 != 0) {
+            return true;
+        }
+        return  false;
+    }
+	
+	//CORRECTO
+	public boolean esImpar(int numero)   {
+        return numero % 2 != 0;
+    }
+
+
+-----------------------------------------------------------------------------
+
+
+
+3)  System.out.printf("%s",caracter) 
+	// Mejor
+	System.out.printf("%c",caracter)
+
+
+----------------------------------------------------------------------------------- 
+ 
+4)   if(esImpar(numero) == false) // zen boolean     
+	 
+	if(!esImpar(numero))			
+	
+----------------------------------------------------------------------------------- 
+
+
+
+5) 	Hacer las preguntas necesarias con if
+
+	// A MEJORAR
+	if(esImpar(numero)){
+                sumaI += numero;
+    }
+	if(esImpar(numero) == false){
+		if(numero > maxP){
+			maxP = numero;
+		}
+	}
+	
+	// MEJORADO
+	if(esImpar(numero)){
+                sumaI += numero;
+    }
+	else if(numero > maxP){
+			maxP = numero;
+		}
+	}
+	
+		
+----------------------------------------------------------------------------------- 
+
+
+6) Validaciones con un bucle while o do .. while
+
+	CON WHILE
+        System.out.println("Altura de la figura? (1-10)");
+		int altura = this.teclado.nextInt();           
+		while(altura < 1 || altura > 10)) {
+			System.out.println("Altura de la figura? (1-10)");
+			altura = this.teclado.nextInt();
+		}
+		
+	CON DO .. WHILE
+
+		 
+        do {
+            System.out.println("Altura de la figura? (1-10)");
+			altura = this.teclado.nextInt();
+            
+        }
+		while(altura < 1 || altura > 10))	
+			
+			
+-----------------------------------------------------------------------------------  
+
+7)  // MAL
+	if (cifra == 0 ) {
+		resul = resul;
+	}
+	else {
+		resul = resul  + cifra * (int) Math.pow(10, multiplicador - 1);
+		multiplicador++;
+	}
+	
+	
+	// CORRECTO
+	if (cifra != 0 ) {
+		resul = resul  + cifra * (int) Math.pow(10, multiplicador - 1);
+		multiplicador++;
+	}
+		
+				
+-----------------------------------------------------------------------------------  	
+		
+8)  generar aleatorio
+	while (condicion) {
+		tratar aleatorio
+		.............................
+		generar aleatorio
+	}
+   
+9)  // MAL- se hace n + 1 veces
+	for (int i = 0; i <= n; i++) {
+            System.out.print(caracter);                
+   }
+   
+   // BIEN
+	for (int i = 0; i < n; i++) {
+            System.out.print(caracter);                
+   }
+

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=DemoFraccion
+comment0.text=\r\n\ Clase\ para\ probar\ la\ clase\ Fraccion\ \r\n\ \r\n\ @author\ -\ Christhoper\ Pinday\ Delgado\r\n\ @version\ \r\n
+comment1.params=
+comment1.target=DemoFraccion()
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ DemoFraccion\r\n
+comment2.params=
+comment2.target=void\ demo1()
+comment2.text=\r\n\ calcula\ la\ suma,\ resta,\ producto\ y\ divisi\u00F3n\ de\ las\ dos\ fracciones\r\n\r\n
+comment3.params=mensaje\ laFraccion
+comment3.target=void\ escribirFraccion(java.lang.String,\ Fraccion)
+comment3.text=\r\n\r\n\ \ \ \r\n
+comment4.params=
+comment4.target=void\ borrarPantalla()
+comment4.text=\r\n\r\n\ Limpiar\ la\ pantalla\ \ \ \ \r\n
+comment5.params=
+comment5.target=void\ demo2()
+comment5.text=\r\n\r\n\ \ \ \r\n
+numComments=6

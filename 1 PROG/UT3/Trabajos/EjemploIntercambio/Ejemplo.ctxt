@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Ejemplo
+comment0.text=\r\n\ Proyecto\r\n
+comment1.params=queA\ queB
+comment1.target=Ejemplo(int,\ int)
+comment1.text=\r\n\ Constructor\ \r\n
+comment2.params=
+comment2.target=void\ promptAntes()
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=void\ escribir()
+comment3.text=\r\n\ Metodo\r\n
+comment4.params=
+comment4.target=void\ promptDespues()
+comment4.text=\r\n\ \r\n
+comment5.params=
+comment5.target=void\ intercambiar()
+comment5.text=\r\n\ M\u00E9todo\ Intercambiar\r\n
+numComments=6

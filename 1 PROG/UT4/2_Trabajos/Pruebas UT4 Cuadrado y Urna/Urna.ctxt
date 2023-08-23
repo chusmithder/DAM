@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Urna
+comment0.text=\r\n\ Representa\ a\ una\ urna\ que\ contiene\ dos\ bolas\r\n
+comment1.params=
+comment1.target=Urna()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=color
+comment2.target=Urna(int)
+comment2.text=\r\n\ Constructor\ \ permite\ crear\ las\ dos\ negras\ o\ las\ \r\n\ dos\ blancas\r\n
+comment3.params=c\ d
+comment3.target=Urna(int,\ int)
+comment3.text=\r\n\ \r\n
+comment4.params=queBola1\ queBola2
+comment4.target=Urna(Bola,\ Bola)
+comment4.text=\r\n\ Constructor\ \ permite\ crear\ las\ dos\ negras\ o\ las\ \r\n\ dos\ blancas\r\n
+comment5.params=
+comment5.target=int\ cuantasNegras()
+comment5.text=\r\n\ \ \r\n\ \ \ \ \r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ \ clase\ bola\ tiene\ un\ metodo\ ostring\r\n\ bola\ de\ color\ negro\ \r\n\ bola\ de\ color\ blanco\r\n
+comment7.params=
+comment7.target=void\ print()
+comment7.text=\r\n\ \ \r\n\ \ \ \ \ \r\n
+numComments=8

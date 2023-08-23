@@ -1,0 +1,138 @@
+Parametros formales
+Son aquellos parametros declarados en la cabecera de un metodo o constructor
+Estan disponibles para el objeto solo dentro del cuerpo del constructor o metodo.
+Ambito de visibilidad de los parametros formales se reduce al ambito de visibilidad del metodo
+o constructor en el que se declaran.
+- El ambito de visivilidad de un atributo es toda la clase, puede ser accedido desde cualquier
+  lugar de la clase.
+- Los parametros formales son variables locales al cuerpo del constructor o metodo
+  Solo se conocen dentro del constructor o metodo.
+* Parametros actuales
+- Son los valores que se asignan desde afuera a los parametros formales.
+
+* TIEMPO DE VIDA DE LAS VARIABLES
+- El tiempo de vida de un parametro formal se limita al tiempo que dura la llamada a un const
+  o metodo. Una vez conscluida su ejecucion, los parametros formales desaparecen y sus valores
+  (parametros actuales) se pierden.
+- El tiempo de vida de un atributo es el tiempo de vida del objeto al que pertence.
+
+- La correspondencia entree parametros formales y actuales se hace en Nº, orden y tipo.
+PASO DE PARAMETROS EN JAVA: Se copia el valor de los parametros actuales en los formales, los
+actuales no se modifican.
+
+SENTENCIA DE ASIGNACION
+- Gracias a las sentencias de asignacion podemos asignar un valor a una variable(vl o atributo)
+- operador =
+ /variable = expresion/
+
+Un valor de un tipo de menor precision puede guarfase en una variable de tipo con mayor precision.
+Java hace una conversion de menor a mayor precision. Es una conversion implicita
+int + long = long
+int + float = float
+float + double = double
+int + double = double
+long = long + int
+float = float + int //misma precision, float tiene mas poder
+double = double + int
+
+Viceversa no es posible, para ello deberiamos hacer una conversion de tipo (type casting) o
+conversion explicita.
+
+double = int
+
+int edad;
+boolean esADulto;
+esAdulto = edad >= 18;x
+
+char teclapulsada;
+boolean teclaCorrecta;
+
+teclaCorrecta = teclaPulsada == 'S'  || teclaPulsada == 's' //expresion booleana assignada
+							    //asignada a una variable booleana
+
+float precio = (float)34.56;
+int valor = (int)7.5
+char letra = (char)65
+
+METODOS
+- Implementan el comportamiento del objeto:
+	lo que el objeto puede hacer
+	lo que se puede solicitar al objeto (los servicios que proporciona)
+- El metodo incluye un codigo que se ejecuta cuando se evia un mensaje al objeto
+- Una clase puede contener varios metodos. Cada metodo realizara una TAREA ESPECIFICA.
+- EJECUCION DE UN METODO: Consiste en la realizacion de cada una de las sentencias(instrucciones)
+que contiene, de arriba hacia abajo(en el orden en el que apareccen dichas instrucciones).
+
+- Todo metodo consta de...
+	una cabecera: la signatura de ese metodo
+	PUBLIC INT GETPRECIO()
+	PUBLIC VOUD IMPRIMIRTICKET()
+	un cuerpo contiene..
+	parte de las declaracion de las variable locales.
+	parte de las sentencias ejecutables (instrucciones) -- que definen que ocurre dentro 
+	del objeto cuando un metodo se ejecuta. 
+	//declaraciones de las variables locales
+	//sentencias ejecutables-- Indican que pasa dentro del objeto cuando se ejecuta el
+	metodo.
+METODOS ACCESORES(getters)
+- Proporcionan informacion sobre el estado de un objeto
+- Permiten responder a preguntas como... ¿Cual es el precio de un ticket? ¿De que color es el conche?
+- Usualmente contienen sentencias return que devuelve el valor de uno de los atrributos del objeto
+- Si el metodo escribe informacion sobre el objeto tambien puede considerarse accesor.
+ej: public int getPrecio , public void ImprimirBoleta()
+* 3.9 ejercicio...
+
+METODOS MUTADORES (setters)...
+- Modifican el estado de un objeto (el valor de uno o varios de sus atributos)
+- Representan peticiones al objeto para que modifique sus espacios de memoria en el que almacena
+  los valores correspondientes a su estado.
+- Normalmente contienen SENTENCIAS DE ASIGNACION y PARAMETROS.
+
+public void isnertarDinero(int cantidad){
+importe += cantidad;
+}
+
+public String setColor(String newColor){
+color = nuevoColor;
+}
+
+puntuacion += puntos;
+
+Reduce el atributo total en la cantidad dada
+public void descontar(int cantidad){
+total -= cantidad;
+}
+
+println() es un metodo del objeto System.out de Java.ç
+
+VARIABLES LOCALES...
+- Es una variable que se declara dentro de un metodo o de un constructor. Tienen un ambito de 
+  visibilidad y vida que se limita al tiempo que tarda la llamada al metodo.
+- Se crean cuando se invoca el metodo y se destruye cuando el metodo concluye.
+- Todos los metodos, incluidos los constructores pueden incluir variables locales. Se declaran 
+  indicando su tipo y nombre (no se especifica su visibilidad)
+- Se utilizan a menudo como almacenamiento temporal, para ayudar a un metodo a relizar su tarea.
+
+CONSTANTS IN JAVA
+Valor de una varieble puede cambiar a lo largo de la EJECUCION DE UN PROGRAMA.
+Una constante es un valor fijo.
+//variable local... final double PI = 3.1416;
+//Constante en una clase... private final double IVA = 0.16;
+
+Cuest
+retun (numero % 3 == 0);
+if (numero % 3 == 0){
+return true;
+}
+return false;
+
+---------------------------------------
+SENTECIA CONDICIONAL
+---------------------------------------
+Sentencias o instrucciones de control permiten...
+- Realizar uno u otro conjunto de instrucciones si se cumple una determinada condicion - Instrucciones
+  condicionales (if, switch)
+- Ejecutart un conjunto de instrucciones repetidamente un nº dterminado o indeterminado de veces - 
+  bucles (while, for, do ... while)
+
+1

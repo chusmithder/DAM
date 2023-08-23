@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Contador
+comment0.text=\r\n\ \ Clase\ Contador\r\n
+comment1.params=
+comment1.target=Contador()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=int\ getValor()
+comment2.text=\r\n\ \ Accesor\ para\ ver\ el\ atributo\ valor\r\n
+comment3.params=cantidad
+comment3.target=void\ incrementar(int)
+comment3.text=\r\n\ Mutador\ para\ incrementar\ valor\ \ \r\n
+comment4.params=cantidad
+comment4.target=void\ decrementar(int)
+comment4.text=\r\n\ Mutador\ para\ decrementar\ valor\ \ \r\n
+comment5.params=
+comment5.target=void\ reset()
+comment5.text=\r\n\ \ Reset\r\n
+comment6.params=
+comment6.target=void\ printContador()
+comment6.text=\r\n\ Imprimir\ valor\ del\ contador\ \r\n
+numComments=7

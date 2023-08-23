@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DemoReloj
+comment0.text=\r\n\ \ \r\n\ \r\n
+comment1.params=
+comment1.target=DemoReloj()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=void\ demo1()
+comment2.text=\r\n\ Escribir\ en\ pantalla\ el\ valor\ de\ la\ hora\ 00\:00\:00\ \r\n\ Avanzar\ 3\ segundos\r\n\ Escribir\ en\ pantalla\ el\ valor\ de\ la\ hora\ 00\:00\:03\ \r\n\ poner\ el\ reloj\ a\ las\ 13\:59\:59\r\n\ escribir\ en\ pantalla\ el\ valor\ de\ la\ hora\r\n\ avanzar\ un\ segundo\r\n\ Escribir\ en\ pantalla\ el\ valor\ de\ la\ hora\r\n
+comment3.params=
+comment3.target=void\ demo2()
+comment3.text=\r\n\ \ \r\n\r\n\ @param\ \ \r\n\ @return\ \ \ \ \ \ \r\n
+numComments=4

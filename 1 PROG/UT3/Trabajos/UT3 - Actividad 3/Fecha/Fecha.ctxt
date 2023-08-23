@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Fecha
+comment0.text=\r\n\ \ Proyecto\ fecha\r\n\ \r\n
+comment1.params=queDia\ queMes\ queA\u00F1o
+comment1.target=Fecha(int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ inicializa\ los\ objetos\ con\ los\ parametros\ actuales\ asignados\r\n
+comment2.params=
+comment2.target=boolean\ esBisiesto()
+comment2.text=\r\n\ \ un\ m\u00E9todo\ esBisiesto()\ que\ devuelve\ true\ si\ el\ a\u00F1o\ es\ bisiesto,\ false\ en\ otro\ caso.\r\n\ \ Un\ a\u00F1o\ es\ bisiesto\ si\ es\ m\u00FAltiplo\ de\ 4\ pero\ no\ de\ 100\ aunque\ si\ de\ 400\ \ \ \ \ \ \r\n
+comment3.params=
+comment3.target=int\ diasMes()
+comment3.text=\r\n\ \ devuelve\ la\ cantidad\ de\ d\u00EDas\ que\ tiene\ el\ mes\ (influir\u00E1\ si\ a\u00F1o\ es\ bisiesto\r\n\ \ en\ el\ caso\ de\ febrero)\ \ \ \r\n
+comment4.params=
+comment4.target=boolean\ esCorrecta()
+comment4.text=\r\n\ \ A\u00F1ade\ un\ m\u00E9todo\ esCorrecta()\ que\ devuelva\r\n\ \ true\ si\ la\ fecha\ que\ contiene\ el\ objeto\ es\ correcta\ \ \ \r\n\ \ \ el\ d\u00EDa\ est\u00E1\ comprendido\ entre\ 1\ y\ 31\r\n\ \ \ el\ mes\ est\u00E1\ entre\ 1\ y\ 12\r\n\ \ \ si\ el\ mes\ no\ es\ febrero\ el\ d\u00EDa\ estar\u00E1\ bien\ en\ relaci\u00F3n\ al\ n\u00BA\ de\ mes,\ es\ decir,\ entre\ 1\ y\ 31\ o\ \r\n\ \ \ entre\ 1\ y\ 30\r\n\ \ \ si\ el\ mes\ es\ febrero\ el\ d\u00EDa\ estar\u00E1\ entre\ 1\ y\ 28\ o\ entre\ 1\ y\ 29\ si\ el\ a\u00F1o\ es\ bisiesto\r\n
+numComments=5

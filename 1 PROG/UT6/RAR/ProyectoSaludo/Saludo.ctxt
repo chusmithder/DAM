@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=aQuien
+comment0.target=Saludo(java.lang.String)
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ Saludo\r\n
+comment1.params=
+comment1.target=void\ saludar()
+comment1.text=\r\n\ @param\ \ \r\n\ @return\ \ \ \ \ \r\n
+numComments=2

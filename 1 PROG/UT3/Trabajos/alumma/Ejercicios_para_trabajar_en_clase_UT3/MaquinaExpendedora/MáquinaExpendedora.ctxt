@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=M\u00E1quinaExpendedora
+comment0.text=\r\n\ Este\ proyecto\ modela\ una\ sencilla\ m\u00E1quina\ expendedora\ de\ billetes.\r\n\ El\ precio\ del\ ticket\ se\ especifica\ via\ el\ constructor.\r\n\ Es\ una\ m\u00E1quina\ sencilla\ en\ el\ sentido\ de\ que\ conf\u00EDa\ que\ el\ usuario\ \r\n\ inserte\ el\ suficiente\ dinero\ antes\ de\ emitir\ el\ ticket.\r\n\ Asume\ tambi\u00E9n\ que\ el\ usuario\ introduce\ cantidades\ positivas\r\n
+comment1.params=precioTicket
+comment1.target=M\u00E1quinaExpendedora(int)
+comment1.text=\r\n\ Crear\ una\ m\u00E1quina\ que\ emite\ tickets\ de\ un\ determinado\ precio\r\n\ El\ precio\ ha\ de\ ser\ mayor\ que\ 0\ y\ no\ hay\ que\ verificar\ esto\r\n
+comment2.params=
+comment2.target=int\ getPrecio()
+comment2.text=\r\n\ Devolver\ el\ precio\ de\ un\ billete\r\n
+comment3.params=
+comment3.target=int\ getImporte()
+comment3.text=\r\n\ Devolver\ la\ cantidad\ de\ dinero\ insertada\ hasta\ el\ momento\r\n\ para\ el\ billete\r\n
+comment4.params=cantidad
+comment4.target=void\ insertarDinero(int)
+comment4.text=\r\n\ Recibir\ una\ cantidad\ de\ dinero\ de\ un\ usuario\r\n
+comment5.params=
+comment5.target=void\ imprimirTicket()
+comment5.text=\r\n\ Imprimir\ un\ ticket\r\n\ Actualizar\ el\ total\ recolectado\ por\ la\ m\u00E1quina\ y\r\n\ poner\ el\ importe\ a\ 0\r\n
+numComments=6

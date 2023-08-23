@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Bicicleta
+comment0.text=\r\n\ Modela\ a\ una\ bicicleta\r\n
+comment1.params=
+comment1.target=Bicicleta()
+comment1.text=\r\n\ \ el\ constructor\ cree\ las\ ruedas\ con\ una\ presi\u00F3n\ inicial\ de\ 0.0\ \r\n
+comment2.params=
+comment2.target=void\ verificar()
+comment2.text=\r\n\ \ \ verifica\ cada\ una\ de\ las\ ruedas\ de\ la\ bici.\r\n\ \ \ Si\ est\u00E1n\ desinfladas\ las\ infla\ quedando\ las\ ruedas\ con\ una\ presi\u00F3n\ de\ 1.5.\r\n
+numComments=3

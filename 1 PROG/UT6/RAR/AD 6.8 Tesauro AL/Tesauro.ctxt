@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tesauro()
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ Tesauro\r\n
+comment1.params=palabra\ sinonimo
+comment1.target=void\ a\u00F1adirSinonimo(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ \r\n\ @param\ \ palabra\ la\ palabra\ a\ a\u00F1adir\r\n\ \ \ \ \ \ \ \ \ sinonimo\ el\ sin\u00F3nimo\ de\ la\ palabra\r\n
+comment2.params=linea
+comment2.target=void\ a\u00F1adirSinonimo(java.lang.String)
+comment2.text=\r\n\ a\u00F1ade\ una\ palabra\ junto\ con\ todos\ sus\ sin\u00F3nimos\ \r\n\ @param\ linea\ contiene\ la\ palabra\ y\ sus\ sin\u00F3nimos\r\n\ \ \ \ \ \ \ \ \ el\ separador\ entre\ palabras\ es\ el\ blanco\r\n\ \ \ \ \ \ \ \ \ la\ primera\ palabra\ es\ la\ clave,\ el\ resto\ sin\u00F3nimos\r\n
+comment3.params=sin
+comment3.target=java.util.HashSet\ borrarSinonimo(java.lang.String)
+comment3.text=\r\n\ \r\n\ @param\ \ sin\ el\ sin\u00F3nimo\ a\ borrar\ de\ cada\ conjunto\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ de\ sin\u00F3nimos\r\n\ @return\ \ \ el\ conjunto\ de\ claves\ en\ las\ que\ estaba\r\n\ \ \ \ \ \ \ \ \ \ \ \ el\ sin\u00F3nimo\ borrado.\ SI\ no\ se\ borr\u00F3\r\n\ \ \ \ \ \ \ \ \ \ \ \ ninguno\ devuelve\ el\ conjunto\ vac\u00EDo\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ \r\n\ @param\ \ representaci\u00F3n\ textual\ del\ map\r\n\ @return\ \ \ \ \ \r\n
+comment5.params=
+comment5.target=void\ escribirTesauro()
+comment5.text=\r\n\ \r\n\ Visualiza\ el\ tesauro\ \ \ \ \r\n
+numComments=6

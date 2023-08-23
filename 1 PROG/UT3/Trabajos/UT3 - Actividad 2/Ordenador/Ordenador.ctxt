@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Ordenador
+comment0.text=\r\n\ \ Los\ objetos\ de\ esta\ clase\ ser\u00E1n\ ordenadores.\r\n\ \r\n\ @author\ \ \r\n\ @version\ \ \r\n
+comment1.params=queMaxMemoria
+comment1.target=Ordenador(int)
+comment1.text=\r\n\ Constructor\ \ de\ la\ clase\r\n\ Verifica\ que\ el\ parametro\ queMemoriaMax\ sea\ mayor\ que\ 0\r\n\ Si\ es\ negativo\ la\ memoria\ maxima\ inicia\ con\ 1024\r\n
+comment2.params=
+comment2.target=int\ getMaxMemoria()
+comment2.text=\r\n\ Accesor\ \r\n\ Devuelve\ la\ maxima\ memoria\ permitida\ \ \ \ \r\n
+comment3.params=
+comment3.target=int\ obtenerMemoriaDisponible()
+comment3.text=\r\n\ \ Devuelve\ la\ memoria\ que\ queda\ disponible\r\n
+comment4.params=
+comment4.target=void\ vaciarMemoria()
+comment4.text=\r\n\ \ Mutador\r\n\ \ Libera\ toda\ la\ memoria\ instalada\r\n
+comment5.params=
+comment5.target=boolean\ instalar256Mb()
+comment5.text=\r\n\ \ Mutador\r\n\ \ Instalar\ 256\ Mb\r\n\ \ \r\n
+comment6.params=cantidad
+comment6.target=boolean\ instalarMemoria(int)
+comment6.text=\r\n\ \ Mutador\r\n\ \ Instalar\ memoria\ que\ se\ indica\ en\ el\ par\u00E1metro\r\n\ \ memoriaInstalada\ \=\ memoriaInstalada\ +\ cantidad\r\n
+comment7.params=
+comment7.target=void\ printInfornacion()
+comment7.text=\r\n\ \ Accesor\r\n\ \ \r\n
+numComments=8

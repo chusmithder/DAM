@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=ListaNumeros
+comment0.text=\r\n\ \ \r\n\ Modela\ una\ lista\ de\ n\u00FAmeros\ \r\n\ Tiene\ un\ atributo\ que\ es\ un\ array\r\n
+comment1.params=n
+comment1.target=ListaNumeros(int)
+comment1.text=\r\n\ @param\ n\ el\ tama\u00F1o\ m\u00E1ximo\ del\ array\r\n
+comment2.params=valor
+comment2.target=void\ addNumero(int)
+comment2.text=\r\n\ A\u00F1adir\ un\ n\u00BA\ a\ la\ lista\ solo\ si\ no\ est\u00E1\ completa\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Representaci\u00F3n\ textual\ de\ la\ lista\r\n
+comment4.params=
+comment4.target=boolean\ estaLlena()
+comment4.text=\r\n\ Comprueba\ si\ la\ lista\ de\ n\u00FAmeros\ est\u00E1\ completa\ o\ no\r\n
+comment5.params=
+comment5.target=int\ suma()
+comment5.text=\r\n\ \ Calcula\ y\ devuelve\ la\ suma\ de\ todos\ los\ n\u00BAs\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\r\n\ Main\ en\ la\ misma\ clase\r\n
+numComments=7

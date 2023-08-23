@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Moneda()
+comment0.text=\r\n\ Constructor\ \ \r\n
+comment1.params=
+comment1.target=void\ tirar()
+comment1.text=\r\n\ \ \r\n\ \ Simula\ el\ lanzamiento\ de\ la\ moneda\r\n\ \ Se\ genera\ un\ n\u00BA\ aleatorio,\ si\ es\ 0\ suponemos\ cara,\ si\ es\ 1\ suponemos\ cruz\r\n\ \r\n
+comment2.params=
+comment2.target=boolean\ esCara()
+comment2.text=\r\n\ \r\n
+numComments=3

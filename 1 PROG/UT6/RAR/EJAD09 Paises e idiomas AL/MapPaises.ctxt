@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MapPaises()
+comment0.text=\r\n\ Constructor\ \ \r\n
+comment1.params=pais\ idioma
+comment1.target=void\ add(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ \ a\u00F1ade\ un\ pa\u00EDs\ (siempre\ en\ may\u00FAsculas)\ y\ el\ idioma\ asociado\r\n\ \ Si\ la\ clave\ ya\ existe\ se\ a\u00F1ade\ el\ idioma\ al\ conjunto\ de\ idiomas\ del\ pa\u00EDs\r\n\ \ Si\ la\ clave\ no\ existe\ se\ a\u00F1ade\ una\ nueva\ entrada\ con\ el\ pais\ y\ el\ conjunto\r\n\ \ formado\ por\ idioma\r\n
+comment2.params=pais
+comment2.target=java.util.TreeSet\ idiomasQueHablanEn(java.lang.String)
+comment2.text=\r\n\ \ Devuelve\ el\ conjunto\ de\ idiomas\ que\ hablan\ en\ el\ pais\ indicado\r\n\ \ \r\n\r\n
+comment3.params=pais
+comment3.target=int\ totalIdiomasQueHablanEn(java.lang.String)
+comment3.text=\r\n\ \ Devuelve\ cu\u00E1ntos\ idiomas\ hablan\ en\ el\ pais\ indicado\r\n\ \ 0\ si\ el\ pais\ no\ existe\ \r\n\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ \ Representaci\u00F3n\ textual\ del\ map\ de\ la\ forma\r\n\ \ Pais\ \=\ {idioma1,\ idioma2,\ ....}\r\n\ \ Usa\ StringBuilder\ para\ las\ concatenaciones\r\n\ \ Para\ iterar\ sobre\ el\ map\ usa\ el\ conjunto\ de\ entradas\ y\ un\ for\ mejorado\r\n
+comment5.params=idioma
+comment5.target=java.util.TreeSet\ paisesQueHablanIdioma(java.lang.String)
+comment5.text=\r\n\ \ Conjunto\ de\ paises\ en\ los\ que\ se\ habla\ el\ idioma\ indicado\r\n\ \ Importa\ el\ orden\ en\ el\ conjunto\ devuelto\r\n\ \ Usa\ el\ conjunto\ de\ claves\ y\ un\ iterador\r\n
+comment6.params=pais1\ pais2
+comment6.target=java.util.TreeSet\ idiomasComunes(java.lang.String,\ java.lang.String)
+comment6.text=\r\n\ \ Dados\ dos\ pa\u00EDses\ devuelve\ el\ conjunto\ de\ idioma/s\ comunes\ que\ se\ hablan\ en\ ellos\r\n\ \ Si\ no\ hay\ devuelve\ el\ conjunto\ vac\u00EDo.\ Si\ los\ pa\u00EDses\ no\ existen\ tambi\u00E9n\ se\ devuelve\ \r\n\ \ conjunto\ vac\u00EDo\r\n\r\n
+comment7.params=
+comment7.target=void\ printPaises()
+comment7.text=\r\n\ \ \r\n\r\n
+numComments=8

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AppListaNombres
+comment0.text=\r\n\ \r\n\ Acepta\ como\ argumento\ del\ main\ el\ tama\u00F1o\ m\u00E1ximo\ de\ la\ lista\r\n\ Si\ no\ se\ pasan\ argumentos\ se\ muestra\ un\ mensaje\ de\ error,\ se\ le\ informa\ al\ usuario\r\n\ de\ la\ sintaxis\ a\ utilizar\ y\ se\ acaba\ el\ programa\r\n\ \r\n\ En\ otro\ caso\ se\ crea\ la\ lista\ y\:\r\n\ \ -\ se\ llama\ al\ m\u00E9todo\ cargarDeFichero()\ \r\n\ \ -\ se\ muestra\ la\ lista\r\n\ \ -\ se\ muestra\ el\ nombre\ m\u00E1s\ largo\r\n\ \ -\ se\ borran\ los\ que\ empiezan\ por\ 'r'\r\n\ \ -\ se\ muestra\ la\ lista\r\n\ \ -\ se\ muestra\ cu\u00E1ntos\ empiezan\ por\ 'aL'\r\n\ \ -\ se\ muestran\ los\ nombres\ que\ empiezan\ por\ "a"\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ \r\n
+numComments=2

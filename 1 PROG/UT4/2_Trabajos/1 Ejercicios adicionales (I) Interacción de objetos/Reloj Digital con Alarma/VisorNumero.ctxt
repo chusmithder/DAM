@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=VisorNumero
+comment0.text=\r\n\ La\ clase\ VisorNumero\ representa\ un\ visor\ digital\ que\ permite\ almacenar\r\n\ valores\ entre\ 0\ y\ un\ l\u00EDmite.\ El\ l\u00EDmite\ puede\ ser\ especificado\ cuando\ se\ crea\r\n\ el\ visor.\ El\ rango\ de\ valores\ va\ de\ 0\ a\ l\u00EDmite-1.\ Si\ se\ usa,\ por\ ejemplo,\ para\ \r\n\ los\ segundos\ un\ reloj\ digital,\ el\ l\u00EDmite\ ser\u00EDa\ 60,\ resultando\ en\ este\ caso\ que\ \r\n\ el\ visor\ mostrar\u00EDa\ valores\ entre\ 0\ y\ 59.\ Al\ incrementarse,\ el\ visor\ da\ la\ vuelta\ \r\n\ autom\u00E1ticamente\ y\ se\ pone\ a\ 0\ al\ alcanzar\ el\ l\u00EDmite.\r\n
+comment1.params=limiteMaximo
+comment1.target=VisorNumero(int)
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ VisorNumero\r\n
+comment2.params=
+comment2.target=int\ getValor()
+comment2.text=\r\n\ Devuelve\ el\ valor\ actual\r\n
+comment3.params=
+comment3.target=java.lang.String\ getValorVisor()
+comment3.text=\r\n\ Devuelve\ el\ valor\ del\ visor\ como\ una\ cadena\ de\ dos\ d\u00EDgitos\r\n\ Si\ el\ valor\ es\ menor\ que\ 10\ se\ le\ a\u00F1ade\ a\ la\ iquierda\ un\ 0\r\n
+comment4.params=nuevoValor
+comment4.target=void\ setValor(int)
+comment4.text=\r\n\ Pone\ el\ valor\ del\ visor\ al\ nuevo\ valor\ especificado.\ Si\ el\r\n\ nuevo\ valor\ es\ menor\ que\ 0\ o\ ssupera\ el\ l\u00EDmite\ no\ hace\ nada\r\n
+comment5.params=
+comment5.target=void\ incrementar()
+comment5.text=\r\n\ Incrementa\ el\ valor\ del\ display\ en\ 1,\ dando\ la\ vuelta\ a\ cero\r\n\ si\ se\ alcanza\ el\ l\u00EDmite\r\n
+numComments=6

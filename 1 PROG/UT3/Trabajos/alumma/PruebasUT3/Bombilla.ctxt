@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Bombilla
+comment0.text=\r\n\ Modela\ una\ bombilla\r\n\ \r\n\ @author\ -\ Chris\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=quePotencia
+comment1.target=Bombilla(java.lang.String)
+comment1.text=\r\n\ Constructor\ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getPotencia()
+comment2.text=\r\n\ Accesor\ para\ la\ potencia\r\n
+comment3.params=
+comment3.target=boolean\ get()
+comment3.text=\r\n\ Accesor\ para\ la\ situacion\r\n
+comment4.params=quePotencia
+comment4.target=void\ setPotencia(java.lang.String)
+comment4.text=\r\n\ Mutador\ para\ la\ potencia\r\n
+comment5.params=
+comment5.target=void\ cambiarSituacion()
+comment5.text=\r\n\ Accesor\ para\ la\ potencia\r\n
+numComments=6

@@ -1,0 +1,114 @@
+No hay clase TestEnvio
+
+Ejecución correcta resto de clases
+
+
+
+---------------------------------------
+clase Dimension
+---------------------------------------
+
+*** obtenerCopia()
+
+
+
+
+*** toString()
+
+
+
+---------------------------------------
+clase Paquete
+---------------------------------------
+
+*** construtores
+
+
+
+
+
+***calcularVolumen()
+
+
+
+
+***calcularPesoVolumetrico()
+
+
+
+
+***calcularPesoFacturable()
+
+
+calcularPesoVolumetrico() a una variable local
+
+
+*** obtenerCopia()
+
+No estás haciendo una copia, devuelves la referencia al objeto actual (this)  pero eso no esocrear un nuevo objeto Paquete
+
+
+
+return new Paquete(this.dimension.obtenerCopia(), 
+								this.peso);
+								
+o 
+
+return new Paquete(this.dimension,	this.peso); // esta opción podría valer en tu caso
+
+En el tercer constructor de Paquete tú creas de nuevo un nuevo objeto dimension
+
+
+
+*** toString()
+
+
+
+
+
+
+---------------------------------------
+clase Envio
+---------------------------------------
+
+*** getNumeroPaquetes()
+
+
+
+*** envioCompleto()
+
+
+
+
+*** addPaquete()
+
+
+
+
+*** calcularCosteTotalEnvio()
+
+
+
+
+*** toString()
+
+
+
+
+
+
+
+---------------------------------------
+clase TestEnvio
+---------------------------------------
+
+
+*** main()
+
+
+No se ha incluido
+
+
+
+
+

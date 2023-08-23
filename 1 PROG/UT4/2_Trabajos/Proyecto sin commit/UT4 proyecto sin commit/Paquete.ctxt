@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=Paquete
+comment0.text=\r\n\ \ Un\ objeto\ de\ esta\ clase\ guarda\ los\ datos\ de\ un\r\n\ \ paquete\r\n\ \r\n\ @author\ -\ Christhoper\ Pinday\ Delgado\r\n\ \ \r\n
+comment1.params=
+comment1.target=Paquete()
+comment1.text=\r\n\ Constructor\ 1\ sin\ par\u00E1metros\r\n\ Crea\ el\ paquete\ con\ 40\ ,\ 30,\ 50\ de\r\n\ alto,\ ancho,\ largo\ (en\ cm)\ y\ peso\ 8\ Kg\r\n
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment10.text=\r\n\ Representaci\u00F3n\ textual\ del\ paquete\r\n\ \ (leer\ enunciado)\r\n
+comment11.params=
+comment11.target=void\ print()
+comment11.text=\r\n\ Muestra\ en\ pantalla\ el\ objeto\ actual\r\n\ Este\ m\u00E9todo\ se\ incluye\ como\ m\u00E9todo\ de\ prueba\r\n\ de\ la\ clase\ Paquete\r\n
+comment2.params=alto\ ancho\ largo
+comment2.target=Paquete(double,\ double,\ double)
+comment2.text=\r\n\ Constructor\ 2\ \r\n\ \ Crea\ el\ paquete\ con\ el\ alto,\ ancho,\ largo\ (en\ cm)\ indicados\r\n\ \ y\ peso\ un\ valor\ aleatorio\ entre\ 2\ y\ 8\ Kg\ inclusive\r\n\ \ Se\ crea\ aqu\u00ED\ el\ generador\r\n
+comment3.params=dimension\ peso
+comment3.target=Paquete(Dimension,\ double)
+comment3.text=\r\n\ Constructor\ 3\ \r\n\ Crea\ el\ paquete\ a\ la\ dimension\ y\ peso\ indicados\r\n\ \r\n
+comment4.params=
+comment4.target=Dimension\ getDimension()
+comment4.text=\r\n\ accesor\ para\ la\ dimensi\u00F3n\r\n
+comment5.params=
+comment5.target=double\ getPeso()
+comment5.text=\r\n\ accesor\ para\ el\ peso\r\n
+comment6.params=
+comment6.target=double\ calcularVolumen()
+comment6.text=\r\n\ calcula\ y\ devuelve\ el\ volumen\ del\ paquete\ (en\ cm3)\r\n\ El\ volumen\ \=\ alto\ x\ ancho\ x\ largo\r\n
+comment7.params=
+comment7.target=double\ calcularPesoVolumetrico()
+comment7.text=\r\n\ calcula\ y\ devuelve\ el\ peso\ volum\u00E9trico\ del\ paquete\ (en\ Kg)\r\n\ Peso\ volum\u00E9trico\ \=\ volumen\ del\ paquete\ /\ 5000\r\n
+comment8.params=
+comment8.target=double\ calcularPesoFacturable()
+comment8.text=\r\n\ \ Devuelve\ el\ peso\ facturable\ de\ un\ paquete\r\n\ \ Siempre\ es\ el\ valor\ mayor\ entre\ su\ peso\ real\ y\ su\ peso\ volum\u00E9trico\r\n\ \ es\ el\ valor\ que\ se\ utiliza\ para\ calcular\ el\ coste\ de\ env\u00EDo\ del\ paquete\r\n\ \ \ \ \ \ \r\n
+comment9.params=
+comment9.target=Paquete\ obtenerCopia()
+comment9.text=\r\n\ Devuelve\ una\ copia\ exacta\ al\ objeto\ actual\r\n\ Se\ obtienen\ copias\ tambi\u00E9n\ de\ los\ objetos\ que\ contenga\r\n
+numComments=12

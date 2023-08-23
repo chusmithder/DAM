@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Bola
+comment0.text=\r\n\ Modela\ a\ una\ bola\ de\ un\ determinado\ color\r\n
+comment1.params=
+comment1.target=Bola()
+comment1.text=\r\n\ \r\n
+comment2.params=c
+comment2.target=Bola(int)
+comment2.text=\r\n\ \r\n
+comment3.params=
+comment3.target=boolean\ esNegra()
+comment3.text=\r\n\ Devuelve\ true\ si\ la\ bola\ es\ negra,\ false\ en\ otro\ caso\r\n
+comment4.params=
+comment4.target=int\ getColor()
+comment4.text=\r\n\ Accesor\ para\ el\ color\ de\ la\ bola\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Representaci\u00F3n\ textual\ de\ la\ bola\r\n
+numComments=6

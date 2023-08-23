@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Calculadora
+comment0.text=\r\n\ \ Este\ proyecto\ simula\ una\ calculadora\ que\ registra\ uno\ a\ uno\ una\ serie\ de\r\n\ \ numeros\ y\ va\ calculando\ al\ mismo\ tiempo\ el\ valor\ maximo\ y\ minimo\ entre\ los\ \r\n\ introducidos\ y\ la\ suma\ total\ de\ todos\ ellos.\r\n\ \r\n\ @author\ CSPD\r\n
+comment1.params=
+comment1.target=Calculadora()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=int\ getCantidad()
+comment2.text=\r\n\ \ ACCESOR\r\n\ \ Devuelve\ la\ cantidad\r\n
+comment3.params=
+comment3.target=int\ getMinimo()
+comment3.text=\r\n\ \ ACCESOR\r\n\ \ Devuelve\ el\ valor\ minimo\ introducido\ hasta\ el\ momento\r\n
+comment4.params=
+comment4.target=int\ getMaximo()
+comment4.text=\r\n\ \ ACCESOR\r\n\ \ Devuelve\ el\ valor\ m\u00E1ximo\ introducido\ hasta\ el\ momento\r\n
+comment5.params=numero
+comment5.target=void\ introducirNumero(int)
+comment5.text=\r\n\ A\u00F1ade\ un\ nuevo\ numero\ al\ objeto\ calculadora.\r\n\ El\ efecto\ sera\ que\ el\ ESTADO\ de\ la\ calculadora\ cambia\ puesto\ que\ habr\u00E1\r\n\ que\ contar\ el\ numero\ (cantidad),\ a\u00F1adirlo\ a\ la\ suma\ ,\ actualizar\ el\ valor\ \r\n\ maximo\ y\ minimo\r\n
+comment6.params=
+comment6.target=double\ getMedia()
+comment6.text=\r\n\ \ Devuelve\ la\ media\ de\ todos\ los\ valores\ introducidos\ \r\n\ \ hasta\ el\ momento\r\n\ \ \ \ \ \r\n
+numComments=7

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ListaPersonas
+comment0.text=\r\n\ \ \r\n\ Modela\ una\ lista\ de\ personas\r\n
+comment1.params=n
+comment1.target=ListaPersonas(int)
+comment1.text=\r\n\ Constructor\ \ \r\n\ @param\ n\ tama\u00F1o\ m\u00E1ximo\ de\ la\ lista\ de\ personas\r\n
+comment2.params=p
+comment2.target=void\ addPersona(Persona)
+comment2.text=\r\n\ @param\ p\ la\ persona\ a\ a\u00F1adir\ en\ la\ lista\r\n
+comment3.params=nombre\ edad
+comment3.target=void\ addPersona(java.lang.String,\ int)
+comment3.text=\r\n\ @param\ p\ la\ persona\ a\ a\u00F1adir\ en\ la\ lista\r\n
+comment4.params=
+comment4.target=java.lang.String\ masJoven()
+comment4.text=\r\n\ Devuelve\ el\ nombre\ de\ la\ persona\ de\ menor\ edad\r\n
+comment5.params=
+comment5.target=int\ getTotal()
+comment5.text=\r\n\ \ Devuelve\ la\ cantidad\ de\ personas\ en\ la\ lista\ \ \r\n\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Representaci\u00F3n\ textual\ de\ la\ lista\ de\ personas\r\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\r\n
+numComments=8

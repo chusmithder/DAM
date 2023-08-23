@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Calentador
+comment0.text=\r\n\ \ Este\ proyecto\ simula\ a\ un\ calentador\r\n\ \ \ \r\n
+comment1.params=queMinimo\ queMaximo
+comment1.target=Calentador(int,\ int)
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=
+comment2.target=void\ calentar()
+comment2.text=\r\n\ \ MUTADOR\r\n\ \ Incrementa\ la\ temperatura\ en\ 5\ grados\r\n\ \ No\ permite\ que\ la\ temperatura\ tenga\ un\ valor\ mayor\ el\ maximo\r\n
+comment3.params=
+comment3.target=void\ enfriar()
+comment3.text=\r\n\ \ MUTADOR\r\n\ \ Decrementa\ la\ temperatura\ en\ 5\ grados\r\n\ \ No\ permite\ que\ la\ temperatura\ tenga\ un\ valor\ menor\ que\ el\ minimo\r\n
+comment4.params=
+comment4.target=int\ getTemperatura()
+comment4.text=\r\n\ \ ACCESOR\r\n\ \ Devolver\ el\ valor\ de\ la\ temperatura\r\n
+comment5.params=nuevoIncremento
+comment5.target=void\ setIncrementoV0(int)
+comment5.text=\r\n\ \ MUTADOR\r\n\ \ Establece\ un\ nuevo\ valor\ al\ incremento\r\n
+comment6.params=nuevoIncremento
+comment6.target=void\ setIncremento(int)
+comment6.text=\r\n\ \ MUTADOR\r\n\ \ Establece\ un\ nuevo\ valor\ al\ incremento\r\n\ \ No\ permite\ que\ el\ nuevo\ incremento\ sea\ negativo\r\n
+numComments=7

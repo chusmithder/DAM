@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Punto
+comment0.text=\r\n\ \r\n
+comment1.params=
+comment1.target=Punto()
+comment1.text=\r\n\ Constructor\ \ \r\n
+comment2.params=queX\ queY
+comment2.target=Punto(int,\ int)
+comment2.text=\r\n\ Constructor\ \ \r\n
+comment3.params=
+comment3.target=int\ getX()
+comment3.text=\r\n\ \ Accesor\ para\ la\ x\r\n
+comment4.params=queX
+comment4.target=void\ setX(int)
+comment4.text=\r\n\ \ Mutador\ para\ la\ x\r\n
+comment5.params=
+comment5.target=int\ getY()
+comment5.text=\r\n\ \ Accesor\ para\ la\ y\r\n
+comment6.params=queY
+comment6.target=void\ setY(int)
+comment6.text=\r\n\ \ Mutador\ para\ la\ y\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ \ Representaci\u00F3n\ textual\ del\ punto\r\n\r\n\ \ \r\n
+numComments=8

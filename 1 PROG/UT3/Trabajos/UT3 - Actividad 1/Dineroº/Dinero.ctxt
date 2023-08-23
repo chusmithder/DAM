@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Dinero
+comment0.text=\r\n\ Este\ proyecto\ simula\ un\ sistema\ de\ descomposicion\ de\ una\ cantidad\r\n\ ,\ positiva\ y\ menor\ que\ 100,\ en\ billetes\ y\ monedas.\r\n\ \ \r\n
+comment1.params=queEuros
+comment1.target=Dinero(int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\r\n
+comment2.params=
+comment2.target=int\ getEuros()
+comment2.text=\r\n\ Accesor\r\n\ Devuelve\ la\ cantidad\ total\ de\ euros\r\n\ @return\ euros\r\n
+comment3.params=nuevaCantidad
+comment3.target=void\ setEuros(int)
+comment3.text=\r\n\ Mutador\r\n\ Cambiar\ la\ cantidad\ de\ euros\r\n
+comment4.params=
+comment4.target=void\ printDescomposicionMonedas()
+comment4.text=\r\n\ Mostrar\ en\ pantalla\ el\ dinero\ expresado\ en\ billetes\ de\ 10\ y\ 5,\r\n\ y\ monedas\ de\ 2\ y\ 1.\ Priorizando\ billetes\ y\ monedas\ de\ m\u00E1s\ valor.\r\n
+comment5.params=
+comment5.target=void\ borrarPantalla()
+comment5.text=\r\n\ Limpiar\ el\ terminal\r\n
+numComments=6
